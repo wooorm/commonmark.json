@@ -1,0 +1,23 @@
+{
+  "name": "commonmark.json",
+  "version": "0.17.0",
+  "description": "CommonMark test spec in JSON",
+  "license": "MIT",
+  "keywords": [
+    "markdown",
+    "commonmark",
+    "spec",
+    "test",
+    "json"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wooorm/commonmark.json.git"
+  },
+  "author": "Titus Wormer <tituswormer@gmail.com>",
+  "scripts": {
+    "prebuild": "curl \"https://raw.githubusercontent.com/jgm/CommonMark/${VERSION:=master}/spec.txt\" > spec.txt",
+    "build": "cat spec.txt | ./build.js > index.json",
+    "prepublish": "npm run build"
+  }
+}
