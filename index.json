@@ -684,2529 +684,2589 @@
     "number": 114
   },
   {
+    "markdown": "[foo]: /url '\ntitle\nline1\nline2\n'\n\n[foo]\n",
+    "html": "<p><a href=\"/url\" title=\"\ntitle\nline1\nline2\n\">foo</a></p>\n",
+    "section": "Link reference definitions",
+    "number": 115
+  },
+  {
+    "markdown": "[foo]: /url 'title\n\nwith blank line'\n\n[foo]\n",
+    "html": "<p>[foo]: /url 'title</p>\n<p>with blank line'</p>\n<p>[foo]</p>\n",
+    "section": "Link reference definitions",
+    "number": 116
+  },
+  {
     "markdown": "[foo]:\n/url\n\n[foo]\n",
     "html": "<p><a href=\"/url\">foo</a></p>\n",
     "section": "Link reference definitions",
-    "number": 115
+    "number": 117
   },
   {
     "markdown": "[foo]:\n\n[foo]\n",
     "html": "<p>[foo]:</p>\n<p>[foo]</p>\n",
     "section": "Link reference definitions",
-    "number": 116
+    "number": 118
   },
   {
     "markdown": "[foo]\n\n[foo]: url\n",
     "html": "<p><a href=\"url\">foo</a></p>\n",
     "section": "Link reference definitions",
-    "number": 117
+    "number": 119
   },
   {
     "markdown": "[foo]\n\n[foo]: first\n[foo]: second\n",
     "html": "<p><a href=\"first\">foo</a></p>\n",
     "section": "Link reference definitions",
-    "number": 118
+    "number": 120
   },
   {
     "markdown": "[FOO]: /url\n\n[Foo]\n",
     "html": "<p><a href=\"/url\">Foo</a></p>\n",
     "section": "Link reference definitions",
-    "number": 119
+    "number": 121
   },
   {
     "markdown": "[ΑΓΩ]: /φου\n\n[αγω]\n",
     "html": "<p><a href=\"/%CF%86%CE%BF%CF%85\">αγω</a></p>\n",
     "section": "Link reference definitions",
-    "number": 120
+    "number": 122
   },
   {
     "markdown": "[foo]: /url\n",
     "html": "",
     "section": "Link reference definitions",
-    "number": 121
+    "number": 123
+  },
+  {
+    "markdown": "[\nfoo\n]: /url\nbar\n",
+    "html": "<p>bar</p>\n",
+    "section": "Link reference definitions",
+    "number": 124
   },
   {
     "markdown": "[foo]: /url \"title\" ok\n",
     "html": "<p>[foo]: /url &quot;title&quot; ok</p>\n",
     "section": "Link reference definitions",
-    "number": 122
+    "number": 125
   },
   {
     "markdown": "    [foo]: /url \"title\"\n\n[foo]\n",
     "html": "<pre><code>[foo]: /url &quot;title&quot;\n</code></pre>\n<p>[foo]</p>\n",
     "section": "Link reference definitions",
-    "number": 123
+    "number": 126
   },
   {
     "markdown": "```\n[foo]: /url\n```\n\n[foo]\n",
     "html": "<pre><code>[foo]: /url\n</code></pre>\n<p>[foo]</p>\n",
     "section": "Link reference definitions",
-    "number": 124
+    "number": 127
   },
   {
     "markdown": "Foo\n[bar]: /baz\n\n[bar]\n",
     "html": "<p>Foo\n[bar]: /baz</p>\n<p>[bar]</p>\n",
     "section": "Link reference definitions",
-    "number": 125
+    "number": 128
   },
   {
     "markdown": "# [Foo]\n[foo]: /url\n> bar\n",
     "html": "<h1><a href=\"/url\">Foo</a></h1>\n<blockquote>\n<p>bar</p>\n</blockquote>\n",
     "section": "Link reference definitions",
-    "number": 126
+    "number": 129
   },
   {
     "markdown": "[foo]: /foo-url \"foo\"\n[bar]: /bar-url\n  \"bar\"\n[baz]: /baz-url\n\n[foo],\n[bar],\n[baz]\n",
     "html": "<p><a href=\"/foo-url\" title=\"foo\">foo</a>,\n<a href=\"/bar-url\" title=\"bar\">bar</a>,\n<a href=\"/baz-url\">baz</a></p>\n",
     "section": "Link reference definitions",
-    "number": 127
+    "number": 130
   },
   {
     "markdown": "[foo]\n\n> [foo]: /url\n",
     "html": "<p><a href=\"/url\">foo</a></p>\n<blockquote>\n</blockquote>\n",
     "section": "Link reference definitions",
-    "number": 128
+    "number": 131
   },
   {
     "markdown": "aaa\n\nbbb\n",
     "html": "<p>aaa</p>\n<p>bbb</p>\n",
     "section": "Paragraphs",
-    "number": 129
+    "number": 132
   },
   {
     "markdown": "aaa\nbbb\n\nccc\nddd\n",
     "html": "<p>aaa\nbbb</p>\n<p>ccc\nddd</p>\n",
     "section": "Paragraphs",
-    "number": 130
+    "number": 133
   },
   {
     "markdown": "aaa\n\n\nbbb\n",
     "html": "<p>aaa</p>\n<p>bbb</p>\n",
     "section": "Paragraphs",
-    "number": 131
+    "number": 134
   },
   {
     "markdown": "  aaa\n bbb\n",
     "html": "<p>aaa\nbbb</p>\n",
     "section": "Paragraphs",
-    "number": 132
+    "number": 135
   },
   {
     "markdown": "aaa\n             bbb\n                                       ccc\n",
     "html": "<p>aaa\nbbb\nccc</p>\n",
     "section": "Paragraphs",
-    "number": 133
+    "number": 136
   },
   {
     "markdown": "   aaa\nbbb\n",
     "html": "<p>aaa\nbbb</p>\n",
     "section": "Paragraphs",
-    "number": 134
+    "number": 137
   },
   {
     "markdown": "    aaa\nbbb\n",
     "html": "<pre><code>aaa\n</code></pre>\n<p>bbb</p>\n",
     "section": "Paragraphs",
-    "number": 135
+    "number": 138
   },
   {
     "markdown": "aaa     \nbbb     \n",
     "html": "<p>aaa<br />\nbbb</p>\n",
     "section": "Paragraphs",
-    "number": 136
+    "number": 139
   },
   {
     "markdown": "  \n\naaa\n  \n\n# aaa\n\n  \n",
     "html": "<p>aaa</p>\n<h1>aaa</h1>\n",
     "section": "Blank lines",
-    "number": 137
+    "number": 140
   },
   {
     "markdown": "> # Foo\n> bar\n> baz\n",
     "html": "<blockquote>\n<h1>Foo</h1>\n<p>bar\nbaz</p>\n</blockquote>\n",
     "section": "Block quotes",
-    "number": 138
+    "number": 141
   },
   {
     "markdown": "># Foo\n>bar\n> baz\n",
     "html": "<blockquote>\n<h1>Foo</h1>\n<p>bar\nbaz</p>\n</blockquote>\n",
     "section": "Block quotes",
-    "number": 139
+    "number": 142
   },
   {
     "markdown": "   > # Foo\n   > bar\n > baz\n",
     "html": "<blockquote>\n<h1>Foo</h1>\n<p>bar\nbaz</p>\n</blockquote>\n",
     "section": "Block quotes",
-    "number": 140
+    "number": 143
   },
   {
     "markdown": "    > # Foo\n    > bar\n    > baz\n",
     "html": "<pre><code>&gt; # Foo\n&gt; bar\n&gt; baz\n</code></pre>\n",
     "section": "Block quotes",
-    "number": 141
+    "number": 144
   },
   {
     "markdown": "> # Foo\n> bar\nbaz\n",
     "html": "<blockquote>\n<h1>Foo</h1>\n<p>bar\nbaz</p>\n</blockquote>\n",
     "section": "Block quotes",
-    "number": 142
+    "number": 145
   },
   {
     "markdown": "> bar\nbaz\n> foo\n",
     "html": "<blockquote>\n<p>bar\nbaz\nfoo</p>\n</blockquote>\n",
     "section": "Block quotes",
-    "number": 143
+    "number": 146
   },
   {
     "markdown": "> foo\n---\n",
     "html": "<blockquote>\n<p>foo</p>\n</blockquote>\n<hr />\n",
     "section": "Block quotes",
-    "number": 144
+    "number": 147
   },
   {
     "markdown": "> - foo\n- bar\n",
     "html": "<blockquote>\n<ul>\n<li>foo</li>\n</ul>\n</blockquote>\n<ul>\n<li>bar</li>\n</ul>\n",
     "section": "Block quotes",
-    "number": 145
+    "number": 148
   },
   {
     "markdown": ">     foo\n    bar\n",
     "html": "<blockquote>\n<pre><code>foo\n</code></pre>\n</blockquote>\n<pre><code>bar\n</code></pre>\n",
     "section": "Block quotes",
-    "number": 146
+    "number": 149
   },
   {
     "markdown": "> ```\nfoo\n```\n",
     "html": "<blockquote>\n<pre><code></code></pre>\n</blockquote>\n<p>foo</p>\n<pre><code></code></pre>\n",
     "section": "Block quotes",
-    "number": 147
+    "number": 150
   },
   {
     "markdown": ">\n",
     "html": "<blockquote>\n</blockquote>\n",
     "section": "Block quotes",
-    "number": 148
+    "number": 151
   },
   {
     "markdown": ">\n>  \n> \n",
     "html": "<blockquote>\n</blockquote>\n",
     "section": "Block quotes",
-    "number": 149
+    "number": 152
   },
   {
     "markdown": ">\n> foo\n>  \n",
     "html": "<blockquote>\n<p>foo</p>\n</blockquote>\n",
     "section": "Block quotes",
-    "number": 150
+    "number": 153
   },
   {
     "markdown": "> foo\n\n> bar\n",
     "html": "<blockquote>\n<p>foo</p>\n</blockquote>\n<blockquote>\n<p>bar</p>\n</blockquote>\n",
     "section": "Block quotes",
-    "number": 151
+    "number": 154
   },
   {
     "markdown": "> foo\n> bar\n",
     "html": "<blockquote>\n<p>foo\nbar</p>\n</blockquote>\n",
     "section": "Block quotes",
-    "number": 152
+    "number": 155
   },
   {
     "markdown": "> foo\n>\n> bar\n",
     "html": "<blockquote>\n<p>foo</p>\n<p>bar</p>\n</blockquote>\n",
     "section": "Block quotes",
-    "number": 153
+    "number": 156
   },
   {
     "markdown": "foo\n> bar\n",
     "html": "<p>foo</p>\n<blockquote>\n<p>bar</p>\n</blockquote>\n",
     "section": "Block quotes",
-    "number": 154
+    "number": 157
   },
   {
     "markdown": "> aaa\n***\n> bbb\n",
     "html": "<blockquote>\n<p>aaa</p>\n</blockquote>\n<hr />\n<blockquote>\n<p>bbb</p>\n</blockquote>\n",
     "section": "Block quotes",
-    "number": 155
+    "number": 158
   },
   {
     "markdown": "> bar\nbaz\n",
     "html": "<blockquote>\n<p>bar\nbaz</p>\n</blockquote>\n",
     "section": "Block quotes",
-    "number": 156
+    "number": 159
   },
   {
     "markdown": "> bar\n\nbaz\n",
     "html": "<blockquote>\n<p>bar</p>\n</blockquote>\n<p>baz</p>\n",
     "section": "Block quotes",
-    "number": 157
+    "number": 160
   },
   {
     "markdown": "> bar\n>\nbaz\n",
     "html": "<blockquote>\n<p>bar</p>\n</blockquote>\n<p>baz</p>\n",
     "section": "Block quotes",
-    "number": 158
+    "number": 161
   },
   {
     "markdown": "> > > foo\nbar\n",
     "html": "<blockquote>\n<blockquote>\n<blockquote>\n<p>foo\nbar</p>\n</blockquote>\n</blockquote>\n</blockquote>\n",
     "section": "Block quotes",
-    "number": 159
+    "number": 162
   },
   {
     "markdown": ">>> foo\n> bar\n>>baz\n",
     "html": "<blockquote>\n<blockquote>\n<blockquote>\n<p>foo\nbar\nbaz</p>\n</blockquote>\n</blockquote>\n</blockquote>\n",
     "section": "Block quotes",
-    "number": 160
+    "number": 163
   },
   {
     "markdown": ">     code\n\n>    not code\n",
     "html": "<blockquote>\n<pre><code>code\n</code></pre>\n</blockquote>\n<blockquote>\n<p>not code</p>\n</blockquote>\n",
     "section": "Block quotes",
-    "number": 161
+    "number": 164
   },
   {
     "markdown": "A paragraph\nwith two lines.\n\n    indented code\n\n> A block quote.\n",
     "html": "<p>A paragraph\nwith two lines.</p>\n<pre><code>indented code\n</code></pre>\n<blockquote>\n<p>A block quote.</p>\n</blockquote>\n",
     "section": "List items",
-    "number": 162
+    "number": 165
   },
   {
     "markdown": "1.  A paragraph\n    with two lines.\n\n        indented code\n\n    > A block quote.\n",
     "html": "<ol>\n<li>\n<p>A paragraph\nwith two lines.</p>\n<pre><code>indented code\n</code></pre>\n<blockquote>\n<p>A block quote.</p>\n</blockquote>\n</li>\n</ol>\n",
     "section": "List items",
-    "number": 163
+    "number": 166
   },
   {
     "markdown": "- one\n\n two\n",
     "html": "<ul>\n<li>one</li>\n</ul>\n<p>two</p>\n",
     "section": "List items",
-    "number": 164
+    "number": 167
   },
   {
     "markdown": "- one\n\n  two\n",
     "html": "<ul>\n<li>\n<p>one</p>\n<p>two</p>\n</li>\n</ul>\n",
     "section": "List items",
-    "number": 165
+    "number": 168
   },
   {
     "markdown": " -    one\n\n     two\n",
     "html": "<ul>\n<li>one</li>\n</ul>\n<pre><code> two\n</code></pre>\n",
     "section": "List items",
-    "number": 166
+    "number": 169
   },
   {
     "markdown": " -    one\n\n      two\n",
     "html": "<ul>\n<li>\n<p>one</p>\n<p>two</p>\n</li>\n</ul>\n",
     "section": "List items",
-    "number": 167
+    "number": 170
   },
   {
     "markdown": "   > > 1.  one\n>>\n>>     two\n",
     "html": "<blockquote>\n<blockquote>\n<ol>\n<li>\n<p>one</p>\n<p>two</p>\n</li>\n</ol>\n</blockquote>\n</blockquote>\n",
     "section": "List items",
-    "number": 168
+    "number": 171
   },
   {
     "markdown": ">>- one\n>>\n  >  > two\n",
     "html": "<blockquote>\n<blockquote>\n<ul>\n<li>one</li>\n</ul>\n<p>two</p>\n</blockquote>\n</blockquote>\n",
     "section": "List items",
-    "number": 169
+    "number": 172
+  },
+  {
+    "markdown": "-one\n\n2.two\n",
+    "html": "<p>-one</p>\n<p>2.two</p>\n",
+    "section": "List items",
+    "number": 173
   },
   {
     "markdown": "- foo\n\n  bar\n\n- foo\n\n\n  bar\n\n- ```\n  foo\n\n\n  bar\n  ```\n\n- baz\n\n  + ```\n    foo\n\n\n    bar\n    ```\n",
     "html": "<ul>\n<li>\n<p>foo</p>\n<p>bar</p>\n</li>\n<li>\n<p>foo</p>\n</li>\n</ul>\n<p>bar</p>\n<ul>\n<li>\n<pre><code>foo\n\n\nbar\n</code></pre>\n</li>\n<li>\n<p>baz</p>\n<ul>\n<li>\n<pre><code>foo\n\n\nbar\n</code></pre>\n</li>\n</ul>\n</li>\n</ul>\n",
     "section": "List items",
-    "number": 170
+    "number": 174
   },
   {
     "markdown": "1.  foo\n\n    ```\n    bar\n    ```\n\n    baz\n\n    > bam\n",
     "html": "<ol>\n<li>\n<p>foo</p>\n<pre><code>bar\n</code></pre>\n<p>baz</p>\n<blockquote>\n<p>bam</p>\n</blockquote>\n</li>\n</ol>\n",
     "section": "List items",
-    "number": 171
+    "number": 175
   },
   {
     "markdown": "- foo\n\n      bar\n",
     "html": "<ul>\n<li>\n<p>foo</p>\n<pre><code>bar\n</code></pre>\n</li>\n</ul>\n",
     "section": "List items",
-    "number": 172
+    "number": 176
   },
   {
     "markdown": "  10.  foo\n\n           bar\n",
     "html": "<ol start=\"10\">\n<li>\n<p>foo</p>\n<pre><code>bar\n</code></pre>\n</li>\n</ol>\n",
     "section": "List items",
-    "number": 173
+    "number": 177
   },
   {
     "markdown": "    indented code\n\nparagraph\n\n    more code\n",
     "html": "<pre><code>indented code\n</code></pre>\n<p>paragraph</p>\n<pre><code>more code\n</code></pre>\n",
     "section": "List items",
-    "number": 174
+    "number": 178
   },
   {
     "markdown": "1.     indented code\n\n   paragraph\n\n       more code\n",
     "html": "<ol>\n<li>\n<pre><code>indented code\n</code></pre>\n<p>paragraph</p>\n<pre><code>more code\n</code></pre>\n</li>\n</ol>\n",
     "section": "List items",
-    "number": 175
+    "number": 179
   },
   {
     "markdown": "1.      indented code\n\n   paragraph\n\n       more code\n",
     "html": "<ol>\n<li>\n<pre><code> indented code\n</code></pre>\n<p>paragraph</p>\n<pre><code>more code\n</code></pre>\n</li>\n</ol>\n",
     "section": "List items",
-    "number": 176
+    "number": 180
   },
   {
     "markdown": "   foo\n\nbar\n",
     "html": "<p>foo</p>\n<p>bar</p>\n",
     "section": "List items",
-    "number": 177
+    "number": 181
   },
   {
     "markdown": "-    foo\n\n  bar\n",
     "html": "<ul>\n<li>foo</li>\n</ul>\n<p>bar</p>\n",
     "section": "List items",
-    "number": 178
+    "number": 182
   },
   {
     "markdown": "-  foo\n\n   bar\n",
     "html": "<ul>\n<li>\n<p>foo</p>\n<p>bar</p>\n</li>\n</ul>\n",
     "section": "List items",
-    "number": 179
+    "number": 183
+  },
+  {
+    "markdown": "-\n  foo\n-\n  ```\n  bar\n  ```\n-\n      baz\n",
+    "html": "<ul>\n<li>foo</li>\n<li>\n<pre><code>bar\n</code></pre>\n</li>\n<li>\n<pre><code>baz\n</code></pre>\n</li>\n</ul>\n",
+    "section": "List items",
+    "number": 184
   },
   {
     "markdown": "- foo\n-\n- bar\n",
     "html": "<ul>\n<li>foo</li>\n<li></li>\n<li>bar</li>\n</ul>\n",
     "section": "List items",
-    "number": 180
+    "number": 185
   },
   {
     "markdown": "- foo\n-   \n- bar\n",
     "html": "<ul>\n<li>foo</li>\n<li></li>\n<li>bar</li>\n</ul>\n",
     "section": "List items",
-    "number": 181
+    "number": 186
   },
   {
     "markdown": "1. foo\n2.\n3. bar\n",
     "html": "<ol>\n<li>foo</li>\n<li></li>\n<li>bar</li>\n</ol>\n",
     "section": "List items",
-    "number": 182
+    "number": 187
   },
   {
     "markdown": "*\n",
     "html": "<ul>\n<li></li>\n</ul>\n",
     "section": "List items",
-    "number": 183
+    "number": 188
   },
   {
     "markdown": " 1.  A paragraph\n     with two lines.\n\n         indented code\n\n     > A block quote.\n",
     "html": "<ol>\n<li>\n<p>A paragraph\nwith two lines.</p>\n<pre><code>indented code\n</code></pre>\n<blockquote>\n<p>A block quote.</p>\n</blockquote>\n</li>\n</ol>\n",
     "section": "List items",
-    "number": 184
+    "number": 189
   },
   {
     "markdown": "  1.  A paragraph\n      with two lines.\n\n          indented code\n\n      > A block quote.\n",
     "html": "<ol>\n<li>\n<p>A paragraph\nwith two lines.</p>\n<pre><code>indented code\n</code></pre>\n<blockquote>\n<p>A block quote.</p>\n</blockquote>\n</li>\n</ol>\n",
     "section": "List items",
-    "number": 185
+    "number": 190
   },
   {
     "markdown": "   1.  A paragraph\n       with two lines.\n\n           indented code\n\n       > A block quote.\n",
     "html": "<ol>\n<li>\n<p>A paragraph\nwith two lines.</p>\n<pre><code>indented code\n</code></pre>\n<blockquote>\n<p>A block quote.</p>\n</blockquote>\n</li>\n</ol>\n",
     "section": "List items",
-    "number": 186
+    "number": 191
   },
   {
     "markdown": "    1.  A paragraph\n        with two lines.\n\n            indented code\n\n        > A block quote.\n",
     "html": "<pre><code>1.  A paragraph\n    with two lines.\n\n        indented code\n\n    &gt; A block quote.\n</code></pre>\n",
     "section": "List items",
-    "number": 187
+    "number": 192
   },
   {
     "markdown": "  1.  A paragraph\nwith two lines.\n\n          indented code\n\n      > A block quote.\n",
     "html": "<ol>\n<li>\n<p>A paragraph\nwith two lines.</p>\n<pre><code>indented code\n</code></pre>\n<blockquote>\n<p>A block quote.</p>\n</blockquote>\n</li>\n</ol>\n",
     "section": "List items",
-    "number": 188
+    "number": 193
   },
   {
     "markdown": "  1.  A paragraph\n    with two lines.\n",
     "html": "<ol>\n<li>A paragraph\nwith two lines.</li>\n</ol>\n",
     "section": "List items",
-    "number": 189
+    "number": 194
   },
   {
     "markdown": "> 1. > Blockquote\ncontinued here.\n",
     "html": "<blockquote>\n<ol>\n<li>\n<blockquote>\n<p>Blockquote\ncontinued here.</p>\n</blockquote>\n</li>\n</ol>\n</blockquote>\n",
     "section": "List items",
-    "number": 190
+    "number": 195
   },
   {
     "markdown": "> 1. > Blockquote\n> continued here.\n",
     "html": "<blockquote>\n<ol>\n<li>\n<blockquote>\n<p>Blockquote\ncontinued here.</p>\n</blockquote>\n</li>\n</ol>\n</blockquote>\n",
     "section": "List items",
-    "number": 191
+    "number": 196
   },
   {
     "markdown": "- foo\n  - bar\n    - baz\n",
     "html": "<ul>\n<li>foo\n<ul>\n<li>bar\n<ul>\n<li>baz</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n",
     "section": "List items",
-    "number": 192
+    "number": 197
   },
   {
     "markdown": "- foo\n - bar\n  - baz\n",
     "html": "<ul>\n<li>foo</li>\n<li>bar</li>\n<li>baz</li>\n</ul>\n",
     "section": "List items",
-    "number": 193
+    "number": 198
   },
   {
     "markdown": "10) foo\n    - bar\n",
     "html": "<ol start=\"10\">\n<li>foo\n<ul>\n<li>bar</li>\n</ul>\n</li>\n</ol>\n",
     "section": "List items",
-    "number": 194
+    "number": 199
   },
   {
     "markdown": "10) foo\n   - bar\n",
     "html": "<ol start=\"10\">\n<li>foo</li>\n</ol>\n<ul>\n<li>bar</li>\n</ul>\n",
     "section": "List items",
-    "number": 195
+    "number": 200
   },
   {
     "markdown": "- - foo\n",
     "html": "<ul>\n<li>\n<ul>\n<li>foo</li>\n</ul>\n</li>\n</ul>\n",
     "section": "List items",
-    "number": 196
+    "number": 201
   },
   {
     "markdown": "1. - 2. foo\n",
     "html": "<ol>\n<li>\n<ul>\n<li>\n<ol start=\"2\">\n<li>foo</li>\n</ol>\n</li>\n</ul>\n</li>\n</ol>\n",
     "section": "List items",
-    "number": 197
+    "number": 202
   },
   {
     "markdown": "- # Foo\n- Bar\n  ---\n  baz\n",
     "html": "<ul>\n<li>\n<h1>Foo</h1>\n</li>\n<li>\n<h2>Bar</h2>\nbaz</li>\n</ul>\n",
     "section": "List items",
-    "number": 198
+    "number": 203
   },
   {
     "markdown": "- foo\n- bar\n+ baz\n",
     "html": "<ul>\n<li>foo</li>\n<li>bar</li>\n</ul>\n<ul>\n<li>baz</li>\n</ul>\n",
     "section": "Lists",
-    "number": 199
+    "number": 204
   },
   {
     "markdown": "1. foo\n2. bar\n3) baz\n",
     "html": "<ol>\n<li>foo</li>\n<li>bar</li>\n</ol>\n<ol start=\"3\">\n<li>baz</li>\n</ol>\n",
     "section": "Lists",
-    "number": 200
+    "number": 205
   },
   {
     "markdown": "Foo\n- bar\n- baz\n",
     "html": "<p>Foo</p>\n<ul>\n<li>bar</li>\n<li>baz</li>\n</ul>\n",
     "section": "Lists",
-    "number": 201
+    "number": 206
   },
   {
     "markdown": "The number of windows in my house is\n14.  The number of doors is 6.\n",
     "html": "<p>The number of windows in my house is</p>\n<ol start=\"14\">\n<li>The number of doors is 6.</li>\n</ol>\n",
     "section": "Lists",
-    "number": 202
+    "number": 207
   },
   {
     "markdown": "- foo\n\n- bar\n\n\n- baz\n",
     "html": "<ul>\n<li>\n<p>foo</p>\n</li>\n<li>\n<p>bar</p>\n</li>\n</ul>\n<ul>\n<li>baz</li>\n</ul>\n",
     "section": "Lists",
-    "number": 203
+    "number": 208
   },
   {
     "markdown": "- foo\n\n\n  bar\n- baz\n",
     "html": "<ul>\n<li>foo</li>\n</ul>\n<p>bar</p>\n<ul>\n<li>baz</li>\n</ul>\n",
     "section": "Lists",
-    "number": 204
+    "number": 209
   },
   {
     "markdown": "- foo\n  - bar\n    - baz\n\n\n      bim\n",
     "html": "<ul>\n<li>foo\n<ul>\n<li>bar\n<ul>\n<li>baz</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<pre><code>  bim\n</code></pre>\n",
     "section": "Lists",
-    "number": 205
+    "number": 210
   },
   {
     "markdown": "- foo\n- bar\n\n\n- baz\n- bim\n",
     "html": "<ul>\n<li>foo</li>\n<li>bar</li>\n</ul>\n<ul>\n<li>baz</li>\n<li>bim</li>\n</ul>\n",
     "section": "Lists",
-    "number": 206
+    "number": 211
   },
   {
     "markdown": "-   foo\n\n    notcode\n\n-   foo\n\n\n    code\n",
     "html": "<ul>\n<li>\n<p>foo</p>\n<p>notcode</p>\n</li>\n<li>\n<p>foo</p>\n</li>\n</ul>\n<pre><code>code\n</code></pre>\n",
     "section": "Lists",
-    "number": 207
+    "number": 212
   },
   {
     "markdown": "- a\n - b\n  - c\n   - d\n  - e\n - f\n- g\n",
     "html": "<ul>\n<li>a</li>\n<li>b</li>\n<li>c</li>\n<li>d</li>\n<li>e</li>\n<li>f</li>\n<li>g</li>\n</ul>\n",
     "section": "Lists",
-    "number": 208
+    "number": 213
   },
   {
     "markdown": "- a\n- b\n\n- c\n",
     "html": "<ul>\n<li>\n<p>a</p>\n</li>\n<li>\n<p>b</p>\n</li>\n<li>\n<p>c</p>\n</li>\n</ul>\n",
     "section": "Lists",
-    "number": 209
+    "number": 214
   },
   {
     "markdown": "* a\n*\n\n* c\n",
     "html": "<ul>\n<li>\n<p>a</p>\n</li>\n<li></li>\n<li>\n<p>c</p>\n</li>\n</ul>\n",
     "section": "Lists",
-    "number": 210
+    "number": 215
   },
   {
     "markdown": "- a\n- b\n\n  c\n- d\n",
     "html": "<ul>\n<li>\n<p>a</p>\n</li>\n<li>\n<p>b</p>\n<p>c</p>\n</li>\n<li>\n<p>d</p>\n</li>\n</ul>\n",
     "section": "Lists",
-    "number": 211
+    "number": 216
   },
   {
     "markdown": "- a\n- b\n\n  [ref]: /url\n- d\n",
     "html": "<ul>\n<li>\n<p>a</p>\n</li>\n<li>\n<p>b</p>\n</li>\n<li>\n<p>d</p>\n</li>\n</ul>\n",
     "section": "Lists",
-    "number": 212
+    "number": 217
   },
   {
     "markdown": "- a\n- ```\n  b\n\n\n  ```\n- c\n",
     "html": "<ul>\n<li>a</li>\n<li>\n<pre><code>b\n\n\n</code></pre>\n</li>\n<li>c</li>\n</ul>\n",
     "section": "Lists",
-    "number": 213
+    "number": 218
   },
   {
     "markdown": "- a\n  - b\n\n    c\n- d\n",
     "html": "<ul>\n<li>a\n<ul>\n<li>\n<p>b</p>\n<p>c</p>\n</li>\n</ul>\n</li>\n<li>d</li>\n</ul>\n",
     "section": "Lists",
-    "number": 214
+    "number": 219
   },
   {
     "markdown": "* a\n  > b\n  >\n* c\n",
     "html": "<ul>\n<li>a\n<blockquote>\n<p>b</p>\n</blockquote>\n</li>\n<li>c</li>\n</ul>\n",
     "section": "Lists",
-    "number": 215
+    "number": 220
   },
   {
     "markdown": "- a\n  > b\n  ```\n  c\n  ```\n- d\n",
     "html": "<ul>\n<li>a\n<blockquote>\n<p>b</p>\n</blockquote>\n<pre><code>c\n</code></pre>\n</li>\n<li>d</li>\n</ul>\n",
     "section": "Lists",
-    "number": 216
+    "number": 221
   },
   {
     "markdown": "- a\n",
     "html": "<ul>\n<li>a</li>\n</ul>\n",
     "section": "Lists",
-    "number": 217
+    "number": 222
   },
   {
     "markdown": "- a\n  - b\n",
     "html": "<ul>\n<li>a\n<ul>\n<li>b</li>\n</ul>\n</li>\n</ul>\n",
     "section": "Lists",
-    "number": 218
+    "number": 223
   },
   {
     "markdown": "1. ```\n   foo\n   ```\n\n   bar\n",
     "html": "<ol>\n<li>\n<pre><code>foo\n</code></pre>\n<p>bar</p>\n</li>\n</ol>\n",
     "section": "Lists",
-    "number": 219
+    "number": 224
   },
   {
     "markdown": "* foo\n  * bar\n\n  baz\n",
     "html": "<ul>\n<li>\n<p>foo</p>\n<ul>\n<li>bar</li>\n</ul>\n<p>baz</p>\n</li>\n</ul>\n",
     "section": "Lists",
-    "number": 220
+    "number": 225
   },
   {
     "markdown": "- a\n  - b\n  - c\n\n- d\n  - e\n  - f\n",
     "html": "<ul>\n<li>\n<p>a</p>\n<ul>\n<li>b</li>\n<li>c</li>\n</ul>\n</li>\n<li>\n<p>d</p>\n<ul>\n<li>e</li>\n<li>f</li>\n</ul>\n</li>\n</ul>\n",
     "section": "Lists",
-    "number": 221
+    "number": 226
   },
   {
     "markdown": "`hi`lo`\n",
     "html": "<p><code>hi</code>lo`</p>\n",
     "section": "Inlines",
-    "number": 222
+    "number": 227
   },
   {
     "markdown": "\\!\\\"\\#\\$\\%\\&\\'\\(\\)\\*\\+\\,\\-\\.\\/\\:\\;\\<\\=\\>\\?\\@\\[\\\\\\]\\^\\_\\`\\{\\|\\}\\~\n",
     "html": "<p>!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\\]^_`{|}~</p>\n",
     "section": "Backslash escapes",
-    "number": 223
+    "number": 228
   },
   {
     "markdown": "\\\t\\A\\a\\ \\3\\φ\\«\n",
     "html": "<p>\\   \\A\\a\\ \\3\\φ\\«</p>\n",
     "section": "Backslash escapes",
-    "number": 224
+    "number": 229
   },
   {
     "markdown": "\\*not emphasized*\n\\<br/> not a tag\n\\[not a link](/foo)\n\\`not code`\n1\\. not a list\n\\* not a list\n\\# not a header\n\\[foo]: /url \"not a reference\"\n",
     "html": "<p>*not emphasized*\n&lt;br/&gt; not a tag\n[not a link](/foo)\n`not code`\n1. not a list\n* not a list\n# not a header\n[foo]: /url &quot;not a reference&quot;</p>\n",
     "section": "Backslash escapes",
-    "number": 225
+    "number": 230
   },
   {
     "markdown": "\\\\*emphasis*\n",
     "html": "<p>\\<em>emphasis</em></p>\n",
     "section": "Backslash escapes",
-    "number": 226
+    "number": 231
   },
   {
     "markdown": "foo\\\nbar\n",
     "html": "<p>foo<br />\nbar</p>\n",
     "section": "Backslash escapes",
-    "number": 227
+    "number": 232
   },
   {
     "markdown": "`` \\[\\` ``\n",
     "html": "<p><code>\\[\\`</code></p>\n",
     "section": "Backslash escapes",
-    "number": 228
+    "number": 233
   },
   {
     "markdown": "    \\[\\]\n",
     "html": "<pre><code>\\[\\]\n</code></pre>\n",
     "section": "Backslash escapes",
-    "number": 229
+    "number": 234
   },
   {
     "markdown": "~~~\n\\[\\]\n~~~\n",
     "html": "<pre><code>\\[\\]\n</code></pre>\n",
     "section": "Backslash escapes",
-    "number": 230
+    "number": 235
   },
   {
     "markdown": "<http://example.com?find=\\*>\n",
     "html": "<p><a href=\"http://example.com?find=%5C*\">http://example.com?find=\\*</a></p>\n",
     "section": "Backslash escapes",
-    "number": 231
+    "number": 236
   },
   {
     "markdown": "<a href=\"/bar\\/)\">\n",
     "html": "<p><a href=\"/bar\\/)\"></p>\n",
     "section": "Backslash escapes",
-    "number": 232
+    "number": 237
   },
   {
     "markdown": "[foo](/bar\\* \"ti\\*tle\")\n",
     "html": "<p><a href=\"/bar*\" title=\"ti*tle\">foo</a></p>\n",
     "section": "Backslash escapes",
-    "number": 233
+    "number": 238
   },
   {
     "markdown": "[foo]\n\n[foo]: /bar\\* \"ti\\*tle\"\n",
     "html": "<p><a href=\"/bar*\" title=\"ti*tle\">foo</a></p>\n",
     "section": "Backslash escapes",
-    "number": 234
+    "number": 239
   },
   {
     "markdown": "``` foo\\+bar\nfoo\n```\n",
     "html": "<pre><code class=\"language-foo+bar\">foo\n</code></pre>\n",
     "section": "Backslash escapes",
-    "number": 235
+    "number": 240
   },
   {
     "markdown": "&nbsp; &amp; &copy; &AElig; &Dcaron; &frac34; &HilbertSpace; &DifferentialD; &ClockwiseContourIntegral;\n",
     "html": "<p>  &amp; © Æ Ď ¾ ℋ ⅆ ∲</p>\n",
     "section": "Entities",
-    "number": 236
+    "number": 241
   },
   {
     "markdown": "&#35; &#1234; &#992; &#98765432;\n",
     "html": "<p># Ӓ Ϡ �</p>\n",
     "section": "Entities",
-    "number": 237
+    "number": 242
   },
   {
     "markdown": "&#X22; &#XD06; &#xcab;\n",
     "html": "<p>&quot; ആ ಫ</p>\n",
     "section": "Entities",
-    "number": 238
+    "number": 243
   },
   {
     "markdown": "&nbsp &x; &#; &#x; &ThisIsWayTooLongToBeAnEntityIsntIt; &hi?;\n",
     "html": "<p>&amp;nbsp &amp;x; &amp;#; &amp;#x; &amp;ThisIsWayTooLongToBeAnEntityIsntIt; &amp;hi?;</p>\n",
     "section": "Entities",
-    "number": 239
+    "number": 244
   },
   {
     "markdown": "&copy\n",
     "html": "<p>&amp;copy</p>\n",
     "section": "Entities",
-    "number": 240
+    "number": 245
   },
   {
     "markdown": "&MadeUpEntity;\n",
     "html": "<p>&amp;MadeUpEntity;</p>\n",
     "section": "Entities",
-    "number": 241
+    "number": 246
   },
   {
     "markdown": "<a href=\"&ouml;&ouml;.html\">\n",
     "html": "<p><a href=\"&ouml;&ouml;.html\"></p>\n",
     "section": "Entities",
-    "number": 242
+    "number": 247
   },
   {
     "markdown": "[foo](/f&ouml;&ouml; \"f&ouml;&ouml;\")\n",
     "html": "<p><a href=\"/f%C3%B6%C3%B6\" title=\"föö\">foo</a></p>\n",
     "section": "Entities",
-    "number": 243
+    "number": 248
   },
   {
     "markdown": "[foo]\n\n[foo]: /f&ouml;&ouml; \"f&ouml;&ouml;\"\n",
     "html": "<p><a href=\"/f%C3%B6%C3%B6\" title=\"föö\">foo</a></p>\n",
     "section": "Entities",
-    "number": 244
+    "number": 249
   },
   {
     "markdown": "``` f&ouml;&ouml;\nfoo\n```\n",
     "html": "<pre><code class=\"language-föö\">foo\n</code></pre>\n",
     "section": "Entities",
-    "number": 245
+    "number": 250
   },
   {
     "markdown": "`f&ouml;&ouml;`\n",
     "html": "<p><code>f&amp;ouml;&amp;ouml;</code></p>\n",
     "section": "Entities",
-    "number": 246
+    "number": 251
   },
   {
     "markdown": "    f&ouml;f&ouml;\n",
     "html": "<pre><code>f&amp;ouml;f&amp;ouml;\n</code></pre>\n",
     "section": "Entities",
-    "number": 247
+    "number": 252
   },
   {
     "markdown": "`foo`\n",
     "html": "<p><code>foo</code></p>\n",
     "section": "Code spans",
-    "number": 248
+    "number": 253
   },
   {
     "markdown": "`` foo ` bar  ``\n",
     "html": "<p><code>foo ` bar</code></p>\n",
     "section": "Code spans",
-    "number": 249
+    "number": 254
   },
   {
     "markdown": "` `` `\n",
     "html": "<p><code>``</code></p>\n",
     "section": "Code spans",
-    "number": 250
+    "number": 255
   },
   {
     "markdown": "``\nfoo\n``\n",
     "html": "<p><code>foo</code></p>\n",
     "section": "Code spans",
-    "number": 251
+    "number": 256
   },
   {
     "markdown": "`foo   bar\n  baz`\n",
     "html": "<p><code>foo bar baz</code></p>\n",
     "section": "Code spans",
-    "number": 252
+    "number": 257
   },
   {
     "markdown": "`foo `` bar`\n",
     "html": "<p><code>foo `` bar</code></p>\n",
     "section": "Code spans",
-    "number": 253
+    "number": 258
   },
   {
     "markdown": "`foo\\`bar`\n",
     "html": "<p><code>foo\\</code>bar`</p>\n",
     "section": "Code spans",
-    "number": 254
+    "number": 259
   },
   {
     "markdown": "*foo`*`\n",
     "html": "<p>*foo<code>*</code></p>\n",
     "section": "Code spans",
-    "number": 255
+    "number": 260
   },
   {
     "markdown": "[not a `link](/foo`)\n",
     "html": "<p>[not a <code>link](/foo</code>)</p>\n",
     "section": "Code spans",
-    "number": 256
+    "number": 261
   },
   {
     "markdown": "`<a href=\"`\">`\n",
     "html": "<p><code>&lt;a href=&quot;</code>&quot;&gt;`</p>\n",
     "section": "Code spans",
-    "number": 257
+    "number": 262
   },
   {
     "markdown": "<a href=\"`\">`\n",
     "html": "<p><a href=\"`\">`</p>\n",
     "section": "Code spans",
-    "number": 258
+    "number": 263
   },
   {
     "markdown": "`<http://foo.bar.`baz>`\n",
     "html": "<p><code>&lt;http://foo.bar.</code>baz&gt;`</p>\n",
     "section": "Code spans",
-    "number": 259
+    "number": 264
   },
   {
     "markdown": "<http://foo.bar.`baz>`\n",
     "html": "<p><a href=\"http://foo.bar.%60baz\">http://foo.bar.`baz</a>`</p>\n",
     "section": "Code spans",
-    "number": 260
+    "number": 265
   },
   {
     "markdown": "```foo``\n",
     "html": "<p>```foo``</p>\n",
     "section": "Code spans",
-    "number": 261
+    "number": 266
   },
   {
     "markdown": "`foo\n",
     "html": "<p>`foo</p>\n",
     "section": "Code spans",
-    "number": 262
+    "number": 267
   },
   {
     "markdown": "*foo bar*\n",
     "html": "<p><em>foo bar</em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 263
+    "number": 268
   },
   {
     "markdown": "a * foo bar*\n",
     "html": "<p>a * foo bar*</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 264
+    "number": 269
   },
   {
     "markdown": "a*\"foo\"*\n",
     "html": "<p>a*&quot;foo&quot;*</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 265
+    "number": 270
   },
   {
     "markdown": "* a *\n",
     "html": "<p>* a *</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 266
+    "number": 271
   },
   {
     "markdown": "foo*bar*\n",
     "html": "<p>foo<em>bar</em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 267
+    "number": 272
   },
   {
     "markdown": "5*6*78\n",
     "html": "<p>5<em>6</em>78</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 268
+    "number": 273
   },
   {
     "markdown": "_foo bar_\n",
     "html": "<p><em>foo bar</em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 269
+    "number": 274
   },
   {
     "markdown": "_ foo bar_\n",
     "html": "<p>_ foo bar_</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 270
+    "number": 275
   },
   {
     "markdown": "a_\"foo\"_\n",
     "html": "<p>a_&quot;foo&quot;_</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 271
+    "number": 276
   },
   {
     "markdown": "foo_bar_\n",
     "html": "<p>foo_bar_</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 272
+    "number": 277
   },
   {
     "markdown": "5_6_78\n",
     "html": "<p>5_6_78</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 273
+    "number": 278
   },
   {
     "markdown": "пристаням_стремятся_\n",
     "html": "<p>пристаням_стремятся_</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 274
+    "number": 279
   },
   {
     "markdown": "aa_\"bb\"_cc\n",
     "html": "<p>aa_&quot;bb&quot;_cc</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 275
+    "number": 280
   },
   {
     "markdown": "\"aa\"_\"bb\"_\"cc\"\n",
     "html": "<p>&quot;aa&quot;_&quot;bb&quot;_&quot;cc&quot;</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 276
+    "number": 281
   },
   {
     "markdown": "_foo*\n",
     "html": "<p>_foo*</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 277
+    "number": 282
   },
   {
     "markdown": "*foo bar *\n",
     "html": "<p>*foo bar *</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 278
+    "number": 283
+  },
+  {
+    "markdown": "*foo bar\n*\n",
+    "html": "<p>*foo bar</p>\n<ul>\n<li></li>\n</ul>\n",
+    "section": "Emphasis and strong emphasis",
+    "number": 284
   },
   {
     "markdown": "*(*foo)\n",
     "html": "<p>*(*foo)</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 279
+    "number": 285
   },
   {
     "markdown": "*(*foo*)*\n",
     "html": "<p><em>(<em>foo</em>)</em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 280
+    "number": 286
   },
   {
     "markdown": "*foo*bar\n",
     "html": "<p><em>foo</em>bar</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 281
+    "number": 287
   },
   {
     "markdown": "_foo bar _\n",
     "html": "<p>_foo bar _</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 282
+    "number": 288
   },
   {
     "markdown": "_(_foo)\n",
     "html": "<p>_(_foo)</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 283
+    "number": 289
   },
   {
     "markdown": "_(_foo_)_\n",
     "html": "<p><em>(<em>foo</em>)</em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 284
+    "number": 290
   },
   {
     "markdown": "_foo_bar\n",
     "html": "<p>_foo_bar</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 285
+    "number": 291
   },
   {
     "markdown": "_пристаням_стремятся\n",
     "html": "<p>_пристаням_стремятся</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 286
+    "number": 292
   },
   {
     "markdown": "_foo_bar_baz_\n",
     "html": "<p><em>foo_bar_baz</em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 287
+    "number": 293
   },
   {
     "markdown": "**foo bar**\n",
     "html": "<p><strong>foo bar</strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 288
+    "number": 294
   },
   {
     "markdown": "** foo bar**\n",
     "html": "<p>** foo bar**</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 289
+    "number": 295
   },
   {
     "markdown": "a**\"foo\"**\n",
     "html": "<p>a**&quot;foo&quot;**</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 290
+    "number": 296
   },
   {
     "markdown": "foo**bar**\n",
     "html": "<p>foo<strong>bar</strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 291
+    "number": 297
   },
   {
     "markdown": "__foo bar__\n",
     "html": "<p><strong>foo bar</strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 292
+    "number": 298
   },
   {
     "markdown": "__ foo bar__\n",
     "html": "<p>__ foo bar__</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 293
+    "number": 299
+  },
+  {
+    "markdown": "__\nfoo bar__\n",
+    "html": "<p>__\nfoo bar__</p>\n",
+    "section": "Emphasis and strong emphasis",
+    "number": 300
   },
   {
     "markdown": "a__\"foo\"__\n",
     "html": "<p>a__&quot;foo&quot;__</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 294
+    "number": 301
   },
   {
     "markdown": "foo__bar__\n",
     "html": "<p>foo__bar__</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 295
+    "number": 302
   },
   {
     "markdown": "5__6__78\n",
     "html": "<p>5__6__78</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 296
+    "number": 303
   },
   {
     "markdown": "пристаням__стремятся__\n",
     "html": "<p>пристаням__стремятся__</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 297
+    "number": 304
   },
   {
     "markdown": "__foo, __bar__, baz__\n",
     "html": "<p><strong>foo, <strong>bar</strong>, baz</strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 298
+    "number": 305
   },
   {
     "markdown": "**foo bar **\n",
     "html": "<p>**foo bar **</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 299
+    "number": 306
   },
   {
     "markdown": "**(**foo)\n",
     "html": "<p>**(**foo)</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 300
+    "number": 307
   },
   {
     "markdown": "*(**foo**)*\n",
     "html": "<p><em>(<strong>foo</strong>)</em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 301
+    "number": 308
   },
   {
     "markdown": "**Gomphocarpus (*Gomphocarpus physocarpus*, syn.\n*Asclepias physocarpa*)**\n",
     "html": "<p><strong>Gomphocarpus (<em>Gomphocarpus physocarpus</em>, syn.\n<em>Asclepias physocarpa</em>)</strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 302
+    "number": 309
   },
   {
     "markdown": "**foo \"*bar*\" foo**\n",
     "html": "<p><strong>foo &quot;<em>bar</em>&quot; foo</strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 303
+    "number": 310
   },
   {
     "markdown": "**foo**bar\n",
     "html": "<p><strong>foo</strong>bar</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 304
+    "number": 311
   },
   {
     "markdown": "__foo bar __\n",
     "html": "<p>__foo bar __</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 305
+    "number": 312
   },
   {
     "markdown": "__(__foo)\n",
     "html": "<p>__(__foo)</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 306
+    "number": 313
   },
   {
     "markdown": "_(__foo__)_\n",
     "html": "<p><em>(<strong>foo</strong>)</em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 307
+    "number": 314
   },
   {
     "markdown": "__foo__bar\n",
     "html": "<p>__foo__bar</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 308
+    "number": 315
   },
   {
     "markdown": "__пристаням__стремятся\n",
     "html": "<p>__пристаням__стремятся</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 309
+    "number": 316
   },
   {
     "markdown": "__foo__bar__baz__\n",
     "html": "<p><strong>foo__bar__baz</strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 310
+    "number": 317
   },
   {
     "markdown": "*foo [bar](/url)*\n",
     "html": "<p><em>foo <a href=\"/url\">bar</a></em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 311
+    "number": 318
   },
   {
     "markdown": "*foo\nbar*\n",
     "html": "<p><em>foo\nbar</em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 312
+    "number": 319
   },
   {
     "markdown": "_foo __bar__ baz_\n",
     "html": "<p><em>foo <strong>bar</strong> baz</em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 313
+    "number": 320
   },
   {
     "markdown": "_foo _bar_ baz_\n",
     "html": "<p><em>foo <em>bar</em> baz</em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 314
+    "number": 321
   },
   {
     "markdown": "__foo_ bar_\n",
     "html": "<p><em><em>foo</em> bar</em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 315
+    "number": 322
   },
   {
     "markdown": "*foo *bar**\n",
     "html": "<p><em>foo <em>bar</em></em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 316
+    "number": 323
   },
   {
     "markdown": "*foo **bar** baz*\n",
     "html": "<p><em>foo <strong>bar</strong> baz</em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 317
+    "number": 324
   },
   {
     "markdown": "*foo**bar**baz*\n",
     "html": "<p><em>foo</em><em>bar</em><em>baz</em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 318
+    "number": 325
   },
   {
     "markdown": "***foo** bar*\n",
     "html": "<p><em><strong>foo</strong> bar</em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 319
+    "number": 326
   },
   {
     "markdown": "*foo **bar***\n",
     "html": "<p><em>foo <strong>bar</strong></em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 320
+    "number": 327
   },
   {
     "markdown": "*foo**bar***\n",
     "html": "<p><em>foo</em><em>bar</em>**</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 321
+    "number": 328
   },
   {
     "markdown": "*foo **bar *baz* bim** bop*\n",
     "html": "<p><em>foo <strong>bar <em>baz</em> bim</strong> bop</em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 322
+    "number": 329
   },
   {
     "markdown": "*foo [*bar*](/url)*\n",
     "html": "<p><em>foo <a href=\"/url\"><em>bar</em></a></em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 323
+    "number": 330
   },
   {
     "markdown": "** is not an empty emphasis\n",
     "html": "<p>** is not an empty emphasis</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 324
+    "number": 331
   },
   {
     "markdown": "**** is not an empty strong emphasis\n",
     "html": "<p>**** is not an empty strong emphasis</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 325
+    "number": 332
   },
   {
     "markdown": "**foo [bar](/url)**\n",
     "html": "<p><strong>foo <a href=\"/url\">bar</a></strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 326
+    "number": 333
   },
   {
     "markdown": "**foo\nbar**\n",
     "html": "<p><strong>foo\nbar</strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 327
+    "number": 334
   },
   {
     "markdown": "__foo _bar_ baz__\n",
     "html": "<p><strong>foo <em>bar</em> baz</strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 328
+    "number": 335
   },
   {
     "markdown": "__foo __bar__ baz__\n",
     "html": "<p><strong>foo <strong>bar</strong> baz</strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 329
+    "number": 336
   },
   {
     "markdown": "____foo__ bar__\n",
     "html": "<p><strong><strong>foo</strong> bar</strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 330
+    "number": 337
   },
   {
     "markdown": "**foo **bar****\n",
     "html": "<p><strong>foo <strong>bar</strong></strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 331
+    "number": 338
   },
   {
     "markdown": "**foo *bar* baz**\n",
     "html": "<p><strong>foo <em>bar</em> baz</strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 332
+    "number": 339
   },
   {
     "markdown": "**foo*bar*baz**\n",
     "html": "<p><em><em>foo</em>bar</em>baz**</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 333
+    "number": 340
   },
   {
     "markdown": "***foo* bar**\n",
     "html": "<p><strong><em>foo</em> bar</strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 334
+    "number": 341
   },
   {
     "markdown": "**foo *bar***\n",
     "html": "<p><strong>foo <em>bar</em></strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 335
+    "number": 342
   },
   {
     "markdown": "**foo *bar **baz**\nbim* bop**\n",
     "html": "<p><strong>foo <em>bar <strong>baz</strong>\nbim</em> bop</strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 336
+    "number": 343
   },
   {
     "markdown": "**foo [*bar*](/url)**\n",
     "html": "<p><strong>foo <a href=\"/url\"><em>bar</em></a></strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 337
+    "number": 344
   },
   {
     "markdown": "__ is not an empty emphasis\n",
     "html": "<p>__ is not an empty emphasis</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 338
+    "number": 345
   },
   {
     "markdown": "____ is not an empty strong emphasis\n",
     "html": "<p>____ is not an empty strong emphasis</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 339
+    "number": 346
   },
   {
     "markdown": "foo ***\n",
     "html": "<p>foo ***</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 340
+    "number": 347
   },
   {
     "markdown": "foo *\\**\n",
     "html": "<p>foo <em>*</em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 341
+    "number": 348
   },
   {
     "markdown": "foo *_*\n",
     "html": "<p>foo <em>_</em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 342
+    "number": 349
   },
   {
     "markdown": "foo *****\n",
     "html": "<p>foo *****</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 343
+    "number": 350
   },
   {
     "markdown": "foo **\\***\n",
     "html": "<p>foo <strong>*</strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 344
+    "number": 351
   },
   {
     "markdown": "foo **_**\n",
     "html": "<p>foo <strong>_</strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 345
+    "number": 352
   },
   {
     "markdown": "**foo*\n",
     "html": "<p>*<em>foo</em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 346
+    "number": 353
   },
   {
     "markdown": "*foo**\n",
     "html": "<p><em>foo</em>*</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 347
+    "number": 354
   },
   {
     "markdown": "***foo**\n",
     "html": "<p>*<strong>foo</strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 348
+    "number": 355
   },
   {
     "markdown": "****foo*\n",
     "html": "<p>***<em>foo</em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 349
+    "number": 356
   },
   {
     "markdown": "**foo***\n",
     "html": "<p><strong>foo</strong>*</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 350
+    "number": 357
   },
   {
     "markdown": "*foo****\n",
     "html": "<p><em>foo</em>***</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 351
+    "number": 358
   },
   {
     "markdown": "foo ___\n",
     "html": "<p>foo ___</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 352
+    "number": 359
   },
   {
     "markdown": "foo _\\__\n",
     "html": "<p>foo <em>_</em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 353
+    "number": 360
   },
   {
     "markdown": "foo _*_\n",
     "html": "<p>foo <em>*</em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 354
+    "number": 361
   },
   {
     "markdown": "foo _____\n",
     "html": "<p>foo _____</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 355
+    "number": 362
   },
   {
     "markdown": "foo __\\___\n",
     "html": "<p>foo <strong>_</strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 356
+    "number": 363
   },
   {
     "markdown": "foo __*__\n",
     "html": "<p>foo <strong>*</strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 357
+    "number": 364
   },
   {
     "markdown": "__foo_\n",
     "html": "<p>_<em>foo</em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 358
+    "number": 365
   },
   {
     "markdown": "_foo__\n",
     "html": "<p><em>foo</em>_</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 359
+    "number": 366
   },
   {
     "markdown": "___foo__\n",
     "html": "<p>_<strong>foo</strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 360
+    "number": 367
   },
   {
     "markdown": "____foo_\n",
     "html": "<p>___<em>foo</em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 361
+    "number": 368
   },
   {
     "markdown": "__foo___\n",
     "html": "<p><strong>foo</strong>_</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 362
+    "number": 369
   },
   {
     "markdown": "_foo____\n",
     "html": "<p><em>foo</em>___</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 363
+    "number": 370
   },
   {
     "markdown": "**foo**\n",
     "html": "<p><strong>foo</strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 364
+    "number": 371
   },
   {
     "markdown": "*_foo_*\n",
     "html": "<p><em><em>foo</em></em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 365
+    "number": 372
   },
   {
     "markdown": "__foo__\n",
     "html": "<p><strong>foo</strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 366
+    "number": 373
   },
   {
     "markdown": "_*foo*_\n",
     "html": "<p><em><em>foo</em></em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 367
+    "number": 374
   },
   {
     "markdown": "****foo****\n",
     "html": "<p><strong><strong>foo</strong></strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 368
+    "number": 375
   },
   {
     "markdown": "____foo____\n",
     "html": "<p><strong><strong>foo</strong></strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 369
+    "number": 376
   },
   {
     "markdown": "******foo******\n",
     "html": "<p><strong><strong><strong>foo</strong></strong></strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 370
+    "number": 377
   },
   {
     "markdown": "***foo***\n",
     "html": "<p><strong><em>foo</em></strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 371
+    "number": 378
   },
   {
     "markdown": "_____foo_____\n",
     "html": "<p><strong><strong><em>foo</em></strong></strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 372
+    "number": 379
   },
   {
     "markdown": "*foo _bar* baz_\n",
     "html": "<p><em>foo _bar</em> baz_</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 373
+    "number": 380
   },
   {
     "markdown": "**foo*bar**\n",
     "html": "<p><em><em>foo</em>bar</em>*</p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 374
+    "number": 381
   },
   {
     "markdown": "**foo **bar baz**\n",
     "html": "<p>**foo <strong>bar baz</strong></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 375
+    "number": 382
   },
   {
     "markdown": "*foo *bar baz*\n",
     "html": "<p>*foo <em>bar baz</em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 376
+    "number": 383
   },
   {
     "markdown": "*[bar*](/url)\n",
     "html": "<p>*<a href=\"/url\">bar*</a></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 377
+    "number": 384
   },
   {
     "markdown": "_foo [bar_](/url)\n",
     "html": "<p>_foo <a href=\"/url\">bar_</a></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 378
+    "number": 385
   },
   {
     "markdown": "*<img src=\"foo\" title=\"*\"/>\n",
     "html": "<p>*<img src=\"foo\" title=\"*\"/></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 379
+    "number": 386
   },
   {
     "markdown": "**<a href=\"**\">\n",
     "html": "<p>**<a href=\"**\"></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 380
+    "number": 387
   },
   {
     "markdown": "__<a href=\"__\">\n",
     "html": "<p>__<a href=\"__\"></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 381
+    "number": 388
   },
   {
     "markdown": "*a `*`*\n",
     "html": "<p><em>a <code>*</code></em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 382
+    "number": 389
   },
   {
     "markdown": "_a `_`_\n",
     "html": "<p><em>a <code>_</code></em></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 383
+    "number": 390
   },
   {
-    "markdown": "**a<http://foo.bar?q=**>\n",
-    "html": "<p>**a<a href=\"http://foo.bar?q=**\">http://foo.bar?q=**</a></p>\n",
+    "markdown": "**a<http://foo.bar/?q=**>\n",
+    "html": "<p>**a<a href=\"http://foo.bar/?q=**\">http://foo.bar/?q=**</a></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 384
+    "number": 391
   },
   {
-    "markdown": "__a<http://foo.bar?q=__>\n",
-    "html": "<p>__a<a href=\"http://foo.bar?q=__\">http://foo.bar?q=__</a></p>\n",
+    "markdown": "__a<http://foo.bar/?q=__>\n",
+    "html": "<p>__a<a href=\"http://foo.bar/?q=__\">http://foo.bar/?q=__</a></p>\n",
     "section": "Emphasis and strong emphasis",
-    "number": 385
+    "number": 392
   },
   {
     "markdown": "[link](/uri \"title\")\n",
     "html": "<p><a href=\"/uri\" title=\"title\">link</a></p>\n",
     "section": "Links",
-    "number": 386
+    "number": 393
   },
   {
     "markdown": "[link](/uri)\n",
     "html": "<p><a href=\"/uri\">link</a></p>\n",
     "section": "Links",
-    "number": 387
+    "number": 394
   },
   {
     "markdown": "[link]()\n",
     "html": "<p><a href=\"\">link</a></p>\n",
     "section": "Links",
-    "number": 388
+    "number": 395
   },
   {
     "markdown": "[link](<>)\n",
     "html": "<p><a href=\"\">link</a></p>\n",
     "section": "Links",
-    "number": 389
+    "number": 396
   },
   {
     "markdown": "[link](/my uri)\n",
     "html": "<p>[link](/my uri)</p>\n",
     "section": "Links",
-    "number": 390
+    "number": 397
   },
   {
     "markdown": "[link](</my uri>)\n",
     "html": "<p><a href=\"/my%20uri\">link</a></p>\n",
     "section": "Links",
-    "number": 391
+    "number": 398
   },
   {
     "markdown": "[link](foo\nbar)\n",
     "html": "<p>[link](foo\nbar)</p>\n",
     "section": "Links",
-    "number": 392
+    "number": 399
   },
   {
     "markdown": "[link](<foo\nbar>)\n",
     "html": "<p>[link](<foo\nbar>)</p>\n",
     "section": "Links",
-    "number": 393
+    "number": 400
   },
   {
     "markdown": "[link]((foo)and(bar))\n",
     "html": "<p><a href=\"(foo)and(bar)\">link</a></p>\n",
     "section": "Links",
-    "number": 394
+    "number": 401
   },
   {
     "markdown": "[link](foo(and(bar)))\n",
     "html": "<p>[link](foo(and(bar)))</p>\n",
     "section": "Links",
-    "number": 395
+    "number": 402
   },
   {
     "markdown": "[link](foo(and\\(bar\\)))\n",
     "html": "<p><a href=\"foo(and(bar))\">link</a></p>\n",
     "section": "Links",
-    "number": 396
+    "number": 403
   },
   {
     "markdown": "[link](<foo(and(bar))>)\n",
     "html": "<p><a href=\"foo(and(bar))\">link</a></p>\n",
     "section": "Links",
-    "number": 397
+    "number": 404
   },
   {
     "markdown": "[link](foo\\)\\:)\n",
     "html": "<p><a href=\"foo):\">link</a></p>\n",
     "section": "Links",
-    "number": 398
+    "number": 405
   },
   {
     "markdown": "[link](foo%20b&auml;)\n",
     "html": "<p><a href=\"foo%20b%C3%A4\">link</a></p>\n",
     "section": "Links",
-    "number": 399
+    "number": 406
   },
   {
     "markdown": "[link](\"title\")\n",
     "html": "<p><a href=\"%22title%22\">link</a></p>\n",
     "section": "Links",
-    "number": 400
+    "number": 407
   },
   {
     "markdown": "[link](/url \"title\")\n[link](/url 'title')\n[link](/url (title))\n",
     "html": "<p><a href=\"/url\" title=\"title\">link</a>\n<a href=\"/url\" title=\"title\">link</a>\n<a href=\"/url\" title=\"title\">link</a></p>\n",
     "section": "Links",
-    "number": 401
+    "number": 408
   },
   {
     "markdown": "[link](/url \"title \\\"&quot;\")\n",
     "html": "<p><a href=\"/url\" title=\"title &quot;&quot;\">link</a></p>\n",
     "section": "Links",
-    "number": 402
+    "number": 409
   },
   {
     "markdown": "[link](/url \"title \"and\" title\")\n",
     "html": "<p>[link](/url &quot;title &quot;and&quot; title&quot;)</p>\n",
     "section": "Links",
-    "number": 403
+    "number": 410
   },
   {
     "markdown": "[link](/url 'title \"and\" title')\n",
     "html": "<p><a href=\"/url\" title=\"title &quot;and&quot; title\">link</a></p>\n",
     "section": "Links",
-    "number": 404
+    "number": 411
   },
   {
     "markdown": "[link](   /uri\n  \"title\"  )\n",
     "html": "<p><a href=\"/uri\" title=\"title\">link</a></p>\n",
     "section": "Links",
-    "number": 405
+    "number": 412
   },
   {
     "markdown": "[link] (/uri)\n",
     "html": "<p>[link] (/uri)</p>\n",
     "section": "Links",
-    "number": 406
+    "number": 413
   },
   {
     "markdown": "[link [foo [bar]]](/uri)\n",
     "html": "<p><a href=\"/uri\">link [foo [bar]]</a></p>\n",
     "section": "Links",
-    "number": 407
+    "number": 414
   },
   {
     "markdown": "[link] bar](/uri)\n",
     "html": "<p>[link] bar](/uri)</p>\n",
     "section": "Links",
-    "number": 408
+    "number": 415
   },
   {
     "markdown": "[link [bar](/uri)\n",
     "html": "<p>[link <a href=\"/uri\">bar</a></p>\n",
     "section": "Links",
-    "number": 409
+    "number": 416
   },
   {
     "markdown": "[link \\[bar](/uri)\n",
     "html": "<p><a href=\"/uri\">link [bar</a></p>\n",
     "section": "Links",
-    "number": 410
+    "number": 417
   },
   {
     "markdown": "[link *foo **bar** `#`*](/uri)\n",
     "html": "<p><a href=\"/uri\">link <em>foo <strong>bar</strong> <code>#</code></em></a></p>\n",
     "section": "Links",
-    "number": 411
+    "number": 418
   },
   {
     "markdown": "[![moon](moon.jpg)](/uri)\n",
     "html": "<p><a href=\"/uri\"><img src=\"moon.jpg\" alt=\"moon\" /></a></p>\n",
     "section": "Links",
-    "number": 412
+    "number": 419
   },
   {
     "markdown": "[foo [bar](/uri)](/uri)\n",
     "html": "<p>[foo <a href=\"/uri\">bar</a>](/uri)</p>\n",
     "section": "Links",
-    "number": 413
+    "number": 420
   },
   {
     "markdown": "[foo *[bar [baz](/uri)](/uri)*](/uri)\n",
     "html": "<p>[foo <em>[bar <a href=\"/uri\">baz</a>](/uri)</em>](/uri)</p>\n",
     "section": "Links",
-    "number": 414
+    "number": 421
   },
   {
     "markdown": "![[[foo](uri1)](uri2)](uri3)\n",
     "html": "<p><img src=\"uri3\" alt=\"[foo](uri2)\" /></p>\n",
     "section": "Links",
-    "number": 415
+    "number": 422
   },
   {
     "markdown": "*[foo*](/uri)\n",
     "html": "<p>*<a href=\"/uri\">foo*</a></p>\n",
     "section": "Links",
-    "number": 416
+    "number": 423
   },
   {
     "markdown": "[foo *bar](baz*)\n",
     "html": "<p><a href=\"baz*\">foo *bar</a></p>\n",
     "section": "Links",
-    "number": 417
+    "number": 424
   },
   {
     "markdown": "*foo [bar* baz]\n",
     "html": "<p><em>foo [bar</em> baz]</p>\n",
     "section": "Links",
-    "number": 418
+    "number": 425
   },
   {
     "markdown": "[foo <bar attr=\"](baz)\">\n",
     "html": "<p>[foo <bar attr=\"](baz)\"></p>\n",
     "section": "Links",
-    "number": 419
+    "number": 426
   },
   {
     "markdown": "[foo`](/uri)`\n",
     "html": "<p>[foo<code>](/uri)</code></p>\n",
     "section": "Links",
-    "number": 420
+    "number": 427
   },
   {
-    "markdown": "[foo<http://example.com?search=](uri)>\n",
-    "html": "<p>[foo<a href=\"http://example.com?search=%5D(uri)\">http://example.com?search=](uri)</a></p>\n",
+    "markdown": "[foo<http://example.com/?search=](uri)>\n",
+    "html": "<p>[foo<a href=\"http://example.com/?search=%5D(uri)\">http://example.com/?search=](uri)</a></p>\n",
     "section": "Links",
-    "number": 421
+    "number": 428
   },
   {
     "markdown": "[foo][bar]\n\n[bar]: /url \"title\"\n",
     "html": "<p><a href=\"/url\" title=\"title\">foo</a></p>\n",
     "section": "Links",
-    "number": 422
+    "number": 429
   },
   {
     "markdown": "[link [foo [bar]]][ref]\n\n[ref]: /uri\n",
     "html": "<p><a href=\"/uri\">link [foo [bar]]</a></p>\n",
     "section": "Links",
-    "number": 423
+    "number": 430
   },
   {
     "markdown": "[link \\[bar][ref]\n\n[ref]: /uri\n",
     "html": "<p><a href=\"/uri\">link [bar</a></p>\n",
     "section": "Links",
-    "number": 424
+    "number": 431
   },
   {
     "markdown": "[link *foo **bar** `#`*][ref]\n\n[ref]: /uri\n",
     "html": "<p><a href=\"/uri\">link <em>foo <strong>bar</strong> <code>#</code></em></a></p>\n",
     "section": "Links",
-    "number": 425
+    "number": 432
   },
   {
     "markdown": "[![moon](moon.jpg)][ref]\n\n[ref]: /uri\n",
     "html": "<p><a href=\"/uri\"><img src=\"moon.jpg\" alt=\"moon\" /></a></p>\n",
     "section": "Links",
-    "number": 426
+    "number": 433
   },
   {
     "markdown": "[foo [bar](/uri)][ref]\n\n[ref]: /uri\n",
     "html": "<p>[foo <a href=\"/uri\">bar</a>]<a href=\"/uri\">ref</a></p>\n",
     "section": "Links",
-    "number": 427
+    "number": 434
   },
   {
     "markdown": "[foo *bar [baz][ref]*][ref]\n\n[ref]: /uri\n",
     "html": "<p>[foo <em>bar <a href=\"/uri\">baz</a></em>]<a href=\"/uri\">ref</a></p>\n",
     "section": "Links",
-    "number": 428
+    "number": 435
   },
   {
     "markdown": "*[foo*][ref]\n\n[ref]: /uri\n",
     "html": "<p>*<a href=\"/uri\">foo*</a></p>\n",
     "section": "Links",
-    "number": 429
+    "number": 436
   },
   {
     "markdown": "[foo *bar][ref]\n\n[ref]: /uri\n",
     "html": "<p><a href=\"/uri\">foo *bar</a></p>\n",
     "section": "Links",
-    "number": 430
+    "number": 437
   },
   {
     "markdown": "[foo <bar attr=\"][ref]\">\n\n[ref]: /uri\n",
     "html": "<p>[foo <bar attr=\"][ref]\"></p>\n",
     "section": "Links",
-    "number": 431
+    "number": 438
   },
   {
     "markdown": "[foo`][ref]`\n\n[ref]: /uri\n",
     "html": "<p>[foo<code>][ref]</code></p>\n",
     "section": "Links",
-    "number": 432
+    "number": 439
   },
   {
-    "markdown": "[foo<http://example.com?search=][ref]>\n\n[ref]: /uri\n",
-    "html": "<p>[foo<a href=\"http://example.com?search=%5D%5Bref%5D\">http://example.com?search=][ref]</a></p>\n",
+    "markdown": "[foo<http://example.com/?search=][ref]>\n\n[ref]: /uri\n",
+    "html": "<p>[foo<a href=\"http://example.com/?search=%5D%5Bref%5D\">http://example.com/?search=][ref]</a></p>\n",
     "section": "Links",
-    "number": 433
+    "number": 440
   },
   {
     "markdown": "[foo][BaR]\n\n[bar]: /url \"title\"\n",
     "html": "<p><a href=\"/url\" title=\"title\">foo</a></p>\n",
     "section": "Links",
-    "number": 434
+    "number": 441
   },
   {
     "markdown": "[Толпой][Толпой] is a Russian word.\n\n[ТОЛПОЙ]: /url\n",
     "html": "<p><a href=\"/url\">Толпой</a> is a Russian word.</p>\n",
     "section": "Links",
-    "number": 435
+    "number": 442
   },
   {
     "markdown": "[Foo\n  bar]: /url\n\n[Baz][Foo bar]\n",
     "html": "<p><a href=\"/url\">Baz</a></p>\n",
     "section": "Links",
-    "number": 436
+    "number": 443
   },
   {
     "markdown": "[foo] [bar]\n\n[bar]: /url \"title\"\n",
     "html": "<p><a href=\"/url\" title=\"title\">foo</a></p>\n",
     "section": "Links",
-    "number": 437
+    "number": 444
   },
   {
     "markdown": "[foo]\n[bar]\n\n[bar]: /url \"title\"\n",
     "html": "<p><a href=\"/url\" title=\"title\">foo</a></p>\n",
     "section": "Links",
-    "number": 438
+    "number": 445
   },
   {
     "markdown": "[foo]: /url1\n\n[foo]: /url2\n\n[bar][foo]\n",
     "html": "<p><a href=\"/url1\">bar</a></p>\n",
     "section": "Links",
-    "number": 439
+    "number": 446
   },
   {
     "markdown": "[bar][foo\\!]\n\n[foo!]: /url\n",
     "html": "<p>[bar][foo!]</p>\n",
     "section": "Links",
-    "number": 440
+    "number": 447
   },
   {
     "markdown": "[foo][ref[]\n\n[ref[]: /uri\n",
     "html": "<p>[foo][ref[]</p>\n<p>[ref[]: /uri</p>\n",
     "section": "Links",
-    "number": 441
+    "number": 448
   },
   {
     "markdown": "[foo][ref[bar]]\n\n[ref[bar]]: /uri\n",
     "html": "<p>[foo][ref[bar]]</p>\n<p>[ref[bar]]: /uri</p>\n",
     "section": "Links",
-    "number": 442
+    "number": 449
   },
   {
     "markdown": "[[[foo]]]\n\n[[[foo]]]: /url\n",
     "html": "<p>[[[foo]]]</p>\n<p>[[[foo]]]: /url</p>\n",
     "section": "Links",
-    "number": 443
+    "number": 450
   },
   {
     "markdown": "[foo][ref\\[]\n\n[ref\\[]: /uri\n",
     "html": "<p><a href=\"/uri\">foo</a></p>\n",
     "section": "Links",
-    "number": 444
+    "number": 451
   },
   {
     "markdown": "[foo][]\n\n[foo]: /url \"title\"\n",
     "html": "<p><a href=\"/url\" title=\"title\">foo</a></p>\n",
     "section": "Links",
-    "number": 445
+    "number": 452
   },
   {
     "markdown": "[*foo* bar][]\n\n[*foo* bar]: /url \"title\"\n",
     "html": "<p><a href=\"/url\" title=\"title\"><em>foo</em> bar</a></p>\n",
     "section": "Links",
-    "number": 446
+    "number": 453
   },
   {
     "markdown": "[Foo][]\n\n[foo]: /url \"title\"\n",
     "html": "<p><a href=\"/url\" title=\"title\">Foo</a></p>\n",
     "section": "Links",
-    "number": 447
+    "number": 454
   },
   {
     "markdown": "[foo] \n[]\n\n[foo]: /url \"title\"\n",
     "html": "<p><a href=\"/url\" title=\"title\">foo</a></p>\n",
     "section": "Links",
-    "number": 448
+    "number": 455
   },
   {
     "markdown": "[foo]\n\n[foo]: /url \"title\"\n",
     "html": "<p><a href=\"/url\" title=\"title\">foo</a></p>\n",
     "section": "Links",
-    "number": 449
+    "number": 456
   },
   {
     "markdown": "[*foo* bar]\n\n[*foo* bar]: /url \"title\"\n",
     "html": "<p><a href=\"/url\" title=\"title\"><em>foo</em> bar</a></p>\n",
     "section": "Links",
-    "number": 450
+    "number": 457
   },
   {
     "markdown": "[[*foo* bar]]\n\n[*foo* bar]: /url \"title\"\n",
     "html": "<p>[<a href=\"/url\" title=\"title\"><em>foo</em> bar</a>]</p>\n",
     "section": "Links",
-    "number": 451
+    "number": 458
+  },
+  {
+    "markdown": "[[bar [foo]\n\n[foo]: /url\n",
+    "html": "<p>[[bar <a href=\"/url\">foo</a></p>\n",
+    "section": "Links",
+    "number": 459
   },
   {
     "markdown": "[Foo]\n\n[foo]: /url \"title\"\n",
     "html": "<p><a href=\"/url\" title=\"title\">Foo</a></p>\n",
     "section": "Links",
-    "number": 452
+    "number": 460
   },
   {
     "markdown": "[foo] bar\n\n[foo]: /url\n",
     "html": "<p><a href=\"/url\">foo</a> bar</p>\n",
     "section": "Links",
-    "number": 453
+    "number": 461
   },
   {
     "markdown": "\\[foo]\n\n[foo]: /url \"title\"\n",
     "html": "<p>[foo]</p>\n",
     "section": "Links",
-    "number": 454
+    "number": 462
   },
   {
     "markdown": "[foo*]: /url\n\n*[foo*]\n",
     "html": "<p>*<a href=\"/url\">foo*</a></p>\n",
     "section": "Links",
-    "number": 455
+    "number": 463
   },
   {
     "markdown": "[foo][bar]\n\n[foo]: /url1\n[bar]: /url2\n",
     "html": "<p><a href=\"/url2\">foo</a></p>\n",
     "section": "Links",
-    "number": 456
+    "number": 464
   },
   {
     "markdown": "[foo][bar][baz]\n\n[baz]: /url\n",
     "html": "<p>[foo]<a href=\"/url\">bar</a></p>\n",
     "section": "Links",
-    "number": 457
+    "number": 465
   },
   {
     "markdown": "[foo][bar][baz]\n\n[baz]: /url1\n[bar]: /url2\n",
     "html": "<p><a href=\"/url2\">foo</a><a href=\"/url1\">baz</a></p>\n",
     "section": "Links",
-    "number": 458
+    "number": 466
   },
   {
     "markdown": "[foo][bar][baz]\n\n[baz]: /url1\n[foo]: /url2\n",
     "html": "<p>[foo]<a href=\"/url1\">bar</a></p>\n",
     "section": "Links",
-    "number": 459
+    "number": 467
   },
   {
     "markdown": "![foo](/url \"title\")\n",
     "html": "<p><img src=\"/url\" alt=\"foo\" title=\"title\" /></p>\n",
     "section": "Images",
-    "number": 460
+    "number": 468
   },
   {
     "markdown": "![foo *bar*]\n\n[foo *bar*]: train.jpg \"train & tracks\"\n",
     "html": "<p><img src=\"train.jpg\" alt=\"foo bar\" title=\"train &amp; tracks\" /></p>\n",
     "section": "Images",
-    "number": 461
+    "number": 469
   },
   {
     "markdown": "![foo ![bar](/url)](/url2)\n",
     "html": "<p><img src=\"/url2\" alt=\"foo bar\" /></p>\n",
     "section": "Images",
-    "number": 462
+    "number": 470
   },
   {
     "markdown": "![foo [bar](/url)](/url2)\n",
     "html": "<p><img src=\"/url2\" alt=\"foo bar\" /></p>\n",
     "section": "Images",
-    "number": 463
+    "number": 471
   },
   {
     "markdown": "![foo *bar*][]\n\n[foo *bar*]: train.jpg \"train & tracks\"\n",
     "html": "<p><img src=\"train.jpg\" alt=\"foo bar\" title=\"train &amp; tracks\" /></p>\n",
     "section": "Images",
-    "number": 464
+    "number": 472
   },
   {
     "markdown": "![foo *bar*][foobar]\n\n[FOOBAR]: train.jpg \"train & tracks\"\n",
     "html": "<p><img src=\"train.jpg\" alt=\"foo bar\" title=\"train &amp; tracks\" /></p>\n",
     "section": "Images",
-    "number": 465
+    "number": 473
   },
   {
     "markdown": "![foo](train.jpg)\n",
     "html": "<p><img src=\"train.jpg\" alt=\"foo\" /></p>\n",
     "section": "Images",
-    "number": 466
+    "number": 474
   },
   {
     "markdown": "My ![foo bar](/path/to/train.jpg  \"title\"   )\n",
     "html": "<p>My <img src=\"/path/to/train.jpg\" alt=\"foo bar\" title=\"title\" /></p>\n",
     "section": "Images",
-    "number": 467
+    "number": 475
   },
   {
     "markdown": "![foo](<url>)\n",
     "html": "<p><img src=\"url\" alt=\"foo\" /></p>\n",
     "section": "Images",
-    "number": 468
+    "number": 476
   },
   {
     "markdown": "![](/url)\n",
     "html": "<p><img src=\"/url\" alt=\"\" /></p>\n",
     "section": "Images",
-    "number": 469
+    "number": 477
   },
   {
     "markdown": "![foo] [bar]\n\n[bar]: /url\n",
     "html": "<p><img src=\"/url\" alt=\"foo\" /></p>\n",
     "section": "Images",
-    "number": 470
+    "number": 478
   },
   {
     "markdown": "![foo] [bar]\n\n[BAR]: /url\n",
     "html": "<p><img src=\"/url\" alt=\"foo\" /></p>\n",
     "section": "Images",
-    "number": 471
+    "number": 479
   },
   {
     "markdown": "![foo][]\n\n[foo]: /url \"title\"\n",
     "html": "<p><img src=\"/url\" alt=\"foo\" title=\"title\" /></p>\n",
     "section": "Images",
-    "number": 472
+    "number": 480
   },
   {
     "markdown": "![*foo* bar][]\n\n[*foo* bar]: /url \"title\"\n",
     "html": "<p><img src=\"/url\" alt=\"foo bar\" title=\"title\" /></p>\n",
     "section": "Images",
-    "number": 473
+    "number": 481
   },
   {
     "markdown": "![Foo][]\n\n[foo]: /url \"title\"\n",
     "html": "<p><img src=\"/url\" alt=\"Foo\" title=\"title\" /></p>\n",
     "section": "Images",
-    "number": 474
+    "number": 482
   },
   {
     "markdown": "![foo] \n[]\n\n[foo]: /url \"title\"\n",
     "html": "<p><img src=\"/url\" alt=\"foo\" title=\"title\" /></p>\n",
     "section": "Images",
-    "number": 475
+    "number": 483
   },
   {
     "markdown": "![foo]\n\n[foo]: /url \"title\"\n",
     "html": "<p><img src=\"/url\" alt=\"foo\" title=\"title\" /></p>\n",
     "section": "Images",
-    "number": 476
+    "number": 484
   },
   {
     "markdown": "![*foo* bar]\n\n[*foo* bar]: /url \"title\"\n",
     "html": "<p><img src=\"/url\" alt=\"foo bar\" title=\"title\" /></p>\n",
     "section": "Images",
-    "number": 477
+    "number": 485
   },
   {
     "markdown": "![[foo]]\n\n[[foo]]: /url \"title\"\n",
     "html": "<p>![[foo]]</p>\n<p>[[foo]]: /url &quot;title&quot;</p>\n",
     "section": "Images",
-    "number": 478
+    "number": 486
   },
   {
     "markdown": "![Foo]\n\n[foo]: /url \"title\"\n",
     "html": "<p><img src=\"/url\" alt=\"Foo\" title=\"title\" /></p>\n",
     "section": "Images",
-    "number": 479
+    "number": 487
   },
   {
     "markdown": "\\!\\[foo]\n\n[foo]: /url \"title\"\n",
     "html": "<p>![foo]</p>\n",
     "section": "Images",
-    "number": 480
+    "number": 488
   },
   {
     "markdown": "\\![foo]\n\n[foo]: /url \"title\"\n",
     "html": "<p>!<a href=\"/url\" title=\"title\">foo</a></p>\n",
     "section": "Images",
-    "number": 481
+    "number": 489
   },
   {
     "markdown": "<http://foo.bar.baz>\n",
     "html": "<p><a href=\"http://foo.bar.baz\">http://foo.bar.baz</a></p>\n",
     "section": "Autolinks",
-    "number": 482
+    "number": 490
   },
   {
-    "markdown": "<http://foo.bar.baz?q=hello&id=22&boolean>\n",
-    "html": "<p><a href=\"http://foo.bar.baz?q=hello&amp;id=22&amp;boolean\">http://foo.bar.baz?q=hello&amp;id=22&amp;boolean</a></p>\n",
+    "markdown": "<http://foo.bar.baz/test?q=hello&id=22&boolean>\n",
+    "html": "<p><a href=\"http://foo.bar.baz/test?q=hello&amp;id=22&amp;boolean\">http://foo.bar.baz/test?q=hello&amp;id=22&amp;boolean</a></p>\n",
     "section": "Autolinks",
-    "number": 483
+    "number": 491
   },
   {
     "markdown": "<irc://foo.bar:2233/baz>\n",
     "html": "<p><a href=\"irc://foo.bar:2233/baz\">irc://foo.bar:2233/baz</a></p>\n",
     "section": "Autolinks",
-    "number": 484
+    "number": 492
   },
   {
     "markdown": "<MAILTO:FOO@BAR.BAZ>\n",
     "html": "<p><a href=\"MAILTO:FOO@BAR.BAZ\">MAILTO:FOO@BAR.BAZ</a></p>\n",
     "section": "Autolinks",
-    "number": 485
+    "number": 493
   },
   {
     "markdown": "<http://foo.bar/baz bim>\n",
     "html": "<p>&lt;http://foo.bar/baz bim&gt;</p>\n",
     "section": "Autolinks",
-    "number": 486
+    "number": 494
+  },
+  {
+    "markdown": "<http://example.com/\\[\\>\n",
+    "html": "<p><a href=\"http://example.com/%5C%5B%5C\">http://example.com/\\[\\</a></p>\n",
+    "section": "Autolinks",
+    "number": 495
   },
   {
     "markdown": "<foo@bar.example.com>\n",
     "html": "<p><a href=\"mailto:foo@bar.example.com\">foo@bar.example.com</a></p>\n",
     "section": "Autolinks",
-    "number": 487
+    "number": 496
   },
   {
     "markdown": "<foo+special@Bar.baz-bar0.com>\n",
     "html": "<p><a href=\"mailto:foo+special@Bar.baz-bar0.com\">foo+special@Bar.baz-bar0.com</a></p>\n",
     "section": "Autolinks",
-    "number": 488
+    "number": 497
+  },
+  {
+    "markdown": "<foo\\+@bar.example.com>\n",
+    "html": "<p>&lt;foo+@bar.example.com&gt;</p>\n",
+    "section": "Autolinks",
+    "number": 498
   },
   {
     "markdown": "<>\n",
     "html": "<p>&lt;&gt;</p>\n",
     "section": "Autolinks",
-    "number": 489
+    "number": 499
   },
   {
     "markdown": "<heck://bing.bong>\n",
     "html": "<p>&lt;heck://bing.bong&gt;</p>\n",
     "section": "Autolinks",
-    "number": 490
+    "number": 500
   },
   {
     "markdown": "< http://foo.bar >\n",
     "html": "<p>&lt; http://foo.bar &gt;</p>\n",
     "section": "Autolinks",
-    "number": 491
+    "number": 501
   },
   {
     "markdown": "<foo.bar.baz>\n",
     "html": "<p>&lt;foo.bar.baz&gt;</p>\n",
     "section": "Autolinks",
-    "number": 492
+    "number": 502
   },
   {
     "markdown": "<localhost:5001/foo>\n",
     "html": "<p>&lt;localhost:5001/foo&gt;</p>\n",
     "section": "Autolinks",
-    "number": 493
+    "number": 503
   },
   {
     "markdown": "http://example.com\n",
     "html": "<p>http://example.com</p>\n",
     "section": "Autolinks",
-    "number": 494
+    "number": 504
   },
   {
     "markdown": "foo@bar.example.com\n",
     "html": "<p>foo@bar.example.com</p>\n",
     "section": "Autolinks",
-    "number": 495
+    "number": 505
   },
   {
     "markdown": "<a><bab><c2c>\n",
     "html": "<p><a><bab><c2c></p>\n",
     "section": "Raw HTML",
-    "number": 496
+    "number": 506
   },
   {
     "markdown": "<a/><b2/>\n",
     "html": "<p><a/><b2/></p>\n",
     "section": "Raw HTML",
-    "number": 497
+    "number": 507
   },
   {
     "markdown": "<a  /><b2\ndata=\"foo\" >\n",
     "html": "<p><a  /><b2\ndata=\"foo\" ></p>\n",
     "section": "Raw HTML",
-    "number": 498
+    "number": 508
   },
   {
     "markdown": "<a foo=\"bar\" bam = 'baz <em>\"</em>'\n_boolean zoop:33=zoop:33 />\n",
     "html": "<p><a foo=\"bar\" bam = 'baz <em>\"</em>'\n_boolean zoop:33=zoop:33 /></p>\n",
     "section": "Raw HTML",
-    "number": 499
+    "number": 509
   },
   {
     "markdown": "<33> <__>\n",
     "html": "<p>&lt;33&gt; &lt;__&gt;</p>\n",
     "section": "Raw HTML",
-    "number": 500
+    "number": 510
   },
   {
     "markdown": "<a h*#ref=\"hi\">\n",
     "html": "<p>&lt;a h*#ref=&quot;hi&quot;&gt;</p>\n",
     "section": "Raw HTML",
-    "number": 501
+    "number": 511
   },
   {
     "markdown": "<a href=\"hi'> <a href=hi'>\n",
     "html": "<p>&lt;a href=&quot;hi'&gt; &lt;a href=hi'&gt;</p>\n",
     "section": "Raw HTML",
-    "number": 502
+    "number": 512
   },
   {
     "markdown": "< a><\nfoo><bar/ >\n",
     "html": "<p>&lt; a&gt;&lt;\nfoo&gt;&lt;bar/ &gt;</p>\n",
     "section": "Raw HTML",
-    "number": 503
+    "number": 513
   },
   {
     "markdown": "<a href='bar'title=title>\n",
     "html": "<p>&lt;a href='bar'title=title&gt;</p>\n",
     "section": "Raw HTML",
-    "number": 504
+    "number": 514
   },
   {
     "markdown": "</a>\n</foo >\n",
     "html": "<p></a>\n</foo ></p>\n",
     "section": "Raw HTML",
-    "number": 505
+    "number": 515
   },
   {
     "markdown": "</a href=\"foo\">\n",
     "html": "<p>&lt;/a href=&quot;foo&quot;&gt;</p>\n",
     "section": "Raw HTML",
-    "number": 506
+    "number": 516
   },
   {
     "markdown": "foo <!-- this is a\ncomment - with hyphen -->\n",
     "html": "<p>foo <!-- this is a\ncomment - with hyphen --></p>\n",
     "section": "Raw HTML",
-    "number": 507
+    "number": 517
   },
   {
     "markdown": "foo <!-- not a comment -- two hyphens -->\n",
     "html": "<p>foo &lt;!-- not a comment -- two hyphens --&gt;</p>\n",
     "section": "Raw HTML",
-    "number": 508
+    "number": 518
   },
   {
     "markdown": "foo <!--> foo -->\n\nfoo <!-- foo--->\n",
     "html": "<p>foo &lt;!--&gt; foo --&gt;</p>\n<p>foo &lt;!-- foo---&gt;</p>\n",
     "section": "Raw HTML",
-    "number": 509
+    "number": 519
   },
   {
     "markdown": "foo <?php echo $a; ?>\n",
     "html": "<p>foo <?php echo $a; ?></p>\n",
     "section": "Raw HTML",
-    "number": 510
+    "number": 520
   },
   {
     "markdown": "foo <!ELEMENT br EMPTY>\n",
     "html": "<p>foo <!ELEMENT br EMPTY></p>\n",
     "section": "Raw HTML",
-    "number": 511
+    "number": 521
   },
   {
     "markdown": "foo <![CDATA[>&<]]>\n",
     "html": "<p>foo <![CDATA[>&<]]></p>\n",
     "section": "Raw HTML",
-    "number": 512
+    "number": 522
   },
   {
     "markdown": "<a href=\"&ouml;\">\n",
     "html": "<p><a href=\"&ouml;\"></p>\n",
     "section": "Raw HTML",
-    "number": 513
+    "number": 523
   },
   {
     "markdown": "<a href=\"\\*\">\n",
     "html": "<p><a href=\"\\*\"></p>\n",
     "section": "Raw HTML",
-    "number": 514
+    "number": 524
   },
   {
     "markdown": "<a href=\"\\\"\">\n",
     "html": "<p>&lt;a href=&quot;&quot;&quot;&gt;</p>\n",
     "section": "Raw HTML",
-    "number": 515
+    "number": 525
   },
   {
     "markdown": "foo  \nbaz\n",
     "html": "<p>foo<br />\nbaz</p>\n",
     "section": "Hard line breaks",
-    "number": 516
+    "number": 526
   },
   {
     "markdown": "foo\\\nbaz\n",
     "html": "<p>foo<br />\nbaz</p>\n",
     "section": "Hard line breaks",
-    "number": 517
+    "number": 527
   },
   {
     "markdown": "foo       \nbaz\n",
     "html": "<p>foo<br />\nbaz</p>\n",
     "section": "Hard line breaks",
-    "number": 518
+    "number": 528
   },
   {
     "markdown": "foo  \n     bar\n",
     "html": "<p>foo<br />\nbar</p>\n",
     "section": "Hard line breaks",
-    "number": 519
+    "number": 529
   },
   {
     "markdown": "foo\\\n     bar\n",
     "html": "<p>foo<br />\nbar</p>\n",
     "section": "Hard line breaks",
-    "number": 520
+    "number": 530
   },
   {
     "markdown": "*foo  \nbar*\n",
     "html": "<p><em>foo<br />\nbar</em></p>\n",
     "section": "Hard line breaks",
-    "number": 521
+    "number": 531
   },
   {
     "markdown": "*foo\\\nbar*\n",
     "html": "<p><em>foo<br />\nbar</em></p>\n",
     "section": "Hard line breaks",
-    "number": 522
+    "number": 532
   },
   {
     "markdown": "`code  \nspan`\n",
     "html": "<p><code>code span</code></p>\n",
     "section": "Hard line breaks",
-    "number": 523
+    "number": 533
   },
   {
     "markdown": "`code\\\nspan`\n",
     "html": "<p><code>code\\ span</code></p>\n",
     "section": "Hard line breaks",
-    "number": 524
+    "number": 534
   },
   {
     "markdown": "<a href=\"foo  \nbar\">\n",
     "html": "<p><a href=\"foo  \nbar\"></p>\n",
     "section": "Hard line breaks",
-    "number": 525
+    "number": 535
   },
   {
     "markdown": "<a href=\"foo\\\nbar\">\n",
     "html": "<p><a href=\"foo\\\nbar\"></p>\n",
     "section": "Hard line breaks",
-    "number": 526
+    "number": 536
   },
   {
     "markdown": "foo\\\n",
     "html": "<p>foo\\</p>\n",
     "section": "Hard line breaks",
-    "number": 527
+    "number": 537
   },
   {
     "markdown": "foo  \n",
     "html": "<p>foo</p>\n",
     "section": "Hard line breaks",
-    "number": 528
+    "number": 538
   },
   {
     "markdown": "### foo\\\n",
     "html": "<h3>foo\\</h3>\n",
     "section": "Hard line breaks",
-    "number": 529
+    "number": 539
   },
   {
     "markdown": "### foo  \n",
     "html": "<h3>foo</h3>\n",
     "section": "Hard line breaks",
-    "number": 530
+    "number": 540
   },
   {
     "markdown": "foo\nbaz\n",
     "html": "<p>foo\nbaz</p>\n",
     "section": "Soft line breaks",
-    "number": 531
+    "number": 541
   },
   {
     "markdown": "foo \n baz\n",
     "html": "<p>foo\nbaz</p>\n",
     "section": "Soft line breaks",
-    "number": 532
+    "number": 542
   },
   {
     "markdown": "hello $.;'there\n",
     "html": "<p>hello $.;'there</p>\n",
     "section": "Textual content",
-    "number": 533
+    "number": 543
   },
   {
     "markdown": "Foo χρῆν\n",
     "html": "<p>Foo χρῆν</p>\n",
     "section": "Textual content",
-    "number": 534
+    "number": 544
   },
   {
     "markdown": "Multiple     spaces\n",
     "html": "<p>Multiple     spaces</p>\n",
     "section": "Textual content",
-    "number": 535
+    "number": 545
   }
 ]
