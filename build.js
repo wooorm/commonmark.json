@@ -23,8 +23,7 @@ function rewrite(data) {
                 examples.push({
                     'markdown': $1,
                     'html': $2,
-                    'section': section,
-                    'number': index
+                    'section': section
                 });
             }
         });
