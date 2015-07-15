@@ -1,13 +1,28 @@
 [
   {
     "markdown": "\tfoo\tbaz\t\tbim\n",
-    "html": "<pre><code>foo baz     bim\n</code></pre>\n",
-    "section": "Preprocessing"
+    "html": "<pre><code>foo\tbaz\t\tbim\n</code></pre>\n",
+    "section": "Tabs"
+  },
+  {
+    "markdown": "  \tfoo\tbaz\t\tbim\n",
+    "html": "<pre><code>foo\tbaz\t\tbim\n</code></pre>\n",
+    "section": "Tabs"
   },
   {
     "markdown": "    a\ta\n    ὐ\ta\n",
-    "html": "<pre><code>a   a\nὐ   a\n</code></pre>\n",
-    "section": "Preprocessing"
+    "html": "<pre><code>a\ta\nὐ\ta\n</code></pre>\n",
+    "section": "Tabs"
+  },
+  {
+    "markdown": "  - foo\n\n\tbar\n",
+    "html": "<ul>\n<li>\n<p>foo</p>\n<p>bar</p>\n</li>\n</ul>\n",
+    "section": "Tabs"
+  },
+  {
+    "markdown": ">\tfoo\tbar\n",
+    "html": "<blockquote>\n<p>foo\tbar</p>\n</blockquote>\n",
+    "section": "Tabs"
   },
   {
     "markdown": "- `one\n- two`\n",
@@ -400,6 +415,11 @@
     "section": "Fenced code blocks"
   },
   {
+    "markdown": "> ```\n> aaa\n\nbbb\n",
+    "html": "<blockquote>\n<pre><code>aaa\n</code></pre>\n</blockquote>\n<p>bbb</p>\n",
+    "section": "Fenced code blocks"
+  },
+  {
     "markdown": "```\n\n  \n```\n",
     "html": "<pre><code>\n  \n</code></pre>\n",
     "section": "Fenced code blocks"
@@ -500,8 +520,53 @@
     "section": "HTML blocks"
   },
   {
+    "markdown": "</div>\n*foo*\n",
+    "html": "</div>\n*foo*\n",
+    "section": "HTML blocks"
+  },
+  {
     "markdown": "<DIV CLASS=\"foo\">\n\n*Markdown*\n\n</DIV>\n",
     "html": "<DIV CLASS=\"foo\">\n<p><em>Markdown</em></p>\n</DIV>\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "<div id=\"foo\"\n  class=\"bar\">\n</div>\n",
+    "html": "<div id=\"foo\"\n  class=\"bar\">\n</div>\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "<div id=\"foo\" class=\"bar\n  baz\">\n</div>\n",
+    "html": "<div id=\"foo\" class=\"bar\n  baz\">\n</div>\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "<div>\n*foo*\n\n*bar*\n",
+    "html": "<div>\n*foo*\n<p><em>bar</em></p>\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "<div id=\"foo\"\n*hi*\n",
+    "html": "<div id=\"foo\"\n*hi*\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "<div class\nfoo\n",
+    "html": "<div class\nfoo\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "<div *???-&&&-<---\n*foo*\n",
+    "html": "<div *???-&&&-<---\n*foo*\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "<div><a href=\"bar\">*foo*</a></div>\n",
+    "html": "<div><a href=\"bar\">*foo*</a></div>\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "<table><tr><td>\nfoo\n</td></tr></table>\n",
+    "html": "<table><tr><td>\nfoo\n</td></tr></table>\n",
     "section": "HTML blocks"
   },
   {
@@ -510,23 +575,108 @@
     "section": "HTML blocks"
   },
   {
-    "markdown": "<!-- Foo\nbar\n   baz -->\n",
-    "html": "<!-- Foo\nbar\n   baz -->\n",
+    "markdown": "<a href=\"foo\">\n*bar*\n</a>\n",
+    "html": "<a href=\"foo\">\n*bar*\n</a>\n",
     "section": "HTML blocks"
   },
   {
-    "markdown": "<?php\n  echo '>';\n?>\n",
-    "html": "<?php\n  echo '>';\n?>\n",
+    "markdown": "<Warning>\n*bar*\n</Warning>\n",
+    "html": "<Warning>\n*bar*\n</Warning>\n",
     "section": "HTML blocks"
   },
   {
-    "markdown": "<![CDATA[\nfunction matchwo(a,b)\n{\nif (a < b && a < 0) then\n  {\n  return 1;\n  }\nelse\n  {\n  return 0;\n  }\n}\n]]>\n",
-    "html": "<![CDATA[\nfunction matchwo(a,b)\n{\nif (a < b && a < 0) then\n  {\n  return 1;\n  }\nelse\n  {\n  return 0;\n  }\n}\n]]>\n",
+    "markdown": "<i class=\"foo\">\n*bar*\n</i>\n",
+    "html": "<i class=\"foo\">\n*bar*\n</i>\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "<del>\n*foo*\n</del>\n",
+    "html": "<del>\n*foo*\n</del>\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "<del>\n\n*foo*\n\n</del>\n",
+    "html": "<del>\n<p><em>foo</em></p>\n</del>\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "<del>*foo*</del>\n",
+    "html": "<p><del><em>foo</em></del></p>\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "<pre language=\"haskell\"><code>\nimport Text.HTML.TagSoup\n\nmain :: IO ()\nmain = print $ parseTags tags\n</code></pre>\n",
+    "html": "<pre language=\"haskell\"><code>\nimport Text.HTML.TagSoup\n\nmain :: IO ()\nmain = print $ parseTags tags\n</code></pre>\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "<script type=\"text/javascript\">\n// JavaScript example\n\ndocument.getElementById(\"demo\").innerHTML = \"Hello JavaScript!\";\n</script>\n",
+    "html": "<script type=\"text/javascript\">\n// JavaScript example\n\ndocument.getElementById(\"demo\").innerHTML = \"Hello JavaScript!\";\n</script>\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "<style\n  type=\"text/css\">\nh1 {color:red;}\n\np {color:blue;}\n</style>\n",
+    "html": "<style\n  type=\"text/css\">\nh1 {color:red;}\n\np {color:blue;}\n</style>\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "<style\n  type=\"text/css\">\n\nfoo\n",
+    "html": "<style\n  type=\"text/css\">\n\nfoo\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "> <div>\n> foo\n\nbar\n",
+    "html": "<blockquote>\n<div>\nfoo\n</blockquote>\n<p>bar</p>\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "- <div>\n- foo\n",
+    "html": "<ul>\n<li>\n<div>\n</li>\n<li>foo</li>\n</ul>\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "<style>p{color:red;}</style>\n*foo*\n",
+    "html": "<style>p{color:red;}</style>\n<p><em>foo</em></p>\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "<!-- foo -->*bar*\n*baz*\n",
+    "html": "<!-- foo -->*bar*\n<p><em>baz</em></p>\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "<script>\nfoo\n</script>1. *bar*\n",
+    "html": "<script>\nfoo\n</script>1. *bar*\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "<!-- Foo\n\nbar\n   baz -->\n",
+    "html": "<!-- Foo\n\nbar\n   baz -->\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "<?php\n\n  echo '>';\n\n?>\n",
+    "html": "<?php\n\n  echo '>';\n\n?>\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "<!DOCTYPE html>\n",
+    "html": "<!DOCTYPE html>\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "<![CDATA[\nfunction matchwo(a,b)\n{\n  if (a < b && a < 0) then {\n    return 1;\n\n  } else {\n\n    return 0;\n  }\n}\n]]>\n",
+    "html": "<![CDATA[\nfunction matchwo(a,b)\n{\n  if (a < b && a < 0) then {\n    return 1;\n\n  } else {\n\n    return 0;\n  }\n}\n]]>\n",
     "section": "HTML blocks"
   },
   {
     "markdown": "  <!-- foo -->\n\n    <!-- foo -->\n",
     "html": "  <!-- foo -->\n<pre><code>&lt;!-- foo --&gt;\n</code></pre>\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "  <div>\n\n    <div>\n",
+    "html": "  <div>\n<pre><code>&lt;div&gt;\n</code></pre>\n",
     "section": "HTML blocks"
   },
   {
@@ -540,8 +690,8 @@
     "section": "HTML blocks"
   },
   {
-    "markdown": "<div class\nfoo\n",
-    "html": "<div class\nfoo\n",
+    "markdown": "Foo\n<a href=\"bar\">\nbaz\n",
+    "html": "<p>Foo\n<a href=\"bar\">\nbaz</p>\n",
     "section": "HTML blocks"
   },
   {
@@ -557,6 +707,11 @@
   {
     "markdown": "<table>\n\n<tr>\n\n<td>\nHi\n</td>\n\n</tr>\n\n</table>\n",
     "html": "<table>\n<tr>\n<td>\nHi\n</td>\n</tr>\n</table>\n",
+    "section": "HTML blocks"
+  },
+  {
+    "markdown": "<table>\n\n  <tr>\n\n    <td>\n      Hi\n    </td>\n\n  </tr>\n\n</table>\n",
+    "html": "<table>\n  <tr>\n<pre><code>&lt;td&gt;\n  Hi\n&lt;/td&gt;\n</code></pre>\n  </tr>\n</table>\n",
     "section": "HTML blocks"
   },
   {
@@ -600,6 +755,11 @@
     "section": "Link reference definitions"
   },
   {
+    "markdown": "[foo]: /url\\bar\\*baz \"foo\\\"bar\\baz\"\n\n[foo]\n",
+    "html": "<p><a href=\"/url%5Cbar*baz\" title=\"foo&quot;bar\\baz\">foo</a></p>\n",
+    "section": "Link reference definitions"
+  },
+  {
     "markdown": "[foo]\n\n[foo]: url\n",
     "html": "<p><a href=\"url\">foo</a></p>\n",
     "section": "Link reference definitions"
@@ -632,6 +792,11 @@
   {
     "markdown": "[foo]: /url \"title\" ok\n",
     "html": "<p>[foo]: /url &quot;title&quot; ok</p>\n",
+    "section": "Link reference definitions"
+  },
+  {
+    "markdown": "[foo]: /url\n\"title\" ok\n",
+    "html": "<p>&quot;title&quot; ok</p>\n",
     "section": "Link reference definitions"
   },
   {
@@ -882,6 +1047,31 @@
   {
     "markdown": "1.  foo\n\n    ```\n    bar\n    ```\n\n    baz\n\n    > bam\n",
     "html": "<ol>\n<li>\n<p>foo</p>\n<pre><code>bar\n</code></pre>\n<p>baz</p>\n<blockquote>\n<p>bam</p>\n</blockquote>\n</li>\n</ol>\n",
+    "section": "List items"
+  },
+  {
+    "markdown": "123456789. ok\n",
+    "html": "<ol start=\"123456789\">\n<li>ok</li>\n</ol>\n",
+    "section": "List items"
+  },
+  {
+    "markdown": "1234567890. not ok\n",
+    "html": "<p>1234567890. not ok</p>\n",
+    "section": "List items"
+  },
+  {
+    "markdown": "0. ok\n",
+    "html": "<ol start=\"0\">\n<li>ok</li>\n</ol>\n",
+    "section": "List items"
+  },
+  {
+    "markdown": "003. ok\n",
+    "html": "<ol start=\"3\">\n<li>ok</li>\n</ol>\n",
+    "section": "List items"
+  },
+  {
+    "markdown": "-1. not ok\n",
+    "html": "<p>-1. not ok</p>\n",
     "section": "List items"
   },
   {
@@ -1156,7 +1346,7 @@
   },
   {
     "markdown": "\\\t\\A\\a\\ \\3\\φ\\«\n",
-    "html": "<p>\\   \\A\\a\\ \\3\\φ\\«</p>\n",
+    "html": "<p>\\\t\\A\\a\\ \\3\\φ\\«</p>\n",
     "section": "Backslash escapes"
   },
   {
@@ -1196,7 +1386,7 @@
   },
   {
     "markdown": "<a href=\"/bar\\/)\">\n",
-    "html": "<p><a href=\"/bar\\/)\"></p>\n",
+    "html": "<a href=\"/bar\\/)\">\n",
     "section": "Backslash escapes"
   },
   {
@@ -1215,8 +1405,8 @@
     "section": "Backslash escapes"
   },
   {
-    "markdown": "&nbsp; &amp; &copy; &AElig; &Dcaron; &frac34; &HilbertSpace; &DifferentialD; &ClockwiseContourIntegral;\n",
-    "html": "<p>  &amp; © Æ Ď ¾ ℋ ⅆ ∲</p>\n",
+    "markdown": "&nbsp; &amp; &copy; &AElig; &Dcaron;\n&frac34; &HilbertSpace; &DifferentialD;\n&ClockwiseContourIntegral; &ngE;\n",
+    "html": "<p>  &amp; © Æ Ď\n¾ ℋ ⅆ\n∲ ≧̸</p>\n",
     "section": "Entities"
   },
   {
@@ -1246,7 +1436,7 @@
   },
   {
     "markdown": "<a href=\"&ouml;&ouml;.html\">\n",
-    "html": "<p><a href=\"&ouml;&ouml;.html\"></p>\n",
+    "html": "<a href=\"&ouml;&ouml;.html\">\n",
     "section": "Entities"
   },
   {
@@ -1935,6 +2125,11 @@
     "section": "Emphasis and strong emphasis"
   },
   {
+    "markdown": "*foo __bar *baz bim__ bam*\n",
+    "html": "<p><em>foo <strong>bar *baz bim</strong> bam</em></p>\n",
+    "section": "Emphasis and strong emphasis"
+  },
+  {
     "markdown": "**foo **bar baz**\n",
     "html": "<p>**foo <strong>bar baz</strong></p>\n",
     "section": "Emphasis and strong emphasis"
@@ -2052,6 +2247,16 @@
   {
     "markdown": "[link](foo\\)\\:)\n",
     "html": "<p><a href=\"foo):\">link</a></p>\n",
+    "section": "Links"
+  },
+  {
+    "markdown": "[link](#fragment)\n\n[link](http://example.com#fragment)\n\n[link](http://example.com?foo=bar&baz#fragment)\n",
+    "html": "<p><a href=\"#fragment\">link</a></p>\n<p><a href=\"http://example.com#fragment\">link</a></p>\n<p><a href=\"http://example.com?foo=bar&amp;baz#fragment\">link</a></p>\n",
+    "section": "Links"
+  },
+  {
+    "markdown": "[link](foo\\bar)\n",
+    "html": "<p><a href=\"foo%5Cbar\">link</a></p>\n",
     "section": "Links"
   },
   {
@@ -2585,6 +2790,11 @@
     "section": "Raw HTML"
   },
   {
+    "markdown": "<responsive-image src=\"foo.jpg\" />\n\n<My-Tag>\nfoo\n</My-Tag>\n",
+    "html": "<responsive-image src=\"foo.jpg\" />\n<My-Tag>\nfoo\n</My-Tag>\n",
+    "section": "Raw HTML"
+  },
+  {
     "markdown": "<33> <__>\n",
     "html": "<p>&lt;33&gt; &lt;__&gt;</p>\n",
     "section": "Raw HTML"
@@ -2611,7 +2821,7 @@
   },
   {
     "markdown": "</a>\n</foo >\n",
-    "html": "<p></a>\n</foo ></p>\n",
+    "html": "</a>\n</foo >\n",
     "section": "Raw HTML"
   },
   {
@@ -2651,12 +2861,12 @@
   },
   {
     "markdown": "<a href=\"&ouml;\">\n",
-    "html": "<p><a href=\"&ouml;\"></p>\n",
+    "html": "<a href=\"&ouml;\">\n",
     "section": "Raw HTML"
   },
   {
     "markdown": "<a href=\"\\*\">\n",
-    "html": "<p><a href=\"\\*\"></p>\n",
+    "html": "<a href=\"\\*\">\n",
     "section": "Raw HTML"
   },
   {
