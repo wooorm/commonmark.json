@@ -25,6 +25,11 @@
     "section": "Tabs"
   },
   {
+    "markdown": "    foo\n\tbar\n",
+    "html": "<pre><code>foo\nbar\n</code></pre>\n",
+    "section": "Tabs"
+  },
+  {
     "markdown": "- `one\n- two`\n",
     "html": "<ul>\n<li>`one</li>\n<li>two`</li>\n</ul>\n",
     "section": "Precedence"
@@ -590,6 +595,11 @@
     "section": "HTML blocks"
   },
   {
+    "markdown": "</ins>\n*bar*\n",
+    "html": "</ins>\n*bar*\n",
+    "section": "HTML blocks"
+  },
+  {
     "markdown": "<del>\n*foo*\n</del>\n",
     "html": "<del>\n*foo*\n</del>\n",
     "section": "HTML blocks"
@@ -925,6 +935,11 @@
     "section": "Block quotes"
   },
   {
+    "markdown": "> foo\n    - bar\n",
+    "html": "<blockquote>\n<p>foo\n- bar</p>\n</blockquote>\n",
+    "section": "Block quotes"
+  },
+  {
     "markdown": ">\n",
     "html": "<blockquote>\n</blockquote>\n",
     "section": "Block quotes"
@@ -1117,6 +1132,11 @@
   {
     "markdown": "-\n  foo\n-\n  ```\n  bar\n  ```\n-\n      baz\n",
     "html": "<ul>\n<li>foo</li>\n<li>\n<pre><code>bar\n</code></pre>\n</li>\n<li>\n<pre><code>baz\n</code></pre>\n</li>\n</ul>\n",
+    "section": "List items"
+  },
+  {
+    "markdown": "-\n\n  foo\n",
+    "html": "<ul>\n<li></li>\n</ul>\n<p>foo</p>\n",
     "section": "List items"
   },
   {
