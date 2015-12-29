@@ -37,287 +37,292 @@
   {
     "markdown": "***\n---\n___\n",
     "html": "<hr />\n<hr />\n<hr />\n",
-    "section": "Horizontal rules"
+    "section": "Thematic breaks"
   },
   {
     "markdown": "+++\n",
     "html": "<p>+++</p>\n",
-    "section": "Horizontal rules"
+    "section": "Thematic breaks"
   },
   {
     "markdown": "===\n",
     "html": "<p>===</p>\n",
-    "section": "Horizontal rules"
+    "section": "Thematic breaks"
   },
   {
     "markdown": "--\n**\n__\n",
     "html": "<p>--\n**\n__</p>\n",
-    "section": "Horizontal rules"
+    "section": "Thematic breaks"
   },
   {
     "markdown": " ***\n  ***\n   ***\n",
     "html": "<hr />\n<hr />\n<hr />\n",
-    "section": "Horizontal rules"
+    "section": "Thematic breaks"
   },
   {
     "markdown": "    ***\n",
     "html": "<pre><code>***\n</code></pre>\n",
-    "section": "Horizontal rules"
+    "section": "Thematic breaks"
   },
   {
     "markdown": "Foo\n    ***\n",
     "html": "<p>Foo\n***</p>\n",
-    "section": "Horizontal rules"
+    "section": "Thematic breaks"
   },
   {
     "markdown": "_____________________________________\n",
     "html": "<hr />\n",
-    "section": "Horizontal rules"
+    "section": "Thematic breaks"
   },
   {
     "markdown": " - - -\n",
     "html": "<hr />\n",
-    "section": "Horizontal rules"
+    "section": "Thematic breaks"
   },
   {
     "markdown": " **  * ** * ** * **\n",
     "html": "<hr />\n",
-    "section": "Horizontal rules"
+    "section": "Thematic breaks"
   },
   {
     "markdown": "-     -      -      -\n",
     "html": "<hr />\n",
-    "section": "Horizontal rules"
+    "section": "Thematic breaks"
   },
   {
     "markdown": "- - - -    \n",
     "html": "<hr />\n",
-    "section": "Horizontal rules"
+    "section": "Thematic breaks"
   },
   {
     "markdown": "_ _ _ _ a\n\na------\n\n---a---\n",
     "html": "<p>_ _ _ _ a</p>\n<p>a------</p>\n<p>---a---</p>\n",
-    "section": "Horizontal rules"
+    "section": "Thematic breaks"
   },
   {
     "markdown": " *-*\n",
     "html": "<p><em>-</em></p>\n",
-    "section": "Horizontal rules"
+    "section": "Thematic breaks"
   },
   {
     "markdown": "- foo\n***\n- bar\n",
     "html": "<ul>\n<li>foo</li>\n</ul>\n<hr />\n<ul>\n<li>bar</li>\n</ul>\n",
-    "section": "Horizontal rules"
+    "section": "Thematic breaks"
   },
   {
     "markdown": "Foo\n***\nbar\n",
     "html": "<p>Foo</p>\n<hr />\n<p>bar</p>\n",
-    "section": "Horizontal rules"
+    "section": "Thematic breaks"
   },
   {
     "markdown": "Foo\n---\nbar\n",
     "html": "<h2>Foo</h2>\n<p>bar</p>\n",
-    "section": "Horizontal rules"
+    "section": "Thematic breaks"
   },
   {
     "markdown": "* Foo\n* * *\n* Bar\n",
     "html": "<ul>\n<li>Foo</li>\n</ul>\n<hr />\n<ul>\n<li>Bar</li>\n</ul>\n",
-    "section": "Horizontal rules"
+    "section": "Thematic breaks"
   },
   {
     "markdown": "- Foo\n- * * *\n",
     "html": "<ul>\n<li>Foo</li>\n<li>\n<hr />\n</li>\n</ul>\n",
-    "section": "Horizontal rules"
+    "section": "Thematic breaks"
   },
   {
     "markdown": "# foo\n## foo\n### foo\n#### foo\n##### foo\n###### foo\n",
     "html": "<h1>foo</h1>\n<h2>foo</h2>\n<h3>foo</h3>\n<h4>foo</h4>\n<h5>foo</h5>\n<h6>foo</h6>\n",
-    "section": "ATX headers"
+    "section": "ATX headings"
   },
   {
     "markdown": "####### foo\n",
     "html": "<p>####### foo</p>\n",
-    "section": "ATX headers"
+    "section": "ATX headings"
   },
   {
-    "markdown": "#5 bolt\n\n#foobar\n",
-    "html": "<p>#5 bolt</p>\n<p>#foobar</p>\n",
-    "section": "ATX headers"
+    "markdown": "#5 bolt\n\n#hashtag\n",
+    "html": "<p>#5 bolt</p>\n<p>#hashtag</p>\n",
+    "section": "ATX headings"
+  },
+  {
+    "markdown": "#\tfoo\n",
+    "html": "<p>#\tfoo</p>\n",
+    "section": "ATX headings"
   },
   {
     "markdown": "\\## foo\n",
     "html": "<p>## foo</p>\n",
-    "section": "ATX headers"
+    "section": "ATX headings"
   },
   {
     "markdown": "# foo *bar* \\*baz\\*\n",
     "html": "<h1>foo <em>bar</em> *baz*</h1>\n",
-    "section": "ATX headers"
+    "section": "ATX headings"
   },
   {
     "markdown": "#                  foo                     \n",
     "html": "<h1>foo</h1>\n",
-    "section": "ATX headers"
+    "section": "ATX headings"
   },
   {
     "markdown": " ### foo\n  ## foo\n   # foo\n",
     "html": "<h3>foo</h3>\n<h2>foo</h2>\n<h1>foo</h1>\n",
-    "section": "ATX headers"
+    "section": "ATX headings"
   },
   {
     "markdown": "    # foo\n",
     "html": "<pre><code># foo\n</code></pre>\n",
-    "section": "ATX headers"
+    "section": "ATX headings"
   },
   {
     "markdown": "foo\n    # bar\n",
     "html": "<p>foo\n# bar</p>\n",
-    "section": "ATX headers"
+    "section": "ATX headings"
   },
   {
     "markdown": "## foo ##\n  ###   bar    ###\n",
     "html": "<h2>foo</h2>\n<h3>bar</h3>\n",
-    "section": "ATX headers"
+    "section": "ATX headings"
   },
   {
     "markdown": "# foo ##################################\n##### foo ##\n",
     "html": "<h1>foo</h1>\n<h5>foo</h5>\n",
-    "section": "ATX headers"
+    "section": "ATX headings"
   },
   {
     "markdown": "### foo ###     \n",
     "html": "<h3>foo</h3>\n",
-    "section": "ATX headers"
+    "section": "ATX headings"
   },
   {
     "markdown": "### foo ### b\n",
     "html": "<h3>foo ### b</h3>\n",
-    "section": "ATX headers"
+    "section": "ATX headings"
   },
   {
     "markdown": "# foo#\n",
     "html": "<h1>foo#</h1>\n",
-    "section": "ATX headers"
+    "section": "ATX headings"
   },
   {
     "markdown": "### foo \\###\n## foo #\\##\n# foo \\#\n",
     "html": "<h3>foo ###</h3>\n<h2>foo ###</h2>\n<h1>foo #</h1>\n",
-    "section": "ATX headers"
+    "section": "ATX headings"
   },
   {
     "markdown": "****\n## foo\n****\n",
     "html": "<hr />\n<h2>foo</h2>\n<hr />\n",
-    "section": "ATX headers"
+    "section": "ATX headings"
   },
   {
     "markdown": "Foo bar\n# baz\nBar foo\n",
     "html": "<p>Foo bar</p>\n<h1>baz</h1>\n<p>Bar foo</p>\n",
-    "section": "ATX headers"
+    "section": "ATX headings"
   },
   {
     "markdown": "## \n#\n### ###\n",
     "html": "<h2></h2>\n<h1></h1>\n<h3></h3>\n",
-    "section": "ATX headers"
+    "section": "ATX headings"
   },
   {
     "markdown": "Foo *bar*\n=========\n\nFoo *bar*\n---------\n",
     "html": "<h1>Foo <em>bar</em></h1>\n<h2>Foo <em>bar</em></h2>\n",
-    "section": "Setext headers"
+    "section": "Setext headings"
   },
   {
     "markdown": "Foo\n-------------------------\n\nFoo\n=\n",
     "html": "<h2>Foo</h2>\n<h1>Foo</h1>\n",
-    "section": "Setext headers"
+    "section": "Setext headings"
   },
   {
     "markdown": "   Foo\n---\n\n  Foo\n-----\n\n  Foo\n  ===\n",
     "html": "<h2>Foo</h2>\n<h2>Foo</h2>\n<h1>Foo</h1>\n",
-    "section": "Setext headers"
+    "section": "Setext headings"
   },
   {
     "markdown": "    Foo\n    ---\n\n    Foo\n---\n",
     "html": "<pre><code>Foo\n---\n\nFoo\n</code></pre>\n<hr />\n",
-    "section": "Setext headers"
+    "section": "Setext headings"
   },
   {
     "markdown": "Foo\n   ----      \n",
     "html": "<h2>Foo</h2>\n",
-    "section": "Setext headers"
+    "section": "Setext headings"
   },
   {
     "markdown": "Foo\n    ---\n",
     "html": "<p>Foo\n---</p>\n",
-    "section": "Setext headers"
+    "section": "Setext headings"
   },
   {
     "markdown": "Foo\n= =\n\nFoo\n--- -\n",
     "html": "<p>Foo\n= =</p>\n<p>Foo</p>\n<hr />\n",
-    "section": "Setext headers"
+    "section": "Setext headings"
   },
   {
     "markdown": "Foo  \n-----\n",
     "html": "<h2>Foo</h2>\n",
-    "section": "Setext headers"
+    "section": "Setext headings"
   },
   {
     "markdown": "Foo\\\n----\n",
     "html": "<h2>Foo\\</h2>\n",
-    "section": "Setext headers"
+    "section": "Setext headings"
   },
   {
     "markdown": "`Foo\n----\n`\n\n<a title=\"a lot\n---\nof dashes\"/>\n",
     "html": "<h2>`Foo</h2>\n<p>`</p>\n<h2>&lt;a title=&quot;a lot</h2>\n<p>of dashes&quot;/&gt;</p>\n",
-    "section": "Setext headers"
+    "section": "Setext headings"
   },
   {
     "markdown": "> Foo\n---\n",
     "html": "<blockquote>\n<p>Foo</p>\n</blockquote>\n<hr />\n",
-    "section": "Setext headers"
+    "section": "Setext headings"
   },
   {
     "markdown": "- Foo\n---\n",
     "html": "<ul>\n<li>Foo</li>\n</ul>\n<hr />\n",
-    "section": "Setext headers"
+    "section": "Setext headings"
   },
   {
     "markdown": "Foo\nBar\n---\n\nFoo\nBar\n===\n",
     "html": "<p>Foo\nBar</p>\n<hr />\n<p>Foo\nBar\n===</p>\n",
-    "section": "Setext headers"
+    "section": "Setext headings"
   },
   {
     "markdown": "---\nFoo\n---\nBar\n---\nBaz\n",
     "html": "<hr />\n<h2>Foo</h2>\n<h2>Bar</h2>\n<p>Baz</p>\n",
-    "section": "Setext headers"
+    "section": "Setext headings"
   },
   {
     "markdown": "\n====\n",
     "html": "<p>====</p>\n",
-    "section": "Setext headers"
+    "section": "Setext headings"
   },
   {
     "markdown": "---\n---\n",
     "html": "<hr />\n<hr />\n",
-    "section": "Setext headers"
+    "section": "Setext headings"
   },
   {
     "markdown": "- foo\n-----\n",
     "html": "<ul>\n<li>foo</li>\n</ul>\n<hr />\n",
-    "section": "Setext headers"
+    "section": "Setext headings"
   },
   {
     "markdown": "    foo\n---\n",
     "html": "<pre><code>foo\n</code></pre>\n<hr />\n",
-    "section": "Setext headers"
+    "section": "Setext headings"
   },
   {
     "markdown": "> foo\n-----\n",
     "html": "<blockquote>\n<p>foo</p>\n</blockquote>\n<hr />\n",
-    "section": "Setext headers"
+    "section": "Setext headings"
   },
   {
     "markdown": "\\> foo\n------\n",
     "html": "<h2>&gt; foo</h2>\n",
-    "section": "Setext headers"
+    "section": "Setext headings"
   },
   {
     "markdown": "    a simple\n      indented code block\n",
@@ -360,8 +365,8 @@
     "section": "Indented code blocks"
   },
   {
-    "markdown": "# Header\n    foo\nHeader\n------\n    foo\n----\n",
-    "html": "<h1>Header</h1>\n<pre><code>foo\n</code></pre>\n<h2>Header</h2>\n<pre><code>foo\n</code></pre>\n<hr />\n",
+    "markdown": "# Heading\n    foo\nHeading\n------\n    foo\n----\n",
+    "html": "<h1>Heading</h1>\n<pre><code>foo\n</code></pre>\n<h2>Heading</h2>\n<pre><code>foo\n</code></pre>\n<hr />\n",
     "section": "Indented code blocks"
   },
   {
@@ -1065,6 +1070,16 @@
     "section": "List items"
   },
   {
+    "markdown": "- Foo\n\n      bar\n\n      baz\n",
+    "html": "<ul>\n<li>\n<p>Foo</p>\n<pre><code>bar\n\nbaz\n</code></pre>\n</li>\n</ul>\n",
+    "section": "List items"
+  },
+  {
+    "markdown": "- Foo\n\n      bar\n\n\n      baz\n",
+    "html": "<ul>\n<li>\n<p>Foo</p>\n<pre><code>bar\n</code></pre>\n</li>\n</ul>\n<pre><code>  baz\n</code></pre>\n",
+    "section": "List items"
+  },
+  {
     "markdown": "123456789. ok\n",
     "html": "<ol start=\"123456789\">\n<li>ok</li>\n</ol>\n",
     "section": "List items"
@@ -1370,8 +1385,8 @@
     "section": "Backslash escapes"
   },
   {
-    "markdown": "\\*not emphasized*\n\\<br/> not a tag\n\\[not a link](/foo)\n\\`not code`\n1\\. not a list\n\\* not a list\n\\# not a header\n\\[foo]: /url \"not a reference\"\n",
-    "html": "<p>*not emphasized*\n&lt;br/&gt; not a tag\n[not a link](/foo)\n`not code`\n1. not a list\n* not a list\n# not a header\n[foo]: /url &quot;not a reference&quot;</p>\n",
+    "markdown": "\\*not emphasized*\n\\<br/> not a tag\n\\[not a link](/foo)\n\\`not code`\n1\\. not a list\n\\* not a list\n\\# not a heading\n\\[foo]: /url \"not a reference\"\n",
+    "html": "<p>*not emphasized*\n&lt;br/&gt; not a tag\n[not a link](/foo)\n`not code`\n1. not a list\n* not a list\n# not a heading\n[foo]: /url &quot;not a reference&quot;</p>\n",
     "section": "Backslash escapes"
   },
   {
@@ -1427,62 +1442,67 @@
   {
     "markdown": "&nbsp; &amp; &copy; &AElig; &Dcaron;\n&frac34; &HilbertSpace; &DifferentialD;\n&ClockwiseContourIntegral; &ngE;\n",
     "html": "<p>  &amp; © Æ Ď\n¾ ℋ ⅆ\n∲ ≧̸</p>\n",
-    "section": "Entities"
+    "section": "Entity and numeric character references"
   },
   {
     "markdown": "&#35; &#1234; &#992; &#98765432; &#0;\n",
     "html": "<p># Ӓ Ϡ � �</p>\n",
-    "section": "Entities"
+    "section": "Entity and numeric character references"
   },
   {
     "markdown": "&#X22; &#XD06; &#xcab;\n",
     "html": "<p>&quot; ആ ಫ</p>\n",
-    "section": "Entities"
+    "section": "Entity and numeric character references"
   },
   {
-    "markdown": "&nbsp &x; &#; &#x; &ThisIsWayTooLongToBeAnEntityIsntIt; &hi?;\n",
-    "html": "<p>&amp;nbsp &amp;x; &amp;#; &amp;#x; &amp;ThisIsWayTooLongToBeAnEntityIsntIt; &amp;hi?;</p>\n",
-    "section": "Entities"
+    "markdown": "&nbsp &x; &#; &#x;\n&ThisIsWayTooLongToBeAnEntityIsntIt; &hi?;\n",
+    "html": "<p>&amp;nbsp &amp;x; &amp;#; &amp;#x;\n&amp;ThisIsWayTooLongToBeAnEntityIsntIt; &amp;hi?;</p>\n",
+    "section": "Entity and numeric character references"
   },
   {
     "markdown": "&copy\n",
     "html": "<p>&amp;copy</p>\n",
-    "section": "Entities"
+    "section": "Entity and numeric character references"
   },
   {
     "markdown": "&MadeUpEntity;\n",
     "html": "<p>&amp;MadeUpEntity;</p>\n",
-    "section": "Entities"
+    "section": "Entity and numeric character references"
   },
   {
     "markdown": "<a href=\"&ouml;&ouml;.html\">\n",
     "html": "<a href=\"&ouml;&ouml;.html\">\n",
-    "section": "Entities"
+    "section": "Entity and numeric character references"
   },
   {
     "markdown": "[foo](/f&ouml;&ouml; \"f&ouml;&ouml;\")\n",
     "html": "<p><a href=\"/f%C3%B6%C3%B6\" title=\"föö\">foo</a></p>\n",
-    "section": "Entities"
+    "section": "Entity and numeric character references"
   },
   {
     "markdown": "[foo]\n\n[foo]: /f&ouml;&ouml; \"f&ouml;&ouml;\"\n",
     "html": "<p><a href=\"/f%C3%B6%C3%B6\" title=\"föö\">foo</a></p>\n",
-    "section": "Entities"
+    "section": "Entity and numeric character references"
   },
   {
     "markdown": "``` f&ouml;&ouml;\nfoo\n```\n",
     "html": "<pre><code class=\"language-föö\">foo\n</code></pre>\n",
-    "section": "Entities"
+    "section": "Entity and numeric character references"
   },
   {
     "markdown": "`f&ouml;&ouml;`\n",
     "html": "<p><code>f&amp;ouml;&amp;ouml;</code></p>\n",
-    "section": "Entities"
+    "section": "Entity and numeric character references"
   },
   {
     "markdown": "    f&ouml;f&ouml;\n",
     "html": "<pre><code>f&amp;ouml;f&amp;ouml;\n</code></pre>\n",
-    "section": "Entities"
+    "section": "Entity and numeric character references"
+  },
+  {
+    "markdown": "<a href=\"f&ouml;f&ouml;\"/>\n",
+    "html": "<a href=\"f&ouml;f&ouml;\"/>\n",
+    "section": "Entity and numeric character references"
   },
   {
     "markdown": "`foo`\n",
@@ -2270,8 +2290,8 @@
     "section": "Links"
   },
   {
-    "markdown": "[link](#fragment)\n\n[link](http://example.com#fragment)\n\n[link](http://example.com?foo=bar&baz#fragment)\n",
-    "html": "<p><a href=\"#fragment\">link</a></p>\n<p><a href=\"http://example.com#fragment\">link</a></p>\n<p><a href=\"http://example.com?foo=bar&amp;baz#fragment\">link</a></p>\n",
+    "markdown": "[link](#fragment)\n\n[link](http://example.com#fragment)\n\n[link](http://example.com?foo=3#frag)\n",
+    "html": "<p><a href=\"#fragment\">link</a></p>\n<p><a href=\"http://example.com#fragment\">link</a></p>\n<p><a href=\"http://example.com?foo=3#frag\">link</a></p>\n",
     "section": "Links"
   },
   {
@@ -2471,12 +2491,12 @@
   },
   {
     "markdown": "[foo] [bar]\n\n[bar]: /url \"title\"\n",
-    "html": "<p><a href=\"/url\" title=\"title\">foo</a></p>\n",
+    "html": "<p>[foo] <a href=\"/url\" title=\"title\">bar</a></p>\n",
     "section": "Links"
   },
   {
     "markdown": "[foo]\n[bar]\n\n[bar]: /url \"title\"\n",
-    "html": "<p><a href=\"/url\" title=\"title\">foo</a></p>\n",
+    "html": "<p>[foo]\n<a href=\"/url\" title=\"title\">bar</a></p>\n",
     "section": "Links"
   },
   {
@@ -2510,6 +2530,11 @@
     "section": "Links"
   },
   {
+    "markdown": "[bar\\\\]: /uri\n\n[bar\\\\]\n",
+    "html": "<p><a href=\"/uri\">bar\\</a></p>\n",
+    "section": "Links"
+  },
+  {
     "markdown": "[]\n\n[]: /uri\n",
     "html": "<p>[]</p>\n<p>[]: /uri</p>\n",
     "section": "Links"
@@ -2536,7 +2561,7 @@
   },
   {
     "markdown": "[foo] \n[]\n\n[foo]: /url \"title\"\n",
-    "html": "<p><a href=\"/url\" title=\"title\">foo</a></p>\n",
+    "html": "<p><a href=\"/url\" title=\"title\">foo</a>\n[]</p>\n",
     "section": "Links"
   },
   {
@@ -2650,12 +2675,12 @@
     "section": "Images"
   },
   {
-    "markdown": "![foo] [bar]\n\n[bar]: /url\n",
+    "markdown": "![foo][bar]\n\n[bar]: /url\n",
     "html": "<p><img src=\"/url\" alt=\"foo\" /></p>\n",
     "section": "Images"
   },
   {
-    "markdown": "![foo] [bar]\n\n[BAR]: /url\n",
+    "markdown": "![foo][bar]\n\n[BAR]: /url\n",
     "html": "<p><img src=\"/url\" alt=\"foo\" /></p>\n",
     "section": "Images"
   },
@@ -2676,7 +2701,7 @@
   },
   {
     "markdown": "![foo] \n[]\n\n[foo]: /url \"title\"\n",
-    "html": "<p><img src=\"/url\" alt=\"foo\" title=\"title\" /></p>\n",
+    "html": "<p><img src=\"/url\" alt=\"foo\" title=\"title\" />\n[]</p>\n",
     "section": "Images"
   },
   {
@@ -2810,8 +2835,8 @@
     "section": "Raw HTML"
   },
   {
-    "markdown": "<responsive-image src=\"foo.jpg\" />\n\n<My-Tag>\nfoo\n</My-Tag>\n",
-    "html": "<responsive-image src=\"foo.jpg\" />\n<My-Tag>\nfoo\n</My-Tag>\n",
+    "markdown": "Foo <responsive-image src=\"foo.jpg\" />\n",
+    "html": "<p>Foo <responsive-image src=\"foo.jpg\" /></p>\n",
     "section": "Raw HTML"
   },
   {
@@ -2840,8 +2865,8 @@
     "section": "Raw HTML"
   },
   {
-    "markdown": "</a>\n</foo >\n",
-    "html": "</a>\n</foo >\n",
+    "markdown": "</a></foo >\n",
+    "html": "<p></a></foo ></p>\n",
     "section": "Raw HTML"
   },
   {
@@ -2880,13 +2905,13 @@
     "section": "Raw HTML"
   },
   {
-    "markdown": "<a href=\"&ouml;\">\n",
-    "html": "<a href=\"&ouml;\">\n",
+    "markdown": "foo <a href=\"&ouml;\">\n",
+    "html": "<p>foo <a href=\"&ouml;\"></p>\n",
     "section": "Raw HTML"
   },
   {
-    "markdown": "<a href=\"\\*\">\n",
-    "html": "<a href=\"\\*\">\n",
+    "markdown": "foo <a href=\"\\*\">\n",
+    "html": "<p>foo <a href=\"\\*\"></p>\n",
     "section": "Raw HTML"
   },
   {
