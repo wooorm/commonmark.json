@@ -14,7 +14,11 @@
     "type": "git",
     "url": "https://github.com/wooorm/commonmark.json.git"
   },
+  "bugs": "https://github.com/wooorm/commonmark.json/issues",
   "author": "Titus Wormer <tituswormer@gmail.com>",
+  "contributors": [
+    "Titus Wormer <tituswormer@gmail.com>"
+  ],
   "scripts": {
     "prebuild": "curl \"https://raw.githubusercontent.com/jgm/CommonMark/${VERSION:=master}/spec.txt\" > spec.txt",
     "build": "cat spec.txt | ./build.js > index.json",
