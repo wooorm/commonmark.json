@@ -230,6 +230,11 @@
     "section": "Setext headings"
   },
   {
+    "markdown": "Foo *bar\nbaz*\n====\n",
+    "html": "<h1>Foo <em>bar\nbaz</em></h1>\n",
+    "section": "Setext headings"
+  },
+  {
     "markdown": "Foo\n-------------------------\n\nFoo\n=\n",
     "html": "<h2>Foo</h2>\n<h1>Foo</h1>\n",
     "section": "Setext headings"
@@ -280,13 +285,18 @@
     "section": "Setext headings"
   },
   {
+    "markdown": "> foo\nbar\n===\n",
+    "html": "<blockquote>\n<p>foo\nbar\n===</p>\n</blockquote>\n",
+    "section": "Setext headings"
+  },
+  {
     "markdown": "- Foo\n---\n",
     "html": "<ul>\n<li>Foo</li>\n</ul>\n<hr />\n",
     "section": "Setext headings"
   },
   {
-    "markdown": "Foo\nBar\n---\n\nFoo\nBar\n===\n",
-    "html": "<p>Foo\nBar</p>\n<hr />\n<p>Foo\nBar\n===</p>\n",
+    "markdown": "Foo\nBar\n---\n",
+    "html": "<h2>Foo\nBar</h2>\n",
     "section": "Setext headings"
   },
   {
@@ -322,6 +332,26 @@
   {
     "markdown": "\\> foo\n------\n",
     "html": "<h2>&gt; foo</h2>\n",
+    "section": "Setext headings"
+  },
+  {
+    "markdown": "Foo\n\nbar\n---\nbaz\n",
+    "html": "<p>Foo</p>\n<h2>bar</h2>\n<p>baz</p>\n",
+    "section": "Setext headings"
+  },
+  {
+    "markdown": "Foo\nbar\n\n---\n\nbaz\n",
+    "html": "<p>Foo\nbar</p>\n<hr />\n<p>baz</p>\n",
+    "section": "Setext headings"
+  },
+  {
+    "markdown": "Foo\nbar\n* * *\nbaz\n",
+    "html": "<p>Foo\nbar</p>\n<hr />\n<p>baz</p>\n",
+    "section": "Setext headings"
+  },
+  {
+    "markdown": "Foo\nbar\n\\---\nbaz\n",
+    "html": "<p>Foo\nbar\n---\nbaz</p>\n",
     "section": "Setext headings"
   },
   {
@@ -745,7 +775,7 @@
     "section": "Link reference definitions"
   },
   {
-    "markdown": "[Foo bar]:\n<my url>\n'title'\n\n[Foo bar]\n",
+    "markdown": "[Foo bar]:\n<my%20url>\n'title'\n\n[Foo bar]\n",
     "html": "<p><a href=\"my%20url\" title=\"title\">Foo bar</a></p>\n",
     "section": "Link reference definitions"
   },
@@ -1455,8 +1485,8 @@
     "section": "Entity and numeric character references"
   },
   {
-    "markdown": "&nbsp &x; &#; &#x;\n&ThisIsWayTooLongToBeAnEntityIsntIt; &hi?;\n",
-    "html": "<p>&amp;nbsp &amp;x; &amp;#; &amp;#x;\n&amp;ThisIsWayTooLongToBeAnEntityIsntIt; &amp;hi?;</p>\n",
+    "markdown": "&nbsp &x; &#; &#x;\n&ThisIsNotDefined; &hi?;\n",
+    "html": "<p>&amp;nbsp &amp;x; &amp;#; &amp;#x;\n&amp;ThisIsNotDefined; &amp;hi?;</p>\n",
     "section": "Entity and numeric character references"
   },
   {
@@ -1497,11 +1527,6 @@
   {
     "markdown": "    f&ouml;f&ouml;\n",
     "html": "<pre><code>f&amp;ouml;f&amp;ouml;\n</code></pre>\n",
-    "section": "Entity and numeric character references"
-  },
-  {
-    "markdown": "<a href=\"f&ouml;f&ouml;\"/>\n",
-    "html": "<a href=\"f&ouml;f&ouml;\"/>\n",
     "section": "Entity and numeric character references"
   },
   {
@@ -2251,7 +2276,7 @@
   },
   {
     "markdown": "[link](</my uri>)\n",
-    "html": "<p><a href=\"/my%20uri\">link</a></p>\n",
+    "html": "<p>[link](&lt;/my uri&gt;)</p>\n",
     "section": "Links"
   },
   {
@@ -2262,6 +2287,11 @@
   {
     "markdown": "[link](<foo\nbar>)\n",
     "html": "<p>[link](<foo\nbar>)</p>\n",
+    "section": "Links"
+  },
+  {
+    "markdown": "[link](\\(foo\\))\n",
+    "html": "<p><a href=\"(foo)\">link</a></p>\n",
     "section": "Links"
   },
   {
@@ -2755,6 +2785,26 @@
     "section": "Autolinks"
   },
   {
+    "markdown": "<a+b+c:d>\n",
+    "html": "<p><a href=\"a+b+c:d\">a+b+c:d</a></p>\n",
+    "section": "Autolinks"
+  },
+  {
+    "markdown": "<made-up-scheme://foo,bar>\n",
+    "html": "<p><a href=\"made-up-scheme://foo,bar\">made-up-scheme://foo,bar</a></p>\n",
+    "section": "Autolinks"
+  },
+  {
+    "markdown": "<http://../>\n",
+    "html": "<p><a href=\"http://../\">http://../</a></p>\n",
+    "section": "Autolinks"
+  },
+  {
+    "markdown": "<localhost:5001/foo>\n",
+    "html": "<p><a href=\"localhost:5001/foo\">localhost:5001/foo</a></p>\n",
+    "section": "Autolinks"
+  },
+  {
     "markdown": "<http://foo.bar/baz bim>\n",
     "html": "<p>&lt;http://foo.bar/baz bim&gt;</p>\n",
     "section": "Autolinks"
@@ -2785,23 +2835,18 @@
     "section": "Autolinks"
   },
   {
-    "markdown": "<heck://bing.bong>\n",
-    "html": "<p>&lt;heck://bing.bong&gt;</p>\n",
-    "section": "Autolinks"
-  },
-  {
     "markdown": "< http://foo.bar >\n",
     "html": "<p>&lt; http://foo.bar &gt;</p>\n",
     "section": "Autolinks"
   },
   {
-    "markdown": "<foo.bar.baz>\n",
-    "html": "<p>&lt;foo.bar.baz&gt;</p>\n",
+    "markdown": "<m:abc>\n",
+    "html": "<p>&lt;m:abc&gt;</p>\n",
     "section": "Autolinks"
   },
   {
-    "markdown": "<localhost:5001/foo>\n",
-    "html": "<p>&lt;localhost:5001/foo&gt;</p>\n",
+    "markdown": "<foo.bar.baz>\n",
+    "html": "<p>&lt;foo.bar.baz&gt;</p>\n",
     "section": "Autolinks"
   },
   {
