@@ -20,13 +20,28 @@
     "section": "Tabs"
   },
   {
-    "markdown": ">\tfoo\tbar\n",
-    "html": "<blockquote>\n<p>foo\tbar</p>\n</blockquote>\n",
+    "markdown": "- foo\n\n\t\tbar\n",
+    "html": "<ul>\n<li>\n<p>foo</p>\n<pre><code>  bar\n</code></pre>\n</li>\n</ul>\n",
+    "section": "Tabs"
+  },
+  {
+    "markdown": ">\t\tfoo\n",
+    "html": "<blockquote>\n<pre><code>  foo\n</code></pre>\n</blockquote>\n",
+    "section": "Tabs"
+  },
+  {
+    "markdown": "-\t\tfoo\n",
+    "html": "<ul>\n<li>\n<pre><code>  foo\n</code></pre>\n</li>\n</ul>\n",
     "section": "Tabs"
   },
   {
     "markdown": "    foo\n\tbar\n",
     "html": "<pre><code>foo\nbar\n</code></pre>\n",
+    "section": "Tabs"
+  },
+  {
+    "markdown": " - foo\n   - bar\n\t - baz\n",
+    "html": "<ul>\n<li>foo\n<ul>\n<li>bar\n<ul>\n<li>baz</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n",
     "section": "Tabs"
   },
   {
@@ -1177,6 +1192,11 @@
   {
     "markdown": "-\n  foo\n-\n  ```\n  bar\n  ```\n-\n      baz\n",
     "html": "<ul>\n<li>foo</li>\n<li>\n<pre><code>bar\n</code></pre>\n</li>\n<li>\n<pre><code>baz\n</code></pre>\n</li>\n</ul>\n",
+    "section": "List items"
+  },
+  {
+    "markdown": "-   \n  foo\n",
+    "html": "<ul>\n<li>foo</li>\n</ul>\n",
     "section": "List items"
   },
   {
