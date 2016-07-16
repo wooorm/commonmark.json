@@ -45,6 +45,16 @@
     "section": "Tabs"
   },
   {
+    "markdown": "#\tFoo\n",
+    "html": "<h1>Foo</h1>\n",
+    "section": "Tabs"
+  },
+  {
+    "markdown": "*\t*\t*\t\n",
+    "html": "<hr />\n",
+    "section": "Tabs"
+  },
+  {
     "markdown": "- `one\n- two`\n",
     "html": "<ul>\n<li>`one</li>\n<li>two`</li>\n</ul>\n",
     "section": "Precedence"
@@ -157,11 +167,6 @@
   {
     "markdown": "#5 bolt\n\n#hashtag\n",
     "html": "<p>#5 bolt</p>\n<p>#hashtag</p>\n",
-    "section": "ATX headings"
-  },
-  {
-    "markdown": "#\tfoo\n",
-    "html": "<p>#\tfoo</p>\n",
     "section": "ATX headings"
   },
   {
@@ -665,18 +670,18 @@
     "section": "HTML blocks"
   },
   {
-    "markdown": "<pre language=\"haskell\"><code>\nimport Text.HTML.TagSoup\n\nmain :: IO ()\nmain = print $ parseTags tags\n</code></pre>\n",
-    "html": "<pre language=\"haskell\"><code>\nimport Text.HTML.TagSoup\n\nmain :: IO ()\nmain = print $ parseTags tags\n</code></pre>\n",
+    "markdown": "<pre language=\"haskell\"><code>\nimport Text.HTML.TagSoup\n\nmain :: IO ()\nmain = print $ parseTags tags\n</code></pre>\nokay\n",
+    "html": "<pre language=\"haskell\"><code>\nimport Text.HTML.TagSoup\n\nmain :: IO ()\nmain = print $ parseTags tags\n</code></pre>\n<p>okay</p>\n",
     "section": "HTML blocks"
   },
   {
-    "markdown": "<script type=\"text/javascript\">\n// JavaScript example\n\ndocument.getElementById(\"demo\").innerHTML = \"Hello JavaScript!\";\n</script>\n",
-    "html": "<script type=\"text/javascript\">\n// JavaScript example\n\ndocument.getElementById(\"demo\").innerHTML = \"Hello JavaScript!\";\n</script>\n",
+    "markdown": "<script type=\"text/javascript\">\n// JavaScript example\n\ndocument.getElementById(\"demo\").innerHTML = \"Hello JavaScript!\";\n</script>\nokay\n",
+    "html": "<script type=\"text/javascript\">\n// JavaScript example\n\ndocument.getElementById(\"demo\").innerHTML = \"Hello JavaScript!\";\n</script>\n<p>okay</p>\n",
     "section": "HTML blocks"
   },
   {
-    "markdown": "<style\n  type=\"text/css\">\nh1 {color:red;}\n\np {color:blue;}\n</style>\n",
-    "html": "<style\n  type=\"text/css\">\nh1 {color:red;}\n\np {color:blue;}\n</style>\n",
+    "markdown": "<style\n  type=\"text/css\">\nh1 {color:red;}\n\np {color:blue;}\n</style>\nokay\n",
+    "html": "<style\n  type=\"text/css\">\nh1 {color:red;}\n\np {color:blue;}\n</style>\n<p>okay</p>\n",
     "section": "HTML blocks"
   },
   {
@@ -710,13 +715,13 @@
     "section": "HTML blocks"
   },
   {
-    "markdown": "<!-- Foo\n\nbar\n   baz -->\n",
-    "html": "<!-- Foo\n\nbar\n   baz -->\n",
+    "markdown": "<!-- Foo\n\nbar\n   baz -->\nokay\n",
+    "html": "<!-- Foo\n\nbar\n   baz -->\n<p>okay</p>\n",
     "section": "HTML blocks"
   },
   {
-    "markdown": "<?php\n\n  echo '>';\n\n?>\n",
-    "html": "<?php\n\n  echo '>';\n\n?>\n",
+    "markdown": "<?php\n\n  echo '>';\n\n?>\nokay\n",
+    "html": "<?php\n\n  echo '>';\n\n?>\n<p>okay</p>\n",
     "section": "HTML blocks"
   },
   {
@@ -725,8 +730,8 @@
     "section": "HTML blocks"
   },
   {
-    "markdown": "<![CDATA[\nfunction matchwo(a,b)\n{\n  if (a < b && a < 0) then {\n    return 1;\n\n  } else {\n\n    return 0;\n  }\n}\n]]>\n",
-    "html": "<![CDATA[\nfunction matchwo(a,b)\n{\n  if (a < b && a < 0) then {\n    return 1;\n\n  } else {\n\n    return 0;\n  }\n}\n]]>\n",
+    "markdown": "<![CDATA[\nfunction matchwo(a,b)\n{\n  if (a < b && a < 0) then {\n    return 1;\n\n  } else {\n\n    return 0;\n  }\n}\n]]>\nokay\n",
+    "html": "<![CDATA[\nfunction matchwo(a,b)\n{\n  if (a < b && a < 0) then {\n    return 1;\n\n  } else {\n\n    return 0;\n  }\n}\n]]>\n<p>okay</p>\n",
     "section": "HTML blocks"
   },
   {
@@ -1105,8 +1110,8 @@
     "section": "List items"
   },
   {
-    "markdown": "- foo\n\n  bar\n\n- foo\n\n\n  bar\n\n- ```\n  foo\n\n\n  bar\n  ```\n\n- baz\n\n  + ```\n    foo\n\n\n    bar\n    ```\n",
-    "html": "<ul>\n<li>\n<p>foo</p>\n<p>bar</p>\n</li>\n<li>\n<p>foo</p>\n</li>\n</ul>\n<p>bar</p>\n<ul>\n<li>\n<pre><code>foo\n\n\nbar\n</code></pre>\n</li>\n<li>\n<p>baz</p>\n<ul>\n<li>\n<pre><code>foo\n\n\nbar\n</code></pre>\n</li>\n</ul>\n</li>\n</ul>\n",
+    "markdown": "- foo\n\n\n  bar\n",
+    "html": "<ul>\n<li>\n<p>foo</p>\n<p>bar</p>\n</li>\n</ul>\n",
     "section": "List items"
   },
   {
@@ -1115,13 +1120,8 @@
     "section": "List items"
   },
   {
-    "markdown": "- Foo\n\n      bar\n\n      baz\n",
-    "html": "<ul>\n<li>\n<p>Foo</p>\n<pre><code>bar\n\nbaz\n</code></pre>\n</li>\n</ul>\n",
-    "section": "List items"
-  },
-  {
     "markdown": "- Foo\n\n      bar\n\n\n      baz\n",
-    "html": "<ul>\n<li>\n<p>Foo</p>\n<pre><code>bar\n</code></pre>\n</li>\n</ul>\n<pre><code>  baz\n</code></pre>\n",
+    "html": "<ul>\n<li>\n<p>Foo</p>\n<pre><code>bar\n\n\nbaz\n</code></pre>\n</li>\n</ul>\n",
     "section": "List items"
   },
   {
@@ -1225,6 +1225,11 @@
     "section": "List items"
   },
   {
+    "markdown": "foo\n*\n\nfoo\n1.\n",
+    "html": "<p>foo\n*</p>\n<p>foo\n1.</p>\n",
+    "section": "List items"
+  },
+  {
     "markdown": " 1.  A paragraph\n     with two lines.\n\n         indented code\n\n     > A block quote.\n",
     "html": "<ol>\n<li>\n<p>A paragraph\nwith two lines.</p>\n<pre><code>indented code\n</code></pre>\n<blockquote>\n<p>A block quote.</p>\n</blockquote>\n</li>\n</ol>\n",
     "section": "List items"
@@ -1265,13 +1270,13 @@
     "section": "List items"
   },
   {
-    "markdown": "- foo\n  - bar\n    - baz\n",
-    "html": "<ul>\n<li>foo\n<ul>\n<li>bar\n<ul>\n<li>baz</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n",
+    "markdown": "- foo\n  - bar\n    - baz\n      - boo\n",
+    "html": "<ul>\n<li>foo\n<ul>\n<li>bar\n<ul>\n<li>baz\n<ul>\n<li>boo</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n",
     "section": "List items"
   },
   {
-    "markdown": "- foo\n - bar\n  - baz\n",
-    "html": "<ul>\n<li>foo</li>\n<li>bar</li>\n<li>baz</li>\n</ul>\n",
+    "markdown": "- foo\n - bar\n  - baz\n   - boo\n",
+    "html": "<ul>\n<li>foo</li>\n<li>bar</li>\n<li>baz</li>\n<li>boo</li>\n</ul>\n",
     "section": "List items"
   },
   {
@@ -1316,32 +1321,32 @@
   },
   {
     "markdown": "The number of windows in my house is\n14.  The number of doors is 6.\n",
-    "html": "<p>The number of windows in my house is</p>\n<ol start=\"14\">\n<li>The number of doors is 6.</li>\n</ol>\n",
+    "html": "<p>The number of windows in my house is\n14.  The number of doors is 6.</p>\n",
+    "section": "Lists"
+  },
+  {
+    "markdown": "The number of windows in my house is\n1.  The number of doors is 6.\n",
+    "html": "<p>The number of windows in my house is</p>\n<ol>\n<li>The number of doors is 6.</li>\n</ol>\n",
     "section": "Lists"
   },
   {
     "markdown": "- foo\n\n- bar\n\n\n- baz\n",
-    "html": "<ul>\n<li>\n<p>foo</p>\n</li>\n<li>\n<p>bar</p>\n</li>\n</ul>\n<ul>\n<li>baz</li>\n</ul>\n",
-    "section": "Lists"
-  },
-  {
-    "markdown": "- foo\n\n\n  bar\n- baz\n",
-    "html": "<ul>\n<li>foo</li>\n</ul>\n<p>bar</p>\n<ul>\n<li>baz</li>\n</ul>\n",
+    "html": "<ul>\n<li>\n<p>foo</p>\n</li>\n<li>\n<p>bar</p>\n</li>\n<li>\n<p>baz</p>\n</li>\n</ul>\n",
     "section": "Lists"
   },
   {
     "markdown": "- foo\n  - bar\n    - baz\n\n\n      bim\n",
-    "html": "<ul>\n<li>foo\n<ul>\n<li>bar\n<ul>\n<li>baz</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n<pre><code>  bim\n</code></pre>\n",
+    "html": "<ul>\n<li>foo\n<ul>\n<li>bar\n<ul>\n<li>\n<p>baz</p>\n<p>bim</p>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n",
     "section": "Lists"
   },
   {
-    "markdown": "- foo\n- bar\n\n\n- baz\n- bim\n",
-    "html": "<ul>\n<li>foo</li>\n<li>bar</li>\n</ul>\n<ul>\n<li>baz</li>\n<li>bim</li>\n</ul>\n",
+    "markdown": "- foo\n- bar\n\n<!-- -->\n\n- baz\n- bim\n",
+    "html": "<ul>\n<li>foo</li>\n<li>bar</li>\n</ul>\n<!-- -->\n<ul>\n<li>baz</li>\n<li>bim</li>\n</ul>\n",
     "section": "Lists"
   },
   {
-    "markdown": "-   foo\n\n    notcode\n\n-   foo\n\n\n    code\n",
-    "html": "<ul>\n<li>\n<p>foo</p>\n<p>notcode</p>\n</li>\n<li>\n<p>foo</p>\n</li>\n</ul>\n<pre><code>code\n</code></pre>\n",
+    "markdown": "-   foo\n\n    notcode\n\n-   foo\n\n<!-- -->\n\n    code\n",
+    "html": "<ul>\n<li>\n<p>foo</p>\n<p>notcode</p>\n</li>\n<li>\n<p>foo</p>\n</li>\n</ul>\n<!-- -->\n<pre><code>code\n</code></pre>\n",
     "section": "Lists"
   },
   {
@@ -1706,7 +1711,7 @@
   },
   {
     "markdown": "*foo bar\n*\n",
-    "html": "<p>*foo bar</p>\n<ul>\n<li></li>\n</ul>\n",
+    "html": "<p>*foo bar\n*</p>\n",
     "section": "Emphasis and strong emphasis"
   },
   {
@@ -1926,7 +1931,7 @@
   },
   {
     "markdown": "*foo**bar**baz*\n",
-    "html": "<p><em>foo</em><em>bar</em><em>baz</em></p>\n",
+    "html": "<p><em>foo<strong>bar</strong>baz</em></p>\n",
     "section": "Emphasis and strong emphasis"
   },
   {
@@ -1941,7 +1946,12 @@
   },
   {
     "markdown": "*foo**bar***\n",
-    "html": "<p><em>foo</em><em>bar</em>**</p>\n",
+    "html": "<p><em>foo<strong>bar</strong></em></p>\n",
+    "section": "Emphasis and strong emphasis"
+  },
+  {
+    "markdown": "*foo**bar***\n",
+    "html": "<p><em>foo<strong>bar</strong></em></p>\n",
     "section": "Emphasis and strong emphasis"
   },
   {
@@ -2001,7 +2011,7 @@
   },
   {
     "markdown": "**foo*bar*baz**\n",
-    "html": "<p><em><em>foo</em>bar</em>baz**</p>\n",
+    "html": "<p><strong>foo<em>bar</em>baz</strong></p>\n",
     "section": "Emphasis and strong emphasis"
   },
   {
@@ -2202,11 +2212,6 @@
   {
     "markdown": "*foo _bar* baz_\n",
     "html": "<p><em>foo _bar</em> baz_</p>\n",
-    "section": "Emphasis and strong emphasis"
-  },
-  {
-    "markdown": "**foo*bar**\n",
-    "html": "<p><em><em>foo</em>bar</em>*</p>\n",
     "section": "Emphasis and strong emphasis"
   },
   {

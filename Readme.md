@@ -7,7 +7,7 @@ CommonMark’s spec in JSON.
 [npm](https://docs.npmjs.com/cli/install):
 
 ```bash
-$ npm install commonmark.json
+npm install commonmark.json
 ```
 
 ## Usage
@@ -29,7 +29,8 @@ var spec = require('commonmark.json');
 
 ## Building
 
-On a Mac, run `npm run build` to transform the spec at CommonMark’s master branch to JSON.
+On a Mac, run `npm run build` to transform the spec at CommonMark’s
+master branch to JSON.
 
 Run it with a `$VERSION` to get JSON for a specific version, such as:
 
