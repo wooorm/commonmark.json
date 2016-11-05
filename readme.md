@@ -29,13 +29,13 @@ var spec = require('commonmark.json');
 
 ## Building
 
-On a Mac, run `npm run build` to transform the spec at CommonMark’s
+On a Mac, run `node build` to transform the spec at CommonMark’s
 master branch to JSON.
 
 Run it with a `$VERSION` to get JSON for a specific version, such as:
 
 ```bash
-VERSION="0.17" npm run build
+VERSION="0.17" node build
 ```
 
 ## License
