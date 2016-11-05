@@ -19,9 +19,16 @@
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com>"
   ],
+  "devDependencies": {
+    "bail": "^1.0.1",
+    "concat-stream": "^1.5.2",
+    "xo": "^0.17.0"
+  },
   "scripts": {
-    "prebuild": "curl \"https://raw.githubusercontent.com/jgm/CommonMark/${VERSION:=master}/spec.txt\" > spec.txt",
-    "build": "cat spec.txt | ./build.js > index.json",
-    "prepublish": "npm run build"
+    "build": "node build",
+    "test": "xo"
+  },
+  "xo": {
+    "space": true
   }
 }

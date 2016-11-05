@@ -1,3 +1,3 @@
 .DS_Store
 *.log
-spec.txt
+node_modules/
