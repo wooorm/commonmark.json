@@ -1580,6 +1580,11 @@
     "section": "Code spans"
   },
   {
+    "markdown": "`a  b`\n",
+    "html": "<p><code>a  b</code></p>\n",
+    "section": "Code spans"
+  },
+  {
     "markdown": "`foo `` bar`\n",
     "html": "<p><code>foo `` bar</code></p>\n",
     "section": "Code spans"
@@ -1942,11 +1947,6 @@
   {
     "markdown": "*foo **bar***\n",
     "html": "<p><em>foo <strong>bar</strong></em></p>\n",
-    "section": "Emphasis and strong emphasis"
-  },
-  {
-    "markdown": "*foo**bar***\n",
-    "html": "<p><em>foo<strong>bar</strong></em></p>\n",
     "section": "Emphasis and strong emphasis"
   },
   {
@@ -2375,6 +2375,11 @@
     "section": "Links"
   },
   {
+    "markdown": "[link](/url \"title\")\n",
+    "html": "<p><a href=\"/url%C2%A0%22title%22\">link</a></p>\n",
+    "section": "Links"
+  },
+  {
     "markdown": "[link](/url \"title \"and\" title\")\n",
     "html": "<p>[link](/url &quot;title &quot;and&quot; title&quot;)</p>\n",
     "section": "Links"
@@ -2662,6 +2667,21 @@
   {
     "markdown": "[foo][bar]\n\n[foo]: /url1\n[bar]: /url2\n",
     "html": "<p><a href=\"/url2\">foo</a></p>\n",
+    "section": "Links"
+  },
+  {
+    "markdown": "[foo][]\n\n[foo]: /url1\n",
+    "html": "<p><a href=\"/url1\">foo</a></p>\n",
+    "section": "Links"
+  },
+  {
+    "markdown": "[foo]()\n\n[foo]: /url1\n",
+    "html": "<p><a href=\"\">foo</a></p>\n",
+    "section": "Links"
+  },
+  {
+    "markdown": "[foo](not a link)\n\n[foo]: /url1\n",
+    "html": "<p><a href=\"/url1\">foo</a>(not a link)</p>\n",
     "section": "Links"
   },
   {
