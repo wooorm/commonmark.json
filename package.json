@@ -24,7 +24,7 @@
     "concat-stream": "^1.5.2",
     "remark-cli": "^2.1.0",
     "remark-preset-wooorm": "^1.0.0",
-    "xo": "^0.17.0"
+    "xo": "^0.17.1"
   },
   "scripts": {
     "build-md": "remark . -qfo",
