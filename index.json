@@ -2320,23 +2320,18 @@
     "section": "Links"
   },
   {
-    "markdown": "[link]((foo)and(bar))\n",
-    "html": "<p><a href=\"(foo)and(bar)\">link</a></p>\n",
-    "section": "Links"
-  },
-  {
     "markdown": "[link](foo(and(bar)))\n",
-    "html": "<p>[link](foo(and(bar)))</p>\n",
-    "section": "Links"
-  },
-  {
-    "markdown": "[link](foo(and\\(bar\\)))\n",
     "html": "<p><a href=\"foo(and(bar))\">link</a></p>\n",
     "section": "Links"
   },
   {
-    "markdown": "[link](<foo(and(bar))>)\n",
-    "html": "<p><a href=\"foo(and(bar))\">link</a></p>\n",
+    "markdown": "[link](foo\\(and\\(bar\\))\n",
+    "html": "<p><a href=\"foo(and(bar)\">link</a></p>\n",
+    "section": "Links"
+  },
+  {
+    "markdown": "[link](<foo(and(bar)>)\n",
+    "html": "<p><a href=\"foo(and(bar)\">link</a></p>\n",
     "section": "Links"
   },
   {
