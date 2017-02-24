@@ -22,8 +22,8 @@
   "devDependencies": {
     "bail": "^1.0.1",
     "concat-stream": "^1.5.2",
-    "remark-cli": "^2.1.0",
-    "remark-preset-wooorm": "^1.0.0",
+    "remark-cli": "^3.0.0",
+    "remark-preset-wooorm": "^2.0.0",
     "xo": "^0.17.0"
   },
   "scripts": {
@@ -36,6 +36,6 @@
     "space": true
   },
   "remarkConfig": {
-    "presets": "wooorm"
+    "plugins": ["preset-wooorm"]
   }
 }
