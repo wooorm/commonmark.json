@@ -10,10 +10,7 @@
     "test",
     "json"
   ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/wooorm/commonmark.json.git"
-  },
+  "repository": "wooorm/commonmark.json",
   "bugs": "https://github.com/wooorm/commonmark.json/issues",
   "author": "Titus Wormer <tituswormer@gmail.com>",
   "contributors": [
@@ -22,8 +19,8 @@
   "devDependencies": {
     "bail": "^1.0.1",
     "concat-stream": "^1.5.2",
-    "remark-cli": "^3.0.0",
-    "remark-preset-wooorm": "^2.0.0",
+    "remark-cli": "^4.0.0",
+    "remark-preset-wooorm": "^3.0.0",
     "xo": "^0.18.0"
   },
   "scripts": {
@@ -37,6 +34,8 @@
     "esnext": false
   },
   "remarkConfig": {
-    "plugins": ["preset-wooorm"]
+    "plugins": [
+      "preset-wooorm"
+    ]
   }
 }
