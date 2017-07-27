@@ -14,17 +14,29 @@ npm install commonmark.json
 
 ```javascript
 var spec = require('commonmark.json');
-/*
- * [
- *   {
- *     "markdown": "\tfoo\tbaz\t\tbim\n",
- *     "html": "<pre><code>foo baz     bim\n</code></pre>\n",
- *     "section": "Tab expansion",
- *     "number": 1
- *   }
- *   ...
- * ]
- */
+
+console.log(spec);
+```
+
+Yields:
+
+```js
+[ { markdown: '\tfoo\tbaz\t\tbim\n',
+    html: '<pre><code>foo\tbaz\t\tbim\n</code></pre>\n',
+    section: 'Tabs' },
+  { markdown: '  \tfoo\tbaz\t\tbim\n',
+    html: '<pre><code>foo\tbaz\t\tbim\n</code></pre>\n',
+    section: 'Tabs' },
+  { markdown: '    a\ta\n    ὐ\ta\n',
+    html: '<pre><code>a\ta\nὐ\ta\n</code></pre>\n',
+    section: 'Tabs' },
+  { markdown: '  - foo\n\n\tbar\n',
+    html: '<ul>\n<li>\n<p>foo</p>\n<p>bar</p>\n</li>\n</ul>\n',
+    section: 'Tabs' },
+  { markdown: '- foo\n\n\t\tbar\n',
+    html: '<ul>\n<li>\n<p>foo</p>\n<pre><code>  bar\n</code></pre>\n</li>\n</ul>\n',
+    section: 'Tabs' },
+  ... 616 more items ]
 ```
 
 ## Building
