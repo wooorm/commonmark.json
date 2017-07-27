@@ -47,7 +47,7 @@ master branch to JSON.
 Run it with a `$VERSION` to get JSON for a specific version, such as:
 
 ```bash
-VERSION="0.17" node build
+VERSION="0.27" node build
 ```
 
 ## License
