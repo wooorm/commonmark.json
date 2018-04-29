@@ -56,5 +56,5 @@ https.get('https://raw.githubusercontent.com/jgm/CommonMark/' + version + '/spec
 
     fs.writeFile('index.json', examples + '\n', bail);
   }))
-  .on('error', bail);
+    .on('error', bail);
 });
