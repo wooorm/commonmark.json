@@ -19,18 +19,26 @@
   "devDependencies": {
     "bail": "^1.0.1",
     "concat-stream": "^1.5.2",
+    "prettier": "^1.12.1",
     "remark-cli": "^5.0.0",
     "remark-preset-wooorm": "^4.0.0",
     "xo": "^0.20.0"
   },
   "scripts": {
-    "build-md": "remark . -qfo",
-    "build-generate": "node build",
-    "build": "npm run build-md && npm run build-generate",
-    "test": "xo"
+    "generate": "node build",
+    "format": "remark . -qfo && prettier --write '**/*.js' && xo --fix",
+    "test": "npm run generate && npm run format"
+  },
+  "prettier": {
+    "tabWidth": 2,
+    "useTabs": false,
+    "singleQuote": true,
+    "bracketSpacing": false,
+    "semi": false,
+    "trailingComma": "none"
   },
   "xo": {
-    "space": true,
+    "prettier": true,
     "esnext": false,
     "rules": {
       "no-var": "off",

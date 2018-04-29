@@ -13,9 +13,9 @@ npm install commonmark.json
 ## Usage
 
 ```javascript
-var spec = require('commonmark.json');
+var spec = require('commonmark.json')
 
-console.log(spec);
+console.log(spec)
 ```
 
 Yields:
@@ -36,7 +36,7 @@ Yields:
   { markdown: '- foo\n\n\t\tbar\n',
     html: '<ul>\n<li>\n<p>foo</p>\n<pre><code>  bar\n</code></pre>\n</li>\n</ul>\n',
     section: 'Tabs' },
-  ... 616 more items ]
+  ... 622 more items ]
 ```
 
 ## Building
