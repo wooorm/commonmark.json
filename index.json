@@ -255,6 +255,11 @@
     "section": "Setext headings"
   },
   {
+    "markdown": "  Foo *bar\nbaz*\t\n====\n",
+    "html": "<h1>Foo <em>bar\nbaz</em></h1>\n",
+    "section": "Setext headings"
+  },
+  {
     "markdown": "Foo\n-------------------------\n\nFoo\n=\n",
     "html": "<h2>Foo</h2>\n<h1>Foo</h1>\n",
     "section": "Setext headings"
@@ -445,6 +450,11 @@
     "section": "Fenced code blocks"
   },
   {
+    "markdown": "``\nfoo\n``\n",
+    "html": "<p><code>foo</code></p>\n",
+    "section": "Fenced code blocks"
+  },
+  {
     "markdown": "```\naaa\n~~~\n```\n",
     "html": "<pre><code>aaa\n~~~\n</code></pre>\n",
     "section": "Fenced code blocks"
@@ -526,7 +536,7 @@
   },
   {
     "markdown": "``` ```\naaa\n",
-    "html": "<p><code></code>\naaa</p>\n",
+    "html": "<p><code> </code>\naaa</p>\n",
     "section": "Fenced code blocks"
   },
   {
@@ -565,9 +575,19 @@
     "section": "Fenced code blocks"
   },
   {
+    "markdown": "~~~ aa ``` ~~~\nfoo\n~~~\n",
+    "html": "<pre><code class=\"language-aa\">foo\n</code></pre>\n",
+    "section": "Fenced code blocks"
+  },
+  {
     "markdown": "```\n``` aaa\n```\n",
     "html": "<pre><code>``` aaa\n</code></pre>\n",
     "section": "Fenced code blocks"
+  },
+  {
+    "markdown": "<table><tr><td>\n<pre>\n**Hello**,\n\n_world_.\n</pre>\n</td></tr></table>\n",
+    "html": "<table><tr><td>\n<pre>\n**Hello**,\n<p><em>world</em>.\n</pre></p>\n</td></tr></table>\n",
+    "section": "HTML blocks"
   },
   {
     "markdown": "<table>\n  <tr>\n    <td>\n           hi\n    </td>\n  </tr>\n</table>\n\nokay.\n",
@@ -795,7 +815,7 @@
     "section": "Link reference definitions"
   },
   {
-    "markdown": "[Foo bar]:\n<my%20url>\n'title'\n\n[Foo bar]\n",
+    "markdown": "[Foo bar]:\n<my url>\n'title'\n\n[Foo bar]\n",
     "html": "<p><a href=\"my%20url\" title=\"title\">Foo bar</a></p>\n",
     "section": "Link reference definitions"
   },
@@ -817,6 +837,16 @@
   {
     "markdown": "[foo]:\n\n[foo]\n",
     "html": "<p>[foo]:</p>\n<p>[foo]</p>\n",
+    "section": "Link reference definitions"
+  },
+  {
+    "markdown": "[foo]: <>\n\n[foo]\n",
+    "html": "<p><a href=\"\">foo</a></p>\n",
+    "section": "Link reference definitions"
+  },
+  {
+    "markdown": "[foo]: <bar>(baz)\n\n[foo]\n",
+    "html": "<p>[foo]: <bar>(baz)</p>\n<p>[foo]</p>\n",
     "section": "Link reference definitions"
   },
   {
@@ -885,6 +915,16 @@
     "section": "Link reference definitions"
   },
   {
+    "markdown": "[foo]: /url\nbar\n===\n[foo]\n",
+    "html": "<h1>bar</h1>\n<p><a href=\"/url\">foo</a></p>\n",
+    "section": "Link reference definitions"
+  },
+  {
+    "markdown": "[foo]: /url\n===\n[foo]\n",
+    "html": "<p>===\n<a href=\"/url\">foo</a></p>\n",
+    "section": "Link reference definitions"
+  },
+  {
     "markdown": "[foo]: /foo-url \"foo\"\n[bar]: /bar-url\n  \"bar\"\n[baz]: /baz-url\n\n[foo],\n[bar],\n[baz]\n",
     "html": "<p><a href=\"/foo-url\" title=\"foo\">foo</a>,\n<a href=\"/bar-url\" title=\"bar\">bar</a>,\n<a href=\"/baz-url\">baz</a></p>\n",
     "section": "Link reference definitions"
@@ -892,6 +932,11 @@
   {
     "markdown": "[foo]\n\n> [foo]: /url\n",
     "html": "<p><a href=\"/url\">foo</a></p>\n<blockquote>\n</blockquote>\n",
+    "section": "Link reference definitions"
+  },
+  {
+    "markdown": "[foo]: /url\n",
+    "html": "",
     "section": "Link reference definitions"
   },
   {
@@ -1350,13 +1395,23 @@
     "section": "Lists"
   },
   {
-    "markdown": "- a\n - b\n  - c\n   - d\n    - e\n   - f\n  - g\n - h\n- i\n",
-    "html": "<ul>\n<li>a</li>\n<li>b</li>\n<li>c</li>\n<li>d</li>\n<li>e</li>\n<li>f</li>\n<li>g</li>\n<li>h</li>\n<li>i</li>\n</ul>\n",
+    "markdown": "- a\n - b\n  - c\n   - d\n  - e\n - f\n- g\n",
+    "html": "<ul>\n<li>a</li>\n<li>b</li>\n<li>c</li>\n<li>d</li>\n<li>e</li>\n<li>f</li>\n<li>g</li>\n</ul>\n",
+    "section": "Lists"
+  },
+  {
+    "markdown": "1. a\n\n  2. b\n\n   3. c\n",
+    "html": "<ol>\n<li>\n<p>a</p>\n</li>\n<li>\n<p>b</p>\n</li>\n<li>\n<p>c</p>\n</li>\n</ol>\n",
+    "section": "Lists"
+  },
+  {
+    "markdown": "- a\n - b\n  - c\n   - d\n    - e\n",
+    "html": "<ul>\n<li>a</li>\n<li>b</li>\n<li>c</li>\n<li>d\n- e</li>\n</ul>\n",
     "section": "Lists"
   },
   {
     "markdown": "1. a\n\n  2. b\n\n    3. c\n",
-    "html": "<ol>\n<li>\n<p>a</p>\n</li>\n<li>\n<p>b</p>\n</li>\n<li>\n<p>c</p>\n</li>\n</ol>\n",
+    "html": "<ol>\n<li>\n<p>a</p>\n</li>\n<li>\n<p>b</p>\n</li>\n</ol>\n<pre><code>3. c\n</code></pre>\n",
     "section": "Lists"
   },
   {
@@ -1440,8 +1495,8 @@
     "section": "Backslash escapes"
   },
   {
-    "markdown": "\\*not emphasized*\n\\<br/> not a tag\n\\[not a link](/foo)\n\\`not code`\n1\\. not a list\n\\* not a list\n\\# not a heading\n\\[foo]: /url \"not a reference\"\n",
-    "html": "<p>*not emphasized*\n&lt;br/&gt; not a tag\n[not a link](/foo)\n`not code`\n1. not a list\n* not a list\n# not a heading\n[foo]: /url &quot;not a reference&quot;</p>\n",
+    "markdown": "\\*not emphasized*\n\\<br/> not a tag\n\\[not a link](/foo)\n\\`not code`\n1\\. not a list\n\\* not a list\n\\# not a heading\n\\[foo]: /url \"not a reference\"\n\\&ouml; not a character entity\n",
+    "html": "<p>*not emphasized*\n&lt;br/&gt; not a tag\n[not a link](/foo)\n`not code`\n1. not a list\n* not a list\n# not a heading\n[foo]: /url &quot;not a reference&quot;\n&amp;ouml; not a character entity</p>\n",
     "section": "Backslash escapes"
   },
   {
@@ -1500,8 +1555,8 @@
     "section": "Entity and numeric character references"
   },
   {
-    "markdown": "&#35; &#1234; &#992; &#98765432; &#0;\n",
-    "html": "<p># Ӓ Ϡ � �</p>\n",
+    "markdown": "&#35; &#1234; &#992; &#0;\n",
+    "html": "<p># Ӓ Ϡ �</p>\n",
     "section": "Entity and numeric character references"
   },
   {
@@ -1510,8 +1565,8 @@
     "section": "Entity and numeric character references"
   },
   {
-    "markdown": "&nbsp &x; &#; &#x;\n&ThisIsNotDefined; &hi?;\n",
-    "html": "<p>&amp;nbsp &amp;x; &amp;#; &amp;#x;\n&amp;ThisIsNotDefined; &amp;hi?;</p>\n",
+    "markdown": "&nbsp &x; &#; &#x;\n&#987654321;\n&#abcdef0;\n&ThisIsNotDefined; &hi?;\n",
+    "html": "<p>&amp;nbsp &amp;x; &amp;#; &amp;#x;\n&amp;#987654321;\n&amp;#abcdef0;\n&amp;ThisIsNotDefined; &amp;hi?;</p>\n",
     "section": "Entity and numeric character references"
   },
   {
@@ -1555,12 +1610,37 @@
     "section": "Entity and numeric character references"
   },
   {
+    "markdown": "&#42;foo&#42;\n*foo*\n",
+    "html": "<p>*foo*\n<em>foo</em></p>\n",
+    "section": "Entity and numeric character references"
+  },
+  {
+    "markdown": "&#42; foo\n\n* foo\n",
+    "html": "<p>* foo</p>\n<ul>\n<li>foo</li>\n</ul>\n",
+    "section": "Entity and numeric character references"
+  },
+  {
+    "markdown": "foo&#10;&#10;bar\n",
+    "html": "<p>foo\n\nbar</p>\n",
+    "section": "Entity and numeric character references"
+  },
+  {
+    "markdown": "&#9;foo\n",
+    "html": "<p>\tfoo</p>\n",
+    "section": "Entity and numeric character references"
+  },
+  {
+    "markdown": "[a](url &quot;tit&quot;)\n",
+    "html": "<p>[a](url &quot;tit&quot;)</p>\n",
+    "section": "Entity and numeric character references"
+  },
+  {
     "markdown": "`foo`\n",
     "html": "<p><code>foo</code></p>\n",
     "section": "Code spans"
   },
   {
-    "markdown": "`` foo ` bar  ``\n",
+    "markdown": "`` foo ` bar ``\n",
     "html": "<p><code>foo ` bar</code></p>\n",
     "section": "Code spans"
   },
@@ -1570,28 +1650,53 @@
     "section": "Code spans"
   },
   {
-    "markdown": "``\nfoo\n``\n",
-    "html": "<p><code>foo</code></p>\n",
+    "markdown": "`  ``  `\n",
+    "html": "<p><code> `` </code></p>\n",
     "section": "Code spans"
   },
   {
-    "markdown": "`foo   bar\n  baz`\n",
-    "html": "<p><code>foo bar baz</code></p>\n",
+    "markdown": "` a`\n",
+    "html": "<p><code> a</code></p>\n",
     "section": "Code spans"
   },
   {
-    "markdown": "`a  b`\n",
-    "html": "<p><code>a  b</code></p>\n",
+    "markdown": "` b `\n",
+    "html": "<p><code> b </code></p>\n",
     "section": "Code spans"
   },
   {
-    "markdown": "`foo `` bar`\n",
-    "html": "<p><code>foo `` bar</code></p>\n",
+    "markdown": "` `\n`  `\n",
+    "html": "<p><code> </code>\n<code>  </code></p>\n",
+    "section": "Code spans"
+  },
+  {
+    "markdown": "``\nfoo\nbar  \nbaz\n``\n",
+    "html": "<p><code>foo bar   baz</code></p>\n",
+    "section": "Code spans"
+  },
+  {
+    "markdown": "``\nfoo \n``\n",
+    "html": "<p><code>foo </code></p>\n",
+    "section": "Code spans"
+  },
+  {
+    "markdown": "`foo   bar \nbaz`\n",
+    "html": "<p><code>foo   bar  baz</code></p>\n",
     "section": "Code spans"
   },
   {
     "markdown": "`foo\\`bar`\n",
     "html": "<p><code>foo\\</code>bar`</p>\n",
+    "section": "Code spans"
+  },
+  {
+    "markdown": "``foo`bar``\n",
+    "html": "<p><code>foo`bar</code></p>\n",
+    "section": "Code spans"
+  },
+  {
+    "markdown": "` foo `` bar `\n",
+    "html": "<p><code>foo `` bar</code></p>\n",
     "section": "Code spans"
   },
   {
@@ -1945,6 +2050,11 @@
     "section": "Emphasis and strong emphasis"
   },
   {
+    "markdown": "*foo**bar*\n",
+    "html": "<p><em>foo**bar</em></p>\n",
+    "section": "Emphasis and strong emphasis"
+  },
+  {
     "markdown": "***foo** bar*\n",
     "html": "<p><em><strong>foo</strong> bar</em></p>\n",
     "section": "Emphasis and strong emphasis"
@@ -1957,6 +2067,16 @@
   {
     "markdown": "*foo**bar***\n",
     "html": "<p><em>foo<strong>bar</strong></em></p>\n",
+    "section": "Emphasis and strong emphasis"
+  },
+  {
+    "markdown": "foo***bar***baz\n",
+    "html": "<p>foo<em><strong>bar</strong></em>baz</p>\n",
+    "section": "Emphasis and strong emphasis"
+  },
+  {
+    "markdown": "foo******bar*********baz\n",
+    "html": "<p>foo<strong><strong><strong>bar</strong></strong></strong>***baz</p>\n",
     "section": "Emphasis and strong emphasis"
   },
   {
@@ -2306,7 +2426,7 @@
   },
   {
     "markdown": "[link](</my uri>)\n",
-    "html": "<p>[link](&lt;/my uri&gt;)</p>\n",
+    "html": "<p><a href=\"/my%20uri\">link</a></p>\n",
     "section": "Links"
   },
   {
@@ -2317,6 +2437,21 @@
   {
     "markdown": "[link](<foo\nbar>)\n",
     "html": "<p>[link](<foo\nbar>)</p>\n",
+    "section": "Links"
+  },
+  {
+    "markdown": "[a](<b)c>)\n",
+    "html": "<p><a href=\"b)c\">a</a></p>\n",
+    "section": "Links"
+  },
+  {
+    "markdown": "[link](<foo\\>)\n",
+    "html": "<p>[link](&lt;foo&gt;)</p>\n",
+    "section": "Links"
+  },
+  {
+    "markdown": "[a](<b)c\n[a](<b)c>\n[a](<b>c)\n",
+    "html": "<p>[a](&lt;b)c\n[a](&lt;b)c&gt;\n[a](<b>c)</p>\n",
     "section": "Links"
   },
   {
@@ -2945,8 +3080,8 @@
     "section": "Raw HTML"
   },
   {
-    "markdown": "< a><\nfoo><bar/ >\n",
-    "html": "<p>&lt; a&gt;&lt;\nfoo&gt;&lt;bar/ &gt;</p>\n",
+    "markdown": "< a><\nfoo><bar/ >\n<foo bar=baz\nbim!bop />\n",
+    "html": "<p>&lt; a&gt;&lt;\nfoo&gt;&lt;bar/ &gt;\n&lt;foo bar=baz\nbim!bop /&gt;</p>\n",
     "section": "Raw HTML"
   },
   {
@@ -3045,8 +3180,8 @@
     "section": "Hard line breaks"
   },
   {
-    "markdown": "`code  \nspan`\n",
-    "html": "<p><code>code span</code></p>\n",
+    "markdown": "`code \nspan`\n",
+    "html": "<p><code>code  span</code></p>\n",
     "section": "Hard line breaks"
   },
   {
