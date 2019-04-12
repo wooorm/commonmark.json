@@ -14,7 +14,7 @@ if (version && version < 0.24) {
       'lower than 0.24.\nUse an older version of `commonmark.json` ' +
       'instead'
   )
-} else {
+} else if (!version) {
   version = defaults
 }
 
