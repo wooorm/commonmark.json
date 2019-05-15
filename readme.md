@@ -52,4 +52,4 @@ VERSION="0.27" node build
 
 ## License
 
-[MIT](LICENSE) © [Titus Wormer](http://wooorm.com)
+[MIT](license) © [Titus Wormer](http://wooorm.com)
