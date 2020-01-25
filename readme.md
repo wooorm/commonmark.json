@@ -1,6 +1,6 @@
 # commonmark.json
 
-CommonMark’s spec in JSON.
+[CommonMark][] spec in JSON.
 
 ## Install
 
@@ -59,3 +59,5 @@ VERSION="0.27" node build
 [mit]: license
 
 [author]: https://wooorm.com
+
+[commonmark]: https://spec.commonmark.org
