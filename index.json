@@ -55,6 +55,156 @@
     "section": "Tabs"
   },
   {
+    "markdown": "\\!\\\"\\#\\$\\%\\&\\'\\(\\)\\*\\+\\,\\-\\.\\/\\:\\;\\<\\=\\>\\?\\@\\[\\\\\\]\\^\\_\\`\\{\\|\\}\\~\n",
+    "html": "<p>!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\\]^_`{|}~</p>\n",
+    "section": "Backslash escapes"
+  },
+  {
+    "markdown": "\\\t\\A\\a\\ \\3\\φ\\«\n",
+    "html": "<p>\\\t\\A\\a\\ \\3\\φ\\«</p>\n",
+    "section": "Backslash escapes"
+  },
+  {
+    "markdown": "\\*not emphasized*\n\\<br/> not a tag\n\\[not a link](/foo)\n\\`not code`\n1\\. not a list\n\\* not a list\n\\# not a heading\n\\[foo]: /url \"not a reference\"\n\\&ouml; not a character entity\n",
+    "html": "<p>*not emphasized*\n&lt;br/&gt; not a tag\n[not a link](/foo)\n`not code`\n1. not a list\n* not a list\n# not a heading\n[foo]: /url &quot;not a reference&quot;\n&amp;ouml; not a character entity</p>\n",
+    "section": "Backslash escapes"
+  },
+  {
+    "markdown": "\\\\*emphasis*\n",
+    "html": "<p>\\<em>emphasis</em></p>\n",
+    "section": "Backslash escapes"
+  },
+  {
+    "markdown": "foo\\\nbar\n",
+    "html": "<p>foo<br />\nbar</p>\n",
+    "section": "Backslash escapes"
+  },
+  {
+    "markdown": "`` \\[\\` ``\n",
+    "html": "<p><code>\\[\\`</code></p>\n",
+    "section": "Backslash escapes"
+  },
+  {
+    "markdown": "    \\[\\]\n",
+    "html": "<pre><code>\\[\\]\n</code></pre>\n",
+    "section": "Backslash escapes"
+  },
+  {
+    "markdown": "~~~\n\\[\\]\n~~~\n",
+    "html": "<pre><code>\\[\\]\n</code></pre>\n",
+    "section": "Backslash escapes"
+  },
+  {
+    "markdown": "<http://example.com?find=\\*>\n",
+    "html": "<p><a href=\"http://example.com?find=%5C*\">http://example.com?find=\\*</a></p>\n",
+    "section": "Backslash escapes"
+  },
+  {
+    "markdown": "<a href=\"/bar\\/)\">\n",
+    "html": "<a href=\"/bar\\/)\">\n",
+    "section": "Backslash escapes"
+  },
+  {
+    "markdown": "[foo](/bar\\* \"ti\\*tle\")\n",
+    "html": "<p><a href=\"/bar*\" title=\"ti*tle\">foo</a></p>\n",
+    "section": "Backslash escapes"
+  },
+  {
+    "markdown": "[foo]\n\n[foo]: /bar\\* \"ti\\*tle\"\n",
+    "html": "<p><a href=\"/bar*\" title=\"ti*tle\">foo</a></p>\n",
+    "section": "Backslash escapes"
+  },
+  {
+    "markdown": "``` foo\\+bar\nfoo\n```\n",
+    "html": "<pre><code class=\"language-foo+bar\">foo\n</code></pre>\n",
+    "section": "Backslash escapes"
+  },
+  {
+    "markdown": "&nbsp; &amp; &copy; &AElig; &Dcaron;\n&frac34; &HilbertSpace; &DifferentialD;\n&ClockwiseContourIntegral; &ngE;\n",
+    "html": "<p>  &amp; © Æ Ď\n¾ ℋ ⅆ\n∲ ≧̸</p>\n",
+    "section": "Entity and numeric character references"
+  },
+  {
+    "markdown": "&#35; &#1234; &#992; &#0;\n",
+    "html": "<p># Ӓ Ϡ �</p>\n",
+    "section": "Entity and numeric character references"
+  },
+  {
+    "markdown": "&#X22; &#XD06; &#xcab;\n",
+    "html": "<p>&quot; ആ ಫ</p>\n",
+    "section": "Entity and numeric character references"
+  },
+  {
+    "markdown": "&nbsp &x; &#; &#x;\n&#87654321;\n&#abcdef0;\n&ThisIsNotDefined; &hi?;\n",
+    "html": "<p>&amp;nbsp &amp;x; &amp;#; &amp;#x;\n&amp;#87654321;\n&amp;#abcdef0;\n&amp;ThisIsNotDefined; &amp;hi?;</p>\n",
+    "section": "Entity and numeric character references"
+  },
+  {
+    "markdown": "&copy\n",
+    "html": "<p>&amp;copy</p>\n",
+    "section": "Entity and numeric character references"
+  },
+  {
+    "markdown": "&MadeUpEntity;\n",
+    "html": "<p>&amp;MadeUpEntity;</p>\n",
+    "section": "Entity and numeric character references"
+  },
+  {
+    "markdown": "<a href=\"&ouml;&ouml;.html\">\n",
+    "html": "<a href=\"&ouml;&ouml;.html\">\n",
+    "section": "Entity and numeric character references"
+  },
+  {
+    "markdown": "[foo](/f&ouml;&ouml; \"f&ouml;&ouml;\")\n",
+    "html": "<p><a href=\"/f%C3%B6%C3%B6\" title=\"föö\">foo</a></p>\n",
+    "section": "Entity and numeric character references"
+  },
+  {
+    "markdown": "[foo]\n\n[foo]: /f&ouml;&ouml; \"f&ouml;&ouml;\"\n",
+    "html": "<p><a href=\"/f%C3%B6%C3%B6\" title=\"föö\">foo</a></p>\n",
+    "section": "Entity and numeric character references"
+  },
+  {
+    "markdown": "``` f&ouml;&ouml;\nfoo\n```\n",
+    "html": "<pre><code class=\"language-föö\">foo\n</code></pre>\n",
+    "section": "Entity and numeric character references"
+  },
+  {
+    "markdown": "`f&ouml;&ouml;`\n",
+    "html": "<p><code>f&amp;ouml;&amp;ouml;</code></p>\n",
+    "section": "Entity and numeric character references"
+  },
+  {
+    "markdown": "    f&ouml;f&ouml;\n",
+    "html": "<pre><code>f&amp;ouml;f&amp;ouml;\n</code></pre>\n",
+    "section": "Entity and numeric character references"
+  },
+  {
+    "markdown": "&#42;foo&#42;\n*foo*\n",
+    "html": "<p>*foo*\n<em>foo</em></p>\n",
+    "section": "Entity and numeric character references"
+  },
+  {
+    "markdown": "&#42; foo\n\n* foo\n",
+    "html": "<p>* foo</p>\n<ul>\n<li>foo</li>\n</ul>\n",
+    "section": "Entity and numeric character references"
+  },
+  {
+    "markdown": "foo&#10;&#10;bar\n",
+    "html": "<p>foo\n\nbar</p>\n",
+    "section": "Entity and numeric character references"
+  },
+  {
+    "markdown": "&#9;foo\n",
+    "html": "<p>\tfoo</p>\n",
+    "section": "Entity and numeric character references"
+  },
+  {
+    "markdown": "[a](url &quot;tit&quot;)\n",
+    "html": "<p>[a](url &quot;tit&quot;)</p>\n",
+    "section": "Entity and numeric character references"
+  },
+  {
     "markdown": "- `one\n- two`\n",
     "html": "<ul>\n<li>`one</li>\n<li>two`</li>\n</ul>\n",
     "section": "Precedence"
@@ -1485,156 +1635,6 @@
     "section": "Inlines"
   },
   {
-    "markdown": "\\!\\\"\\#\\$\\%\\&\\'\\(\\)\\*\\+\\,\\-\\.\\/\\:\\;\\<\\=\\>\\?\\@\\[\\\\\\]\\^\\_\\`\\{\\|\\}\\~\n",
-    "html": "<p>!&quot;#$%&amp;'()*+,-./:;&lt;=&gt;?@[\\]^_`{|}~</p>\n",
-    "section": "Backslash escapes"
-  },
-  {
-    "markdown": "\\\t\\A\\a\\ \\3\\φ\\«\n",
-    "html": "<p>\\\t\\A\\a\\ \\3\\φ\\«</p>\n",
-    "section": "Backslash escapes"
-  },
-  {
-    "markdown": "\\*not emphasized*\n\\<br/> not a tag\n\\[not a link](/foo)\n\\`not code`\n1\\. not a list\n\\* not a list\n\\# not a heading\n\\[foo]: /url \"not a reference\"\n\\&ouml; not a character entity\n",
-    "html": "<p>*not emphasized*\n&lt;br/&gt; not a tag\n[not a link](/foo)\n`not code`\n1. not a list\n* not a list\n# not a heading\n[foo]: /url &quot;not a reference&quot;\n&amp;ouml; not a character entity</p>\n",
-    "section": "Backslash escapes"
-  },
-  {
-    "markdown": "\\\\*emphasis*\n",
-    "html": "<p>\\<em>emphasis</em></p>\n",
-    "section": "Backslash escapes"
-  },
-  {
-    "markdown": "foo\\\nbar\n",
-    "html": "<p>foo<br />\nbar</p>\n",
-    "section": "Backslash escapes"
-  },
-  {
-    "markdown": "`` \\[\\` ``\n",
-    "html": "<p><code>\\[\\`</code></p>\n",
-    "section": "Backslash escapes"
-  },
-  {
-    "markdown": "    \\[\\]\n",
-    "html": "<pre><code>\\[\\]\n</code></pre>\n",
-    "section": "Backslash escapes"
-  },
-  {
-    "markdown": "~~~\n\\[\\]\n~~~\n",
-    "html": "<pre><code>\\[\\]\n</code></pre>\n",
-    "section": "Backslash escapes"
-  },
-  {
-    "markdown": "<http://example.com?find=\\*>\n",
-    "html": "<p><a href=\"http://example.com?find=%5C*\">http://example.com?find=\\*</a></p>\n",
-    "section": "Backslash escapes"
-  },
-  {
-    "markdown": "<a href=\"/bar\\/)\">\n",
-    "html": "<a href=\"/bar\\/)\">\n",
-    "section": "Backslash escapes"
-  },
-  {
-    "markdown": "[foo](/bar\\* \"ti\\*tle\")\n",
-    "html": "<p><a href=\"/bar*\" title=\"ti*tle\">foo</a></p>\n",
-    "section": "Backslash escapes"
-  },
-  {
-    "markdown": "[foo]\n\n[foo]: /bar\\* \"ti\\*tle\"\n",
-    "html": "<p><a href=\"/bar*\" title=\"ti*tle\">foo</a></p>\n",
-    "section": "Backslash escapes"
-  },
-  {
-    "markdown": "``` foo\\+bar\nfoo\n```\n",
-    "html": "<pre><code class=\"language-foo+bar\">foo\n</code></pre>\n",
-    "section": "Backslash escapes"
-  },
-  {
-    "markdown": "&nbsp; &amp; &copy; &AElig; &Dcaron;\n&frac34; &HilbertSpace; &DifferentialD;\n&ClockwiseContourIntegral; &ngE;\n",
-    "html": "<p>  &amp; © Æ Ď\n¾ ℋ ⅆ\n∲ ≧̸</p>\n",
-    "section": "Entity and numeric character references"
-  },
-  {
-    "markdown": "&#35; &#1234; &#992; &#0;\n",
-    "html": "<p># Ӓ Ϡ �</p>\n",
-    "section": "Entity and numeric character references"
-  },
-  {
-    "markdown": "&#X22; &#XD06; &#xcab;\n",
-    "html": "<p>&quot; ആ ಫ</p>\n",
-    "section": "Entity and numeric character references"
-  },
-  {
-    "markdown": "&nbsp &x; &#; &#x;\n&#987654321;\n&#abcdef0;\n&ThisIsNotDefined; &hi?;\n",
-    "html": "<p>&amp;nbsp &amp;x; &amp;#; &amp;#x;\n&amp;#987654321;\n&amp;#abcdef0;\n&amp;ThisIsNotDefined; &amp;hi?;</p>\n",
-    "section": "Entity and numeric character references"
-  },
-  {
-    "markdown": "&copy\n",
-    "html": "<p>&amp;copy</p>\n",
-    "section": "Entity and numeric character references"
-  },
-  {
-    "markdown": "&MadeUpEntity;\n",
-    "html": "<p>&amp;MadeUpEntity;</p>\n",
-    "section": "Entity and numeric character references"
-  },
-  {
-    "markdown": "<a href=\"&ouml;&ouml;.html\">\n",
-    "html": "<a href=\"&ouml;&ouml;.html\">\n",
-    "section": "Entity and numeric character references"
-  },
-  {
-    "markdown": "[foo](/f&ouml;&ouml; \"f&ouml;&ouml;\")\n",
-    "html": "<p><a href=\"/f%C3%B6%C3%B6\" title=\"föö\">foo</a></p>\n",
-    "section": "Entity and numeric character references"
-  },
-  {
-    "markdown": "[foo]\n\n[foo]: /f&ouml;&ouml; \"f&ouml;&ouml;\"\n",
-    "html": "<p><a href=\"/f%C3%B6%C3%B6\" title=\"föö\">foo</a></p>\n",
-    "section": "Entity and numeric character references"
-  },
-  {
-    "markdown": "``` f&ouml;&ouml;\nfoo\n```\n",
-    "html": "<pre><code class=\"language-föö\">foo\n</code></pre>\n",
-    "section": "Entity and numeric character references"
-  },
-  {
-    "markdown": "`f&ouml;&ouml;`\n",
-    "html": "<p><code>f&amp;ouml;&amp;ouml;</code></p>\n",
-    "section": "Entity and numeric character references"
-  },
-  {
-    "markdown": "    f&ouml;f&ouml;\n",
-    "html": "<pre><code>f&amp;ouml;f&amp;ouml;\n</code></pre>\n",
-    "section": "Entity and numeric character references"
-  },
-  {
-    "markdown": "&#42;foo&#42;\n*foo*\n",
-    "html": "<p>*foo*\n<em>foo</em></p>\n",
-    "section": "Entity and numeric character references"
-  },
-  {
-    "markdown": "&#42; foo\n\n* foo\n",
-    "html": "<p>* foo</p>\n<ul>\n<li>foo</li>\n</ul>\n",
-    "section": "Entity and numeric character references"
-  },
-  {
-    "markdown": "foo&#10;&#10;bar\n",
-    "html": "<p>foo\n\nbar</p>\n",
-    "section": "Entity and numeric character references"
-  },
-  {
-    "markdown": "&#9;foo\n",
-    "html": "<p>\tfoo</p>\n",
-    "section": "Entity and numeric character references"
-  },
-  {
-    "markdown": "[a](url &quot;tit&quot;)\n",
-    "html": "<p>[a](url &quot;tit&quot;)</p>\n",
-    "section": "Entity and numeric character references"
-  },
-  {
     "markdown": "`foo`\n",
     "html": "<p><code>foo</code></p>\n",
     "section": "Code spans"
@@ -2465,6 +2465,11 @@
     "section": "Links"
   },
   {
+    "markdown": "[link](foo(and(bar))\n",
+    "html": "<p>[link](foo(and(bar))</p>\n",
+    "section": "Links"
+  },
+  {
     "markdown": "[link](foo\\(and\\(bar\\))\n",
     "html": "<p><a href=\"foo(and(bar)\">link</a></p>\n",
     "section": "Links"
@@ -2650,8 +2655,8 @@
     "section": "Links"
   },
   {
-    "markdown": "[foo *bar][ref]\n\n[ref]: /uri\n",
-    "html": "<p><a href=\"/uri\">foo *bar</a></p>\n",
+    "markdown": "[foo *bar][ref]*\n\n[ref]: /uri\n",
+    "html": "<p><a href=\"/uri\">foo *bar</a>*</p>\n",
     "section": "Links"
   },
   {
@@ -2675,8 +2680,8 @@
     "section": "Links"
   },
   {
-    "markdown": "[Толпой][Толпой] is a Russian word.\n\n[ТОЛПОЙ]: /url\n",
-    "html": "<p><a href=\"/url\">Толпой</a> is a Russian word.</p>\n",
+    "markdown": "[ẞ]\n\n[SS]: /url\n",
+    "html": "<p><a href=\"/url\">ẞ</a></p>\n",
     "section": "Links"
   },
   {
