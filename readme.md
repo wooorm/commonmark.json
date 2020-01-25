@@ -2,17 +2,17 @@
 
 CommonMark’s spec in JSON.
 
-## Installation
+## Install
 
-[npm](https://docs.npmjs.com/cli/install):
+[npm][]:
 
-```bash
+```sh
 npm install commonmark.json
 ```
 
-## Usage
+## Use
 
-```javascript
+```js
 var spec = require('commonmark.json')
 
 console.log(spec)
@@ -41,8 +41,8 @@ Yields:
 
 ## Building
 
-On a Mac, run `node build` to transform the spec at CommonMark’s
-master branch to JSON.
+On a Mac, run `node build` to transform the spec at CommonMark’s master branch
+to JSON.
 
 Run it with a `$VERSION` to get JSON for a specific version, such as:
 
@@ -52,4 +52,10 @@ VERSION="0.27" node build
 
 ## License
 
-[MIT](license) © [Titus Wormer](https://wooorm.com)
+[MIT][] © [Titus Wormer][author]
+
+[npm]: https://docs.npmjs.com/cli/install
+
+[mit]: license
+
+[author]: https://wooorm.com
