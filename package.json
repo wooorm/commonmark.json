@@ -1,6 +1,6 @@
 {
   "name": "commonmark.json",
-  "version": "0.29.0",
+  "version": "0.29.1",
   "description": "CommonMark test spec in JSON",
   "license": "MIT",
   "keywords": [
