@@ -12,6 +12,10 @@
   ],
   "repository": "wooorm/commonmark.json",
   "bugs": "https://github.com/wooorm/commonmark.json/issues",
+  "funding": {
+    "type": "github",
+    "url": "https://github.com/sponsors/wooorm"
+  },
   "author": "Titus Wormer <tituswormer@gmail.com>",
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com>"
