@@ -41,8 +41,7 @@ Yields:
 
 ## Building
 
-On a Mac, run `node build` to transform the spec at CommonMark’s master branch
-to JSON.
+On a Mac, run `node build` to transform the spec at CommonMark’s HEAD to JSON.
 
 Run it with a `$VERSION` to get JSON for a specific version, such as:
 

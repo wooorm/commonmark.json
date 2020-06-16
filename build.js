@@ -6,7 +6,7 @@ var bail = require('bail')
 var concat = require('concat-stream')
 
 var version = process.env.VERSION
-var defaults = 'master'
+var defaults = 'HEAD'
 
 if (version && version < 0.24) {
   throw new Error(
