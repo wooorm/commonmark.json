@@ -2410,6 +2410,11 @@
     "section": "Links"
   },
   {
+    "markdown": "[](./target.md)\n",
+    "html": "<p><a href=\"./target.md\"></a></p>\n",
+    "section": "Links"
+  },
+  {
     "markdown": "[link]()\n",
     "html": "<p><a href=\"\">link</a></p>\n",
     "section": "Links"
@@ -2417,6 +2422,11 @@
   {
     "markdown": "[link](<>)\n",
     "html": "<p><a href=\"\">link</a></p>\n",
+    "section": "Links"
+  },
+  {
+    "markdown": "[]()\n",
+    "html": "<p><a href=\"\"></a></p>\n",
     "section": "Links"
   },
   {
