@@ -23,8 +23,8 @@ https.get(
   onconnection
 )
 
-function onconnection(res) {
-  res.pipe(concat(onconcat)).on('error', bail)
+function onconnection(response) {
+  response.pipe(concat(onconcat)).on('error', bail)
 }
 
 function onconcat(data) {
@@ -35,13 +35,13 @@ function onconcat(data) {
   data = String(data)
 
   if (version === defaults) {
-    version = data.match(/version: ([0-9.]+)/)[1]
+    version = data.match(/version: ([\d.]+)/)[1]
   }
 
   data
     .replace(/\r\n?/g, '\n')
     .replace(/→/g, '\t')
-    .replace(/^<!-- END TESTS -->(.|[\n])*/m, '')
+    .replace(/^<!-- END TESTS -->(.|\n)*/m, '')
     .replace(re, onexample)
 
   examples = JSON.stringify(examples, 0, 2)

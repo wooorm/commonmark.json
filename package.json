@@ -23,14 +23,14 @@
   "devDependencies": {
     "bail": "^1.0.0",
     "concat-stream": "^2.0.0",
-    "prettier": "^1.0.0",
-    "remark-cli": "^7.0.0",
-    "remark-preset-wooorm": "^6.0.0",
-    "xo": "^0.25.0"
+    "prettier": "^2.0.0",
+    "remark-cli": "^8.0.0",
+    "remark-preset-wooorm": "^7.0.0",
+    "xo": "^0.32.0"
   },
   "scripts": {
     "generate": "node build",
-    "format": "remark . -qfo && prettier --write \"**/*.js\" && xo --fix",
+    "format": "remark . -qfo && prettier . --write && xo --fix",
     "test": "npm run generate && npm run format"
   },
   "prettier": {
