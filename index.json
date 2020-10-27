@@ -850,6 +850,11 @@
     "section": "HTML blocks"
   },
   {
+    "markdown": "<textarea>\n\n*foo*\n\n_bar_\n\n</textarea>\n",
+    "html": "<textarea>\n\n*foo*\n\n_bar_\n\n</textarea>\n",
+    "section": "HTML blocks"
+  },
+  {
     "markdown": "<style\n  type=\"text/css\">\nh1 {color:red;}\n\np {color:blue;}\n</style>\nokay\n",
     "html": "<style\n  type=\"text/css\">\nh1 {color:red;}\n\np {color:blue;}\n</style>\n<p>okay</p>\n",
     "section": "HTML blocks"
@@ -1082,11 +1087,6 @@
   {
     "markdown": "[foo]\n\n> [foo]: /url\n",
     "html": "<p><a href=\"/url\">foo</a></p>\n<blockquote>\n</blockquote>\n",
-    "section": "Link reference definitions"
-  },
-  {
-    "markdown": "[foo]: /url\n",
-    "html": "",
     "section": "Link reference definitions"
   },
   {
@@ -3195,8 +3195,8 @@
     "section": "Hard line breaks"
   },
   {
-    "markdown": "`code \nspan`\n",
-    "html": "<p><code>code  span</code></p>\n",
+    "markdown": "`code  \nspan`\n",
+    "html": "<p><code>code   span</code></p>\n",
     "section": "Hard line breaks"
   },
   {
