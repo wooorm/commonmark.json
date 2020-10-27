@@ -24,13 +24,13 @@
     "bail": "^1.0.0",
     "concat-stream": "^2.0.0",
     "prettier": "^2.0.0",
-    "remark-cli": "^8.0.0",
-    "remark-preset-wooorm": "^7.0.0",
-    "xo": "^0.32.0"
+    "remark-cli": "^9.0.0",
+    "remark-preset-wooorm": "^8.0.0",
+    "xo": "^0.34.0"
   },
   "scripts": {
     "generate": "node build",
-    "format": "remark . -qfo && prettier . --write && xo --fix",
+    "format": "remark . -qfo && prettier . -w --loglevel warn && xo --fix",
     "test": "npm run generate && npm run format"
   },
   "prettier": {
