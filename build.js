@@ -3,7 +3,8 @@ import https from 'https'
 import {bail} from 'bail'
 import concat from 'concat-stream'
 
-var version = process.env.VERSION
+/** @type {string|number} */
+var version = Number.parseInt(process.env.VERSION, 10)
 var defaults = 'HEAD'
 
 if (version && version < 0.24) {
@@ -23,14 +24,18 @@ https.get(
   onconnection
 )
 
+/** @param {import('http').IncomingMessage} response */
 function onconnection(response) {
   response.pipe(concat(onconcat)).on('error', bail)
 }
 
+/** @param {Buffer} buf */
 function onconcat(buf) {
   var re = /^`{32} example\n([\s\S]*?)\n`{32}$|^#{1,6} *(.*)$/gm
+  /** @type {Array.<Object.<string, string>>} */
   var examples = []
   var data = String(buf)
+  /** @type {string} */
   var section
 
   data
@@ -50,7 +55,13 @@ function onconcat(buf) {
     bail
   )
 
-  function onexample($0, $1, $2) {
+  /**
+   * @param {string} _
+   * @param {string?} $1
+   * @param {string?} $2
+   */
+  function onexample(_, $1, $2) {
+    /** @type {Array.<string>} */
     var example
 
     if ($2) {
@@ -64,5 +75,7 @@ function onconcat(buf) {
         section
       })
     }
+
+    return ''
   }
 }
