@@ -4,6 +4,9 @@
 
 ## Install
 
+This package is ESM only: Node 12+ is needed to use it and it must be `import`ed
+instead of `require`d.
+
 [npm][]:
 
 ```sh
@@ -12,10 +15,13 @@ npm install commonmark.json
 
 ## Use
 
-```js
-var spec = require('commonmark.json')
+This package exports the following identifiers: `commonmark`.
+There is no default export.
 
-console.log(spec)
+```js
+import {commonmark} from 'commonmark.json'
+
+console.log(commonmark)
 ```
 
 Yields:

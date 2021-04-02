@@ -1,9 +1,7 @@
-'use strict'
-
-var fs = require('fs')
-var https = require('https')
-var bail = require('bail')
-var concat = require('concat-stream')
+import fs from 'fs'
+import https from 'https'
+import {bail} from 'bail'
+import concat from 'concat-stream'
 
 var version = process.env.VERSION
 var defaults = 'HEAD'
@@ -27,16 +25,11 @@ function onconnection(response) {
   response.pipe(concat(onconcat)).on('error', bail)
 }
 
-function onconcat(data) {
+function onconcat(buf) {
   var re = /^`{32} example\n([\s\S]*?)\n`{32}$|^#{1,6} *(.*)$/gm
   var examples = []
+  var data = String(buf)
   var section
-
-  data = String(data)
-
-  if (version === defaults) {
-    version = data.match(/version: ([\d.]+)/)[1]
-  }
 
   data
     .replace(/\r\n?/g, '\n')
@@ -44,11 +37,16 @@ function onconcat(data) {
     .replace(/^<!-- END TESTS -->(.|\n)*/m, '')
     .replace(re, onexample)
 
-  examples = JSON.stringify(examples, 0, 2)
+  console.log(
+    'Built CommonMark version ' +
+      (version === defaults ? data.match(/version: ([\d.]+)/)[1] : version)
+  )
 
-  console.log('Built CommonMark version ' + version)
-
-  fs.writeFile('index.json', examples + '\n', bail)
+  fs.writeFile(
+    'index.js',
+    'export var commonmark = ' + JSON.stringify(examples, null, 2) + '\n',
+    bail
+  )
 
   function onexample($0, $1, $2) {
     var example
@@ -61,7 +59,7 @@ function onconcat(data) {
       examples.push({
         markdown: example[0] + '\n',
         html: example[1] ? example[1] + '\n' : '',
-        section: section
+        section
       })
     }
   }

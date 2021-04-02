@@ -20,8 +20,14 @@
   "contributors": [
     "Titus Wormer <tituswormer@gmail.com>"
   ],
+  "sideEffects": false,
+  "type": "module",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
   "devDependencies": {
-    "bail": "^1.0.0",
+    "bail": "^2.0.0",
     "concat-stream": "^2.0.0",
     "prettier": "^2.0.0",
     "remark-cli": "^9.0.0",
@@ -43,7 +49,11 @@
   },
   "xo": {
     "prettier": true,
-    "esnext": false
+    "rules": {
+      "import/no-mutable-exports": "off",
+      "no-var": "off",
+      "prefer-arrow-callback": "off"
+    }
   },
   "remarkConfig": {
     "plugins": [
