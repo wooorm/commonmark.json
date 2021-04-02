@@ -17,7 +17,9 @@ if (version && version < 0.24) {
 }
 
 https.get(
-  'https://raw.githubusercontent.com/jgm/CommonMark/' + version + '/spec.txt',
+  'https://raw.githubusercontent.com/commonmark/commonmark-spec/' +
+    version +
+    '/spec.txt',
   onconnection
 )
 
