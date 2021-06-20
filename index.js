@@ -21,8 +21,7 @@ export var commonmark = [
   },
   {
     markdown: '- foo\n\n\t\tbar\n',
-    html:
-      '<ul>\n<li>\n<p>foo</p>\n<pre><code>  bar\n</code></pre>\n</li>\n</ul>\n',
+    html: '<ul>\n<li>\n<p>foo</p>\n<pre><code>  bar\n</code></pre>\n</li>\n</ul>\n',
     section: 'Tabs'
   },
   {
@@ -42,8 +41,7 @@ export var commonmark = [
   },
   {
     markdown: ' - foo\n   - bar\n\t - baz\n',
-    html:
-      '<ul>\n<li>foo\n<ul>\n<li>bar\n<ul>\n<li>baz</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n',
+    html: '<ul>\n<li>foo\n<ul>\n<li>bar\n<ul>\n<li>baz</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n',
     section: 'Tabs'
   },
   {
@@ -70,8 +68,7 @@ export var commonmark = [
   {
     markdown:
       '\\*not emphasized*\n\\<br/> not a tag\n\\[not a link](/foo)\n\\`not code`\n1\\. not a list\n\\* not a list\n\\# not a heading\n\\[foo]: /url "not a reference"\n\\&ouml; not a character entity\n',
-    html:
-      '<p>*not emphasized*\n&lt;br/&gt; not a tag\n[not a link](/foo)\n`not code`\n1. not a list\n* not a list\n# not a heading\n[foo]: /url &quot;not a reference&quot;\n&amp;ouml; not a character entity</p>\n',
+    html: '<p>*not emphasized*\n&lt;br/&gt; not a tag\n[not a link](/foo)\n`not code`\n1. not a list\n* not a list\n# not a heading\n[foo]: /url &quot;not a reference&quot;\n&amp;ouml; not a character entity</p>\n',
     section: 'Backslash escapes'
   },
   {
@@ -101,8 +98,7 @@ export var commonmark = [
   },
   {
     markdown: '<http://example.com?find=\\*>\n',
-    html:
-      '<p><a href="http://example.com?find=%5C*">http://example.com?find=\\*</a></p>\n',
+    html: '<p><a href="http://example.com?find=%5C*">http://example.com?find=\\*</a></p>\n',
     section: 'Backslash escapes'
   },
   {
@@ -144,8 +140,7 @@ export var commonmark = [
   {
     markdown:
       '&nbsp &x; &#; &#x;\n&#87654321;\n&#abcdef0;\n&ThisIsNotDefined; &hi?;\n',
-    html:
-      '<p>&amp;nbsp &amp;x; &amp;#; &amp;#x;\n&amp;#87654321;\n&amp;#abcdef0;\n&amp;ThisIsNotDefined; &amp;hi?;</p>\n',
+    html: '<p>&amp;nbsp &amp;x; &amp;#; &amp;#x;\n&amp;#87654321;\n&amp;#abcdef0;\n&amp;ThisIsNotDefined; &amp;hi?;</p>\n',
     section: 'Entity and numeric character references'
   },
   {
@@ -315,8 +310,7 @@ export var commonmark = [
   },
   {
     markdown: '# foo\n## foo\n### foo\n#### foo\n##### foo\n###### foo\n',
-    html:
-      '<h1>foo</h1>\n<h2>foo</h2>\n<h3>foo</h3>\n<h4>foo</h4>\n<h5>foo</h5>\n<h6>foo</h6>\n',
+    html: '<h1>foo</h1>\n<h2>foo</h2>\n<h3>foo</h3>\n<h4>foo</h4>\n<h5>foo</h5>\n<h6>foo</h6>\n',
     section: 'ATX headings'
   },
   {
@@ -461,8 +455,7 @@ export var commonmark = [
   },
   {
     markdown: '`Foo\n----\n`\n\n<a title="a lot\n---\nof dashes"/>\n',
-    html:
-      '<h2>`Foo</h2>\n<p>`</p>\n<h2>&lt;a title=&quot;a lot</h2>\n<p>of dashes&quot;/&gt;</p>\n',
+    html: '<h2>`Foo</h2>\n<p>`</p>\n<h2>&lt;a title=&quot;a lot</h2>\n<p>of dashes&quot;/&gt;</p>\n',
     section: 'Setext headings'
   },
   {
@@ -582,8 +575,7 @@ export var commonmark = [
   },
   {
     markdown: '# Heading\n    foo\nHeading\n------\n    foo\n----\n',
-    html:
-      '<h1>Heading</h1>\n<pre><code>foo\n</code></pre>\n<h2>Heading</h2>\n<pre><code>foo\n</code></pre>\n<hr />\n',
+    html: '<h1>Heading</h1>\n<pre><code>foo\n</code></pre>\n<h2>Heading</h2>\n<pre><code>foo\n</code></pre>\n<hr />\n',
     section: 'Indented code blocks'
   },
   {
@@ -648,8 +640,7 @@ export var commonmark = [
   },
   {
     markdown: '> ```\n> aaa\n\nbbb\n',
-    html:
-      '<blockquote>\n<pre><code>aaa\n</code></pre>\n</blockquote>\n<p>bbb</p>\n',
+    html: '<blockquote>\n<pre><code>aaa\n</code></pre>\n</blockquote>\n<p>bbb</p>\n',
     section: 'Fenced code blocks'
   },
   {
@@ -719,15 +710,13 @@ export var commonmark = [
   },
   {
     markdown: '```ruby\ndef foo(x)\n  return 3\nend\n```\n',
-    html:
-      '<pre><code class="language-ruby">def foo(x)\n  return 3\nend\n</code></pre>\n',
+    html: '<pre><code class="language-ruby">def foo(x)\n  return 3\nend\n</code></pre>\n',
     section: 'Fenced code blocks'
   },
   {
     markdown:
       '~~~~    ruby startline=3 $%@#$\ndef foo(x)\n  return 3\nend\n~~~~~~~\n',
-    html:
-      '<pre><code class="language-ruby">def foo(x)\n  return 3\nend\n</code></pre>\n',
+    html: '<pre><code class="language-ruby">def foo(x)\n  return 3\nend\n</code></pre>\n',
     section: 'Fenced code blocks'
   },
   {
@@ -753,15 +742,13 @@ export var commonmark = [
   {
     markdown:
       '<table><tr><td>\n<pre>\n**Hello**,\n\n_world_.\n</pre>\n</td></tr></table>\n',
-    html:
-      '<table><tr><td>\n<pre>\n**Hello**,\n<p><em>world</em>.\n</pre></p>\n</td></tr></table>\n',
+    html: '<table><tr><td>\n<pre>\n**Hello**,\n<p><em>world</em>.\n</pre></p>\n</td></tr></table>\n',
     section: 'HTML blocks'
   },
   {
     markdown:
       '<table>\n  <tr>\n    <td>\n           hi\n    </td>\n  </tr>\n</table>\n\nokay.\n',
-    html:
-      '<table>\n  <tr>\n    <td>\n           hi\n    </td>\n  </tr>\n</table>\n<p>okay.</p>\n',
+    html: '<table>\n  <tr>\n    <td>\n           hi\n    </td>\n  </tr>\n</table>\n<p>okay.</p>\n',
     section: 'HTML blocks'
   },
   {
@@ -862,15 +849,13 @@ export var commonmark = [
   {
     markdown:
       '<pre language="haskell"><code>\nimport Text.HTML.TagSoup\n\nmain :: IO ()\nmain = print $ parseTags tags\n</code></pre>\nokay\n',
-    html:
-      '<pre language="haskell"><code>\nimport Text.HTML.TagSoup\n\nmain :: IO ()\nmain = print $ parseTags tags\n</code></pre>\n<p>okay</p>\n',
+    html: '<pre language="haskell"><code>\nimport Text.HTML.TagSoup\n\nmain :: IO ()\nmain = print $ parseTags tags\n</code></pre>\n<p>okay</p>\n',
     section: 'HTML blocks'
   },
   {
     markdown:
       '<script type="text/javascript">\n// JavaScript example\n\ndocument.getElementById("demo").innerHTML = "Hello JavaScript!";\n</script>\nokay\n',
-    html:
-      '<script type="text/javascript">\n// JavaScript example\n\ndocument.getElementById("demo").innerHTML = "Hello JavaScript!";\n</script>\n<p>okay</p>\n',
+    html: '<script type="text/javascript">\n// JavaScript example\n\ndocument.getElementById("demo").innerHTML = "Hello JavaScript!";\n</script>\n<p>okay</p>\n',
     section: 'HTML blocks'
   },
   {
@@ -881,8 +866,7 @@ export var commonmark = [
   {
     markdown:
       '<style\n  type="text/css">\nh1 {color:red;}\n\np {color:blue;}\n</style>\nokay\n',
-    html:
-      '<style\n  type="text/css">\nh1 {color:red;}\n\np {color:blue;}\n</style>\n<p>okay</p>\n',
+    html: '<style\n  type="text/css">\nh1 {color:red;}\n\np {color:blue;}\n</style>\n<p>okay</p>\n',
     section: 'HTML blocks'
   },
   {
@@ -933,8 +917,7 @@ export var commonmark = [
   {
     markdown:
       '<![CDATA[\nfunction matchwo(a,b)\n{\n  if (a < b && a < 0) then {\n    return 1;\n\n  } else {\n\n    return 0;\n  }\n}\n]]>\nokay\n',
-    html:
-      '<![CDATA[\nfunction matchwo(a,b)\n{\n  if (a < b && a < 0) then {\n    return 1;\n\n  } else {\n\n    return 0;\n  }\n}\n]]>\n<p>okay</p>\n',
+    html: '<![CDATA[\nfunction matchwo(a,b)\n{\n  if (a < b && a < 0) then {\n    return 1;\n\n  } else {\n\n    return 0;\n  }\n}\n]]>\n<p>okay</p>\n',
     section: 'HTML blocks'
   },
   {
@@ -980,8 +963,7 @@ export var commonmark = [
   {
     markdown:
       '<table>\n\n  <tr>\n\n    <td>\n      Hi\n    </td>\n\n  </tr>\n\n</table>\n',
-    html:
-      '<table>\n  <tr>\n<pre><code>&lt;td&gt;\n  Hi\n&lt;/td&gt;\n</code></pre>\n  </tr>\n</table>\n',
+    html: '<table>\n  <tr>\n<pre><code>&lt;td&gt;\n  Hi\n&lt;/td&gt;\n</code></pre>\n  </tr>\n</table>\n',
     section: 'HTML blocks'
   },
   {
@@ -996,8 +978,7 @@ export var commonmark = [
   },
   {
     markdown: "[Foo*bar\\]]:my_(url) 'title (with parens)'\n\n[Foo*bar\\]]\n",
-    html:
-      '<p><a href="my_(url)" title="title (with parens)">Foo*bar]</a></p>\n',
+    html: '<p><a href="my_(url)" title="title (with parens)">Foo*bar]</a></p>\n',
     section: 'Link reference definitions'
   },
   {
@@ -1082,8 +1063,7 @@ export var commonmark = [
   },
   {
     markdown: '    [foo]: /url "title"\n\n[foo]\n',
-    html:
-      '<pre><code>[foo]: /url &quot;title&quot;\n</code></pre>\n<p>[foo]</p>\n',
+    html: '<pre><code>[foo]: /url &quot;title&quot;\n</code></pre>\n<p>[foo]</p>\n',
     section: 'Link reference definitions'
   },
   {
@@ -1098,8 +1078,7 @@ export var commonmark = [
   },
   {
     markdown: '# [Foo]\n[foo]: /url\n> bar\n',
-    html:
-      '<h1><a href="/url">Foo</a></h1>\n<blockquote>\n<p>bar</p>\n</blockquote>\n',
+    html: '<h1><a href="/url">Foo</a></h1>\n<blockquote>\n<p>bar</p>\n</blockquote>\n',
     section: 'Link reference definitions'
   },
   {
@@ -1115,8 +1094,7 @@ export var commonmark = [
   {
     markdown:
       '[foo]: /foo-url "foo"\n[bar]: /bar-url\n  "bar"\n[baz]: /baz-url\n\n[foo],\n[bar],\n[baz]\n',
-    html:
-      '<p><a href="/foo-url" title="foo">foo</a>,\n<a href="/bar-url" title="bar">bar</a>,\n<a href="/baz-url">baz</a></p>\n',
+    html: '<p><a href="/foo-url" title="foo">foo</a>,\n<a href="/bar-url" title="bar">bar</a>,\n<a href="/baz-url">baz</a></p>\n',
     section: 'Link reference definitions'
   },
   {
@@ -1207,20 +1185,17 @@ export var commonmark = [
   },
   {
     markdown: '> - foo\n- bar\n',
-    html:
-      '<blockquote>\n<ul>\n<li>foo</li>\n</ul>\n</blockquote>\n<ul>\n<li>bar</li>\n</ul>\n',
+    html: '<blockquote>\n<ul>\n<li>foo</li>\n</ul>\n</blockquote>\n<ul>\n<li>bar</li>\n</ul>\n',
     section: 'Block quotes'
   },
   {
     markdown: '>     foo\n    bar\n',
-    html:
-      '<blockquote>\n<pre><code>foo\n</code></pre>\n</blockquote>\n<pre><code>bar\n</code></pre>\n',
+    html: '<blockquote>\n<pre><code>foo\n</code></pre>\n</blockquote>\n<pre><code>bar\n</code></pre>\n',
     section: 'Block quotes'
   },
   {
     markdown: '> ```\nfoo\n```\n',
-    html:
-      '<blockquote>\n<pre><code></code></pre>\n</blockquote>\n<p>foo</p>\n<pre><code></code></pre>\n',
+    html: '<blockquote>\n<pre><code></code></pre>\n</blockquote>\n<p>foo</p>\n<pre><code></code></pre>\n',
     section: 'Block quotes'
   },
   {
@@ -1245,8 +1220,7 @@ export var commonmark = [
   },
   {
     markdown: '> foo\n\n> bar\n',
-    html:
-      '<blockquote>\n<p>foo</p>\n</blockquote>\n<blockquote>\n<p>bar</p>\n</blockquote>\n',
+    html: '<blockquote>\n<p>foo</p>\n</blockquote>\n<blockquote>\n<p>bar</p>\n</blockquote>\n',
     section: 'Block quotes'
   },
   {
@@ -1266,8 +1240,7 @@ export var commonmark = [
   },
   {
     markdown: '> aaa\n***\n> bbb\n',
-    html:
-      '<blockquote>\n<p>aaa</p>\n</blockquote>\n<hr />\n<blockquote>\n<p>bbb</p>\n</blockquote>\n',
+    html: '<blockquote>\n<p>aaa</p>\n</blockquote>\n<hr />\n<blockquote>\n<p>bbb</p>\n</blockquote>\n',
     section: 'Block quotes'
   },
   {
@@ -1287,34 +1260,29 @@ export var commonmark = [
   },
   {
     markdown: '> > > foo\nbar\n',
-    html:
-      '<blockquote>\n<blockquote>\n<blockquote>\n<p>foo\nbar</p>\n</blockquote>\n</blockquote>\n</blockquote>\n',
+    html: '<blockquote>\n<blockquote>\n<blockquote>\n<p>foo\nbar</p>\n</blockquote>\n</blockquote>\n</blockquote>\n',
     section: 'Block quotes'
   },
   {
     markdown: '>>> foo\n> bar\n>>baz\n',
-    html:
-      '<blockquote>\n<blockquote>\n<blockquote>\n<p>foo\nbar\nbaz</p>\n</blockquote>\n</blockquote>\n</blockquote>\n',
+    html: '<blockquote>\n<blockquote>\n<blockquote>\n<p>foo\nbar\nbaz</p>\n</blockquote>\n</blockquote>\n</blockquote>\n',
     section: 'Block quotes'
   },
   {
     markdown: '>     code\n\n>    not code\n',
-    html:
-      '<blockquote>\n<pre><code>code\n</code></pre>\n</blockquote>\n<blockquote>\n<p>not code</p>\n</blockquote>\n',
+    html: '<blockquote>\n<pre><code>code\n</code></pre>\n</blockquote>\n<blockquote>\n<p>not code</p>\n</blockquote>\n',
     section: 'Block quotes'
   },
   {
     markdown:
       'A paragraph\nwith two lines.\n\n    indented code\n\n> A block quote.\n',
-    html:
-      '<p>A paragraph\nwith two lines.</p>\n<pre><code>indented code\n</code></pre>\n<blockquote>\n<p>A block quote.</p>\n</blockquote>\n',
+    html: '<p>A paragraph\nwith two lines.</p>\n<pre><code>indented code\n</code></pre>\n<blockquote>\n<p>A block quote.</p>\n</blockquote>\n',
     section: 'List items'
   },
   {
     markdown:
       '1.  A paragraph\n    with two lines.\n\n        indented code\n\n    > A block quote.\n',
-    html:
-      '<ol>\n<li>\n<p>A paragraph\nwith two lines.</p>\n<pre><code>indented code\n</code></pre>\n<blockquote>\n<p>A block quote.</p>\n</blockquote>\n</li>\n</ol>\n',
+    html: '<ol>\n<li>\n<p>A paragraph\nwith two lines.</p>\n<pre><code>indented code\n</code></pre>\n<blockquote>\n<p>A block quote.</p>\n</blockquote>\n</li>\n</ol>\n',
     section: 'List items'
   },
   {
@@ -1339,14 +1307,12 @@ export var commonmark = [
   },
   {
     markdown: '   > > 1.  one\n>>\n>>     two\n',
-    html:
-      '<blockquote>\n<blockquote>\n<ol>\n<li>\n<p>one</p>\n<p>two</p>\n</li>\n</ol>\n</blockquote>\n</blockquote>\n',
+    html: '<blockquote>\n<blockquote>\n<ol>\n<li>\n<p>one</p>\n<p>two</p>\n</li>\n</ol>\n</blockquote>\n</blockquote>\n',
     section: 'List items'
   },
   {
     markdown: '>>- one\n>>\n  >  > two\n',
-    html:
-      '<blockquote>\n<blockquote>\n<ul>\n<li>one</li>\n</ul>\n<p>two</p>\n</blockquote>\n</blockquote>\n',
+    html: '<blockquote>\n<blockquote>\n<ul>\n<li>one</li>\n</ul>\n<p>two</p>\n</blockquote>\n</blockquote>\n',
     section: 'List items'
   },
   {
@@ -1361,14 +1327,12 @@ export var commonmark = [
   },
   {
     markdown: '1.  foo\n\n    ```\n    bar\n    ```\n\n    baz\n\n    > bam\n',
-    html:
-      '<ol>\n<li>\n<p>foo</p>\n<pre><code>bar\n</code></pre>\n<p>baz</p>\n<blockquote>\n<p>bam</p>\n</blockquote>\n</li>\n</ol>\n',
+    html: '<ol>\n<li>\n<p>foo</p>\n<pre><code>bar\n</code></pre>\n<p>baz</p>\n<blockquote>\n<p>bam</p>\n</blockquote>\n</li>\n</ol>\n',
     section: 'List items'
   },
   {
     markdown: '- Foo\n\n      bar\n\n\n      baz\n',
-    html:
-      '<ul>\n<li>\n<p>Foo</p>\n<pre><code>bar\n\n\nbaz\n</code></pre>\n</li>\n</ul>\n',
+    html: '<ul>\n<li>\n<p>Foo</p>\n<pre><code>bar\n\n\nbaz\n</code></pre>\n</li>\n</ul>\n',
     section: 'List items'
   },
   {
@@ -1398,32 +1362,27 @@ export var commonmark = [
   },
   {
     markdown: '- foo\n\n      bar\n',
-    html:
-      '<ul>\n<li>\n<p>foo</p>\n<pre><code>bar\n</code></pre>\n</li>\n</ul>\n',
+    html: '<ul>\n<li>\n<p>foo</p>\n<pre><code>bar\n</code></pre>\n</li>\n</ul>\n',
     section: 'List items'
   },
   {
     markdown: '  10.  foo\n\n           bar\n',
-    html:
-      '<ol start="10">\n<li>\n<p>foo</p>\n<pre><code>bar\n</code></pre>\n</li>\n</ol>\n',
+    html: '<ol start="10">\n<li>\n<p>foo</p>\n<pre><code>bar\n</code></pre>\n</li>\n</ol>\n',
     section: 'List items'
   },
   {
     markdown: '    indented code\n\nparagraph\n\n    more code\n',
-    html:
-      '<pre><code>indented code\n</code></pre>\n<p>paragraph</p>\n<pre><code>more code\n</code></pre>\n',
+    html: '<pre><code>indented code\n</code></pre>\n<p>paragraph</p>\n<pre><code>more code\n</code></pre>\n',
     section: 'List items'
   },
   {
     markdown: '1.     indented code\n\n   paragraph\n\n       more code\n',
-    html:
-      '<ol>\n<li>\n<pre><code>indented code\n</code></pre>\n<p>paragraph</p>\n<pre><code>more code\n</code></pre>\n</li>\n</ol>\n',
+    html: '<ol>\n<li>\n<pre><code>indented code\n</code></pre>\n<p>paragraph</p>\n<pre><code>more code\n</code></pre>\n</li>\n</ol>\n',
     section: 'List items'
   },
   {
     markdown: '1.      indented code\n\n   paragraph\n\n       more code\n',
-    html:
-      '<ol>\n<li>\n<pre><code> indented code\n</code></pre>\n<p>paragraph</p>\n<pre><code>more code\n</code></pre>\n</li>\n</ol>\n',
+    html: '<ol>\n<li>\n<pre><code> indented code\n</code></pre>\n<p>paragraph</p>\n<pre><code>more code\n</code></pre>\n</li>\n</ol>\n',
     section: 'List items'
   },
   {
@@ -1443,8 +1402,7 @@ export var commonmark = [
   },
   {
     markdown: '-\n  foo\n-\n  ```\n  bar\n  ```\n-\n      baz\n',
-    html:
-      '<ul>\n<li>foo</li>\n<li>\n<pre><code>bar\n</code></pre>\n</li>\n<li>\n<pre><code>baz\n</code></pre>\n</li>\n</ul>\n',
+    html: '<ul>\n<li>foo</li>\n<li>\n<pre><code>bar\n</code></pre>\n</li>\n<li>\n<pre><code>baz\n</code></pre>\n</li>\n</ul>\n',
     section: 'List items'
   },
   {
@@ -1485,36 +1443,31 @@ export var commonmark = [
   {
     markdown:
       ' 1.  A paragraph\n     with two lines.\n\n         indented code\n\n     > A block quote.\n',
-    html:
-      '<ol>\n<li>\n<p>A paragraph\nwith two lines.</p>\n<pre><code>indented code\n</code></pre>\n<blockquote>\n<p>A block quote.</p>\n</blockquote>\n</li>\n</ol>\n',
+    html: '<ol>\n<li>\n<p>A paragraph\nwith two lines.</p>\n<pre><code>indented code\n</code></pre>\n<blockquote>\n<p>A block quote.</p>\n</blockquote>\n</li>\n</ol>\n',
     section: 'List items'
   },
   {
     markdown:
       '  1.  A paragraph\n      with two lines.\n\n          indented code\n\n      > A block quote.\n',
-    html:
-      '<ol>\n<li>\n<p>A paragraph\nwith two lines.</p>\n<pre><code>indented code\n</code></pre>\n<blockquote>\n<p>A block quote.</p>\n</blockquote>\n</li>\n</ol>\n',
+    html: '<ol>\n<li>\n<p>A paragraph\nwith two lines.</p>\n<pre><code>indented code\n</code></pre>\n<blockquote>\n<p>A block quote.</p>\n</blockquote>\n</li>\n</ol>\n',
     section: 'List items'
   },
   {
     markdown:
       '   1.  A paragraph\n       with two lines.\n\n           indented code\n\n       > A block quote.\n',
-    html:
-      '<ol>\n<li>\n<p>A paragraph\nwith two lines.</p>\n<pre><code>indented code\n</code></pre>\n<blockquote>\n<p>A block quote.</p>\n</blockquote>\n</li>\n</ol>\n',
+    html: '<ol>\n<li>\n<p>A paragraph\nwith two lines.</p>\n<pre><code>indented code\n</code></pre>\n<blockquote>\n<p>A block quote.</p>\n</blockquote>\n</li>\n</ol>\n',
     section: 'List items'
   },
   {
     markdown:
       '    1.  A paragraph\n        with two lines.\n\n            indented code\n\n        > A block quote.\n',
-    html:
-      '<pre><code>1.  A paragraph\n    with two lines.\n\n        indented code\n\n    &gt; A block quote.\n</code></pre>\n',
+    html: '<pre><code>1.  A paragraph\n    with two lines.\n\n        indented code\n\n    &gt; A block quote.\n</code></pre>\n',
     section: 'List items'
   },
   {
     markdown:
       '  1.  A paragraph\nwith two lines.\n\n          indented code\n\n      > A block quote.\n',
-    html:
-      '<ol>\n<li>\n<p>A paragraph\nwith two lines.</p>\n<pre><code>indented code\n</code></pre>\n<blockquote>\n<p>A block quote.</p>\n</blockquote>\n</li>\n</ol>\n',
+    html: '<ol>\n<li>\n<p>A paragraph\nwith two lines.</p>\n<pre><code>indented code\n</code></pre>\n<blockquote>\n<p>A block quote.</p>\n</blockquote>\n</li>\n</ol>\n',
     section: 'List items'
   },
   {
@@ -1524,26 +1477,22 @@ export var commonmark = [
   },
   {
     markdown: '> 1. > Blockquote\ncontinued here.\n',
-    html:
-      '<blockquote>\n<ol>\n<li>\n<blockquote>\n<p>Blockquote\ncontinued here.</p>\n</blockquote>\n</li>\n</ol>\n</blockquote>\n',
+    html: '<blockquote>\n<ol>\n<li>\n<blockquote>\n<p>Blockquote\ncontinued here.</p>\n</blockquote>\n</li>\n</ol>\n</blockquote>\n',
     section: 'List items'
   },
   {
     markdown: '> 1. > Blockquote\n> continued here.\n',
-    html:
-      '<blockquote>\n<ol>\n<li>\n<blockquote>\n<p>Blockquote\ncontinued here.</p>\n</blockquote>\n</li>\n</ol>\n</blockquote>\n',
+    html: '<blockquote>\n<ol>\n<li>\n<blockquote>\n<p>Blockquote\ncontinued here.</p>\n</blockquote>\n</li>\n</ol>\n</blockquote>\n',
     section: 'List items'
   },
   {
     markdown: '- foo\n  - bar\n    - baz\n      - boo\n',
-    html:
-      '<ul>\n<li>foo\n<ul>\n<li>bar\n<ul>\n<li>baz\n<ul>\n<li>boo</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n',
+    html: '<ul>\n<li>foo\n<ul>\n<li>bar\n<ul>\n<li>baz\n<ul>\n<li>boo</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n',
     section: 'List items'
   },
   {
     markdown: '- foo\n - bar\n  - baz\n   - boo\n',
-    html:
-      '<ul>\n<li>foo</li>\n<li>bar</li>\n<li>baz</li>\n<li>boo</li>\n</ul>\n',
+    html: '<ul>\n<li>foo</li>\n<li>bar</li>\n<li>baz</li>\n<li>boo</li>\n</ul>\n',
     section: 'List items'
   },
   {
@@ -1563,26 +1512,22 @@ export var commonmark = [
   },
   {
     markdown: '1. - 2. foo\n',
-    html:
-      '<ol>\n<li>\n<ul>\n<li>\n<ol start="2">\n<li>foo</li>\n</ol>\n</li>\n</ul>\n</li>\n</ol>\n',
+    html: '<ol>\n<li>\n<ul>\n<li>\n<ol start="2">\n<li>foo</li>\n</ol>\n</li>\n</ul>\n</li>\n</ol>\n',
     section: 'List items'
   },
   {
     markdown: '- # Foo\n- Bar\n  ---\n  baz\n',
-    html:
-      '<ul>\n<li>\n<h1>Foo</h1>\n</li>\n<li>\n<h2>Bar</h2>\nbaz</li>\n</ul>\n',
+    html: '<ul>\n<li>\n<h1>Foo</h1>\n</li>\n<li>\n<h2>Bar</h2>\nbaz</li>\n</ul>\n',
     section: 'List items'
   },
   {
     markdown: '- foo\n- bar\n+ baz\n',
-    html:
-      '<ul>\n<li>foo</li>\n<li>bar</li>\n</ul>\n<ul>\n<li>baz</li>\n</ul>\n',
+    html: '<ul>\n<li>foo</li>\n<li>bar</li>\n</ul>\n<ul>\n<li>baz</li>\n</ul>\n',
     section: 'Lists'
   },
   {
     markdown: '1. foo\n2. bar\n3) baz\n',
-    html:
-      '<ol>\n<li>foo</li>\n<li>bar</li>\n</ol>\n<ol start="3">\n<li>baz</li>\n</ol>\n',
+    html: '<ol>\n<li>foo</li>\n<li>bar</li>\n</ol>\n<ol start="3">\n<li>baz</li>\n</ol>\n',
     section: 'Lists'
   },
   {
@@ -1593,51 +1538,43 @@ export var commonmark = [
   {
     markdown:
       'The number of windows in my house is\n14.  The number of doors is 6.\n',
-    html:
-      '<p>The number of windows in my house is\n14.  The number of doors is 6.</p>\n',
+    html: '<p>The number of windows in my house is\n14.  The number of doors is 6.</p>\n',
     section: 'Lists'
   },
   {
     markdown:
       'The number of windows in my house is\n1.  The number of doors is 6.\n',
-    html:
-      '<p>The number of windows in my house is</p>\n<ol>\n<li>The number of doors is 6.</li>\n</ol>\n',
+    html: '<p>The number of windows in my house is</p>\n<ol>\n<li>The number of doors is 6.</li>\n</ol>\n',
     section: 'Lists'
   },
   {
     markdown: '- foo\n\n- bar\n\n\n- baz\n',
-    html:
-      '<ul>\n<li>\n<p>foo</p>\n</li>\n<li>\n<p>bar</p>\n</li>\n<li>\n<p>baz</p>\n</li>\n</ul>\n',
+    html: '<ul>\n<li>\n<p>foo</p>\n</li>\n<li>\n<p>bar</p>\n</li>\n<li>\n<p>baz</p>\n</li>\n</ul>\n',
     section: 'Lists'
   },
   {
     markdown: '- foo\n  - bar\n    - baz\n\n\n      bim\n',
-    html:
-      '<ul>\n<li>foo\n<ul>\n<li>bar\n<ul>\n<li>\n<p>baz</p>\n<p>bim</p>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n',
+    html: '<ul>\n<li>foo\n<ul>\n<li>bar\n<ul>\n<li>\n<p>baz</p>\n<p>bim</p>\n</li>\n</ul>\n</li>\n</ul>\n</li>\n</ul>\n',
     section: 'Lists'
   },
   {
     markdown: '- foo\n- bar\n\n<!-- -->\n\n- baz\n- bim\n',
-    html:
-      '<ul>\n<li>foo</li>\n<li>bar</li>\n</ul>\n<!-- -->\n<ul>\n<li>baz</li>\n<li>bim</li>\n</ul>\n',
+    html: '<ul>\n<li>foo</li>\n<li>bar</li>\n</ul>\n<!-- -->\n<ul>\n<li>baz</li>\n<li>bim</li>\n</ul>\n',
     section: 'Lists'
   },
   {
     markdown: '-   foo\n\n    notcode\n\n-   foo\n\n<!-- -->\n\n    code\n',
-    html:
-      '<ul>\n<li>\n<p>foo</p>\n<p>notcode</p>\n</li>\n<li>\n<p>foo</p>\n</li>\n</ul>\n<!-- -->\n<pre><code>code\n</code></pre>\n',
+    html: '<ul>\n<li>\n<p>foo</p>\n<p>notcode</p>\n</li>\n<li>\n<p>foo</p>\n</li>\n</ul>\n<!-- -->\n<pre><code>code\n</code></pre>\n',
     section: 'Lists'
   },
   {
     markdown: '- a\n - b\n  - c\n   - d\n  - e\n - f\n- g\n',
-    html:
-      '<ul>\n<li>a</li>\n<li>b</li>\n<li>c</li>\n<li>d</li>\n<li>e</li>\n<li>f</li>\n<li>g</li>\n</ul>\n',
+    html: '<ul>\n<li>a</li>\n<li>b</li>\n<li>c</li>\n<li>d</li>\n<li>e</li>\n<li>f</li>\n<li>g</li>\n</ul>\n',
     section: 'Lists'
   },
   {
     markdown: '1. a\n\n  2. b\n\n   3. c\n',
-    html:
-      '<ol>\n<li>\n<p>a</p>\n</li>\n<li>\n<p>b</p>\n</li>\n<li>\n<p>c</p>\n</li>\n</ol>\n',
+    html: '<ol>\n<li>\n<p>a</p>\n</li>\n<li>\n<p>b</p>\n</li>\n<li>\n<p>c</p>\n</li>\n</ol>\n',
     section: 'Lists'
   },
   {
@@ -1647,56 +1584,47 @@ export var commonmark = [
   },
   {
     markdown: '1. a\n\n  2. b\n\n    3. c\n',
-    html:
-      '<ol>\n<li>\n<p>a</p>\n</li>\n<li>\n<p>b</p>\n</li>\n</ol>\n<pre><code>3. c\n</code></pre>\n',
+    html: '<ol>\n<li>\n<p>a</p>\n</li>\n<li>\n<p>b</p>\n</li>\n</ol>\n<pre><code>3. c\n</code></pre>\n',
     section: 'Lists'
   },
   {
     markdown: '- a\n- b\n\n- c\n',
-    html:
-      '<ul>\n<li>\n<p>a</p>\n</li>\n<li>\n<p>b</p>\n</li>\n<li>\n<p>c</p>\n</li>\n</ul>\n',
+    html: '<ul>\n<li>\n<p>a</p>\n</li>\n<li>\n<p>b</p>\n</li>\n<li>\n<p>c</p>\n</li>\n</ul>\n',
     section: 'Lists'
   },
   {
     markdown: '* a\n*\n\n* c\n',
-    html:
-      '<ul>\n<li>\n<p>a</p>\n</li>\n<li></li>\n<li>\n<p>c</p>\n</li>\n</ul>\n',
+    html: '<ul>\n<li>\n<p>a</p>\n</li>\n<li></li>\n<li>\n<p>c</p>\n</li>\n</ul>\n',
     section: 'Lists'
   },
   {
     markdown: '- a\n- b\n\n  c\n- d\n',
-    html:
-      '<ul>\n<li>\n<p>a</p>\n</li>\n<li>\n<p>b</p>\n<p>c</p>\n</li>\n<li>\n<p>d</p>\n</li>\n</ul>\n',
+    html: '<ul>\n<li>\n<p>a</p>\n</li>\n<li>\n<p>b</p>\n<p>c</p>\n</li>\n<li>\n<p>d</p>\n</li>\n</ul>\n',
     section: 'Lists'
   },
   {
     markdown: '- a\n- b\n\n  [ref]: /url\n- d\n',
-    html:
-      '<ul>\n<li>\n<p>a</p>\n</li>\n<li>\n<p>b</p>\n</li>\n<li>\n<p>d</p>\n</li>\n</ul>\n',
+    html: '<ul>\n<li>\n<p>a</p>\n</li>\n<li>\n<p>b</p>\n</li>\n<li>\n<p>d</p>\n</li>\n</ul>\n',
     section: 'Lists'
   },
   {
     markdown: '- a\n- ```\n  b\n\n\n  ```\n- c\n',
-    html:
-      '<ul>\n<li>a</li>\n<li>\n<pre><code>b\n\n\n</code></pre>\n</li>\n<li>c</li>\n</ul>\n',
+    html: '<ul>\n<li>a</li>\n<li>\n<pre><code>b\n\n\n</code></pre>\n</li>\n<li>c</li>\n</ul>\n',
     section: 'Lists'
   },
   {
     markdown: '- a\n  - b\n\n    c\n- d\n',
-    html:
-      '<ul>\n<li>a\n<ul>\n<li>\n<p>b</p>\n<p>c</p>\n</li>\n</ul>\n</li>\n<li>d</li>\n</ul>\n',
+    html: '<ul>\n<li>a\n<ul>\n<li>\n<p>b</p>\n<p>c</p>\n</li>\n</ul>\n</li>\n<li>d</li>\n</ul>\n',
     section: 'Lists'
   },
   {
     markdown: '* a\n  > b\n  >\n* c\n',
-    html:
-      '<ul>\n<li>a\n<blockquote>\n<p>b</p>\n</blockquote>\n</li>\n<li>c</li>\n</ul>\n',
+    html: '<ul>\n<li>a\n<blockquote>\n<p>b</p>\n</blockquote>\n</li>\n<li>c</li>\n</ul>\n',
     section: 'Lists'
   },
   {
     markdown: '- a\n  > b\n  ```\n  c\n  ```\n- d\n',
-    html:
-      '<ul>\n<li>a\n<blockquote>\n<p>b</p>\n</blockquote>\n<pre><code>c\n</code></pre>\n</li>\n<li>d</li>\n</ul>\n',
+    html: '<ul>\n<li>a\n<blockquote>\n<p>b</p>\n</blockquote>\n<pre><code>c\n</code></pre>\n</li>\n<li>d</li>\n</ul>\n',
     section: 'Lists'
   },
   {
@@ -1711,20 +1639,17 @@ export var commonmark = [
   },
   {
     markdown: '1. ```\n   foo\n   ```\n\n   bar\n',
-    html:
-      '<ol>\n<li>\n<pre><code>foo\n</code></pre>\n<p>bar</p>\n</li>\n</ol>\n',
+    html: '<ol>\n<li>\n<pre><code>foo\n</code></pre>\n<p>bar</p>\n</li>\n</ol>\n',
     section: 'Lists'
   },
   {
     markdown: '* foo\n  * bar\n\n  baz\n',
-    html:
-      '<ul>\n<li>\n<p>foo</p>\n<ul>\n<li>bar</li>\n</ul>\n<p>baz</p>\n</li>\n</ul>\n',
+    html: '<ul>\n<li>\n<p>foo</p>\n<ul>\n<li>bar</li>\n</ul>\n<p>baz</p>\n</li>\n</ul>\n',
     section: 'Lists'
   },
   {
     markdown: '- a\n  - b\n  - c\n\n- d\n  - e\n  - f\n',
-    html:
-      '<ul>\n<li>\n<p>a</p>\n<ul>\n<li>b</li>\n<li>c</li>\n</ul>\n</li>\n<li>\n<p>d</p>\n<ul>\n<li>e</li>\n<li>f</li>\n</ul>\n</li>\n</ul>\n',
+    html: '<ul>\n<li>\n<p>a</p>\n<ul>\n<li>b</li>\n<li>c</li>\n</ul>\n</li>\n<li>\n<p>d</p>\n<ul>\n<li>e</li>\n<li>f</li>\n</ul>\n</li>\n</ul>\n',
     section: 'Lists'
   },
   {
@@ -2060,8 +1985,7 @@ export var commonmark = [
   {
     markdown:
       '**Gomphocarpus (*Gomphocarpus physocarpus*, syn.\n*Asclepias physocarpa*)**\n',
-    html:
-      '<p><strong>Gomphocarpus (<em>Gomphocarpus physocarpus</em>, syn.\n<em>Asclepias physocarpa</em>)</strong></p>\n',
+    html: '<p><strong>Gomphocarpus (<em>Gomphocarpus physocarpus</em>, syn.\n<em>Asclepias physocarpa</em>)</strong></p>\n',
     section: 'Emphasis and strong emphasis'
   },
   {
@@ -2176,8 +2100,7 @@ export var commonmark = [
   },
   {
     markdown: 'foo******bar*********baz\n',
-    html:
-      '<p>foo<strong><strong><strong>bar</strong></strong></strong>***baz</p>\n',
+    html: '<p>foo<strong><strong><strong>bar</strong></strong></strong>***baz</p>\n',
     section: 'Emphasis and strong emphasis'
   },
   {
@@ -2252,8 +2175,7 @@ export var commonmark = [
   },
   {
     markdown: '**foo *bar **baz**\nbim* bop**\n',
-    html:
-      '<p><strong>foo <em>bar <strong>baz</strong>\nbim</em> bop</strong></p>\n',
+    html: '<p><strong>foo <em>bar <strong>baz</strong>\nbim</em> bop</strong></p>\n',
     section: 'Emphasis and strong emphasis'
   },
   {
@@ -2599,8 +2521,7 @@ export var commonmark = [
   {
     markdown:
       '[link](#fragment)\n\n[link](http://example.com#fragment)\n\n[link](http://example.com?foo=3#frag)\n',
-    html:
-      '<p><a href="#fragment">link</a></p>\n<p><a href="http://example.com#fragment">link</a></p>\n<p><a href="http://example.com?foo=3#frag">link</a></p>\n',
+    html: '<p><a href="#fragment">link</a></p>\n<p><a href="http://example.com#fragment">link</a></p>\n<p><a href="http://example.com?foo=3#frag">link</a></p>\n',
     section: 'Links'
   },
   {
@@ -2621,8 +2542,7 @@ export var commonmark = [
   {
     markdown:
       '[link](/url "title")\n[link](/url \'title\')\n[link](/url (title))\n',
-    html:
-      '<p><a href="/url" title="title">link</a>\n<a href="/url" title="title">link</a>\n<a href="/url" title="title">link</a></p>\n',
+    html: '<p><a href="/url" title="title">link</a>\n<a href="/url" title="title">link</a>\n<a href="/url" title="title">link</a></p>\n',
     section: 'Links'
   },
   {
@@ -2642,8 +2562,7 @@ export var commonmark = [
   },
   {
     markdown: '[link](/url \'title "and" title\')\n',
-    html:
-      '<p><a href="/url" title="title &quot;and&quot; title">link</a></p>\n',
+    html: '<p><a href="/url" title="title &quot;and&quot; title">link</a></p>\n',
     section: 'Links'
   },
   {
@@ -2678,8 +2597,7 @@ export var commonmark = [
   },
   {
     markdown: '[link *foo **bar** `#`*](/uri)\n',
-    html:
-      '<p><a href="/uri">link <em>foo <strong>bar</strong> <code>#</code></em></a></p>\n',
+    html: '<p><a href="/uri">link <em>foo <strong>bar</strong> <code>#</code></em></a></p>\n',
     section: 'Links'
   },
   {
@@ -2729,8 +2647,7 @@ export var commonmark = [
   },
   {
     markdown: '[foo<http://example.com/?search=](uri)>\n',
-    html:
-      '<p>[foo<a href="http://example.com/?search=%5D(uri)">http://example.com/?search=](uri)</a></p>\n',
+    html: '<p>[foo<a href="http://example.com/?search=%5D(uri)">http://example.com/?search=](uri)</a></p>\n',
     section: 'Links'
   },
   {
@@ -2750,8 +2667,7 @@ export var commonmark = [
   },
   {
     markdown: '[link *foo **bar** `#`*][ref]\n\n[ref]: /uri\n',
-    html:
-      '<p><a href="/uri">link <em>foo <strong>bar</strong> <code>#</code></em></a></p>\n',
+    html: '<p><a href="/uri">link <em>foo <strong>bar</strong> <code>#</code></em></a></p>\n',
     section: 'Links'
   },
   {
@@ -2766,8 +2682,7 @@ export var commonmark = [
   },
   {
     markdown: '[foo *bar [baz][ref]*][ref]\n\n[ref]: /uri\n',
-    html:
-      '<p>[foo <em>bar <a href="/uri">baz</a></em>]<a href="/uri">ref</a></p>\n',
+    html: '<p>[foo <em>bar <a href="/uri">baz</a></em>]<a href="/uri">ref</a></p>\n',
     section: 'Links'
   },
   {
@@ -2792,8 +2707,7 @@ export var commonmark = [
   },
   {
     markdown: '[foo<http://example.com/?search=][ref]>\n\n[ref]: /uri\n',
-    html:
-      '<p>[foo<a href="http://example.com/?search=%5D%5Bref%5D">http://example.com/?search=][ref]</a></p>\n',
+    html: '<p>[foo<a href="http://example.com/?search=%5D%5Bref%5D">http://example.com/?search=][ref]</a></p>\n',
     section: 'Links'
   },
   {
@@ -2968,8 +2882,7 @@ export var commonmark = [
   },
   {
     markdown: '![foo *bar*]\n\n[foo *bar*]: train.jpg "train & tracks"\n',
-    html:
-      '<p><img src="train.jpg" alt="foo bar" title="train &amp; tracks" /></p>\n',
+    html: '<p><img src="train.jpg" alt="foo bar" title="train &amp; tracks" /></p>\n',
     section: 'Images'
   },
   {
@@ -2984,14 +2897,12 @@ export var commonmark = [
   },
   {
     markdown: '![foo *bar*][]\n\n[foo *bar*]: train.jpg "train & tracks"\n',
-    html:
-      '<p><img src="train.jpg" alt="foo bar" title="train &amp; tracks" /></p>\n',
+    html: '<p><img src="train.jpg" alt="foo bar" title="train &amp; tracks" /></p>\n',
     section: 'Images'
   },
   {
     markdown: '![foo *bar*][foobar]\n\n[FOOBAR]: train.jpg "train & tracks"\n',
-    html:
-      '<p><img src="train.jpg" alt="foo bar" title="train &amp; tracks" /></p>\n',
+    html: '<p><img src="train.jpg" alt="foo bar" title="train &amp; tracks" /></p>\n',
     section: 'Images'
   },
   {
@@ -3001,8 +2912,7 @@ export var commonmark = [
   },
   {
     markdown: 'My ![foo bar](/path/to/train.jpg  "title"   )\n',
-    html:
-      '<p>My <img src="/path/to/train.jpg" alt="foo bar" title="title" /></p>\n',
+    html: '<p>My <img src="/path/to/train.jpg" alt="foo bar" title="title" /></p>\n',
     section: 'Images'
   },
   {
@@ -3082,14 +2992,12 @@ export var commonmark = [
   },
   {
     markdown: '<http://foo.bar.baz/test?q=hello&id=22&boolean>\n',
-    html:
-      '<p><a href="http://foo.bar.baz/test?q=hello&amp;id=22&amp;boolean">http://foo.bar.baz/test?q=hello&amp;id=22&amp;boolean</a></p>\n',
+    html: '<p><a href="http://foo.bar.baz/test?q=hello&amp;id=22&amp;boolean">http://foo.bar.baz/test?q=hello&amp;id=22&amp;boolean</a></p>\n',
     section: 'Autolinks'
   },
   {
     markdown: '<irc://foo.bar:2233/baz>\n',
-    html:
-      '<p><a href="irc://foo.bar:2233/baz">irc://foo.bar:2233/baz</a></p>\n',
+    html: '<p><a href="irc://foo.bar:2233/baz">irc://foo.bar:2233/baz</a></p>\n',
     section: 'Autolinks'
   },
   {
@@ -3104,8 +3012,7 @@ export var commonmark = [
   },
   {
     markdown: '<made-up-scheme://foo,bar>\n',
-    html:
-      '<p><a href="made-up-scheme://foo,bar">made-up-scheme://foo,bar</a></p>\n',
+    html: '<p><a href="made-up-scheme://foo,bar">made-up-scheme://foo,bar</a></p>\n',
     section: 'Autolinks'
   },
   {
@@ -3125,20 +3032,17 @@ export var commonmark = [
   },
   {
     markdown: '<http://example.com/\\[\\>\n',
-    html:
-      '<p><a href="http://example.com/%5C%5B%5C">http://example.com/\\[\\</a></p>\n',
+    html: '<p><a href="http://example.com/%5C%5B%5C">http://example.com/\\[\\</a></p>\n',
     section: 'Autolinks'
   },
   {
     markdown: '<foo@bar.example.com>\n',
-    html:
-      '<p><a href="mailto:foo@bar.example.com">foo@bar.example.com</a></p>\n',
+    html: '<p><a href="mailto:foo@bar.example.com">foo@bar.example.com</a></p>\n',
     section: 'Autolinks'
   },
   {
     markdown: '<foo+special@Bar.baz-bar0.com>\n',
-    html:
-      '<p><a href="mailto:foo+special@Bar.baz-bar0.com">foo+special@Bar.baz-bar0.com</a></p>\n',
+    html: '<p><a href="mailto:foo+special@Bar.baz-bar0.com">foo+special@Bar.baz-bar0.com</a></p>\n',
     section: 'Autolinks'
   },
   {
@@ -3194,8 +3098,7 @@ export var commonmark = [
   {
     markdown:
       '<a foo="bar" bam = \'baz <em>"</em>\'\n_boolean zoop:33=zoop:33 />\n',
-    html:
-      '<p><a foo="bar" bam = \'baz <em>"</em>\'\n_boolean zoop:33=zoop:33 /></p>\n',
+    html: '<p><a foo="bar" bam = \'baz <em>"</em>\'\n_boolean zoop:33=zoop:33 /></p>\n',
     section: 'Raw HTML'
   },
   {
@@ -3220,8 +3123,7 @@ export var commonmark = [
   },
   {
     markdown: '< a><\nfoo><bar/ >\n<foo bar=baz\nbim!bop />\n',
-    html:
-      '<p>&lt; a&gt;&lt;\nfoo&gt;&lt;bar/ &gt;\n&lt;foo bar=baz\nbim!bop /&gt;</p>\n',
+    html: '<p>&lt; a&gt;&lt;\nfoo&gt;&lt;bar/ &gt;\n&lt;foo bar=baz\nbim!bop /&gt;</p>\n',
     section: 'Raw HTML'
   },
   {
