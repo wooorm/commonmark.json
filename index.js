@@ -1,4 +1,20 @@
-export var commonmark = [
+/**
+ * @typedef Example
+ *   A test case.
+ * @property {string} markdown
+ *   Actual input markdown.
+ * @property {string} html
+ *   Expected output HTML.
+ * @property {string} section
+ *   Label of test group.
+ */
+
+/**
+ * CommonMark test spec in JSON
+ *
+ * @type {Array<Example>}
+ */
+export const commonmark = [
   {
     markdown: '\tfoo\tbaz\t\tbim\n',
     html: '<pre><code>foo\tbaz\t\tbim\n</code></pre>\n',
