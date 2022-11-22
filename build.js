@@ -1,3 +1,4 @@
+import assert from 'node:assert/strict'
 import fs from 'node:fs'
 import https from 'node:https'
 import process from 'node:process'
@@ -5,7 +6,7 @@ import {bail} from 'bail'
 import concat from 'concat-stream'
 
 /** @type {string|number} */
-var version = Number.parseInt(process.env.VERSION, 10)
+var version = Number.parseInt(process.env.VERSION || '', 10)
 var defaults = 'HEAD'
 
 if (version && version < 0.24) {
@@ -45,9 +46,12 @@ function onconcat(buf) {
     .replace(/^<!-- END TESTS -->(.|\n)*/m, '')
     .replace(re, onexample)
 
+  const definedVersion = data.match(/version: '?([\d.]+)'?/)
+  assert(definedVersion, 'expected `version` in spec')
+
   console.log(
     'Built CommonMark version ' +
-      (version === defaults ? data.match(/version: '?([\d.]+)'?/)[1] : version)
+      (version === defaults ? definedVersion[1] : version)
   )
 
   fs.writeFile(
@@ -58,8 +62,8 @@ function onconcat(buf) {
 
   /**
    * @param {string} _
-   * @param {string?} $1
-   * @param {string?} $2
+   * @param {string|undefined} $1
+   * @param {string|undefined} $2
    */
   function onexample(_, $1, $2) {
     /** @type {Array.<string>} */
@@ -67,7 +71,7 @@ function onconcat(buf) {
 
     if ($2) {
       section = $2
-    } else {
+    } else if ($1) {
       example = $1.split(/\n\.(?:\n|$)/)
 
       examples.push({

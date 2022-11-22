@@ -43,8 +43,8 @@
   },
   "scripts": {
     "prepack": "npm run build && npm run format",
+    "generate": "node --conditions development build.js",
     "build": "rimraf \"*.d.ts\" && tsc && type-coverage",
-    "generate": "node build",
     "format": "remark . -qfo && prettier . -w --loglevel warn && xo --fix",
     "test": "npm run generate && npm run build && npm run format"
   },
