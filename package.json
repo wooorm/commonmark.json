@@ -44,7 +44,7 @@
     "generate": "node --conditions development build.js",
     "build": "rimraf \"*.d.ts\" && tsc && type-coverage",
     "format": "remark . -qfo && prettier . -w --loglevel warn && xo --fix",
-    "test": "npm run generate && npm run build && npm run format"
+    "test": "npm run build && npm run format"
   },
   "prettier": {
     "tabWidth": 2,
