@@ -1,5 +1,6 @@
-import fs from 'fs'
-import https from 'https'
+import fs from 'node:fs'
+import https from 'node:https'
+import process from 'node:process'
 import {bail} from 'bail'
 import concat from 'concat-stream'
 
@@ -46,7 +47,7 @@ function onconcat(buf) {
 
   console.log(
     'Built CommonMark version ' +
-      (version === defaults ? data.match(/version: ([\d.]+)/)[1] : version)
+      (version === defaults ? data.match(/version: '?([\d.]+)'?/)[1] : version)
   )
 
   fs.writeFile(
