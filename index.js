@@ -3142,18 +3142,13 @@ export var commonmark = [
     section: 'Raw HTML'
   },
   {
-    markdown: 'foo <!-- this is a\ncomment - with hyphen -->\n',
-    html: '<p>foo <!-- this is a\ncomment - with hyphen --></p>\n',
+    markdown: 'foo <!-- this is a --\ncomment - with hyphens -->\n',
+    html: '<p>foo <!-- this is a --\ncomment - with hyphens --></p>\n',
     section: 'Raw HTML'
   },
   {
-    markdown: 'foo <!-- not a comment -- two hyphens -->\n',
-    html: '<p>foo &lt;!-- not a comment -- two hyphens --&gt;</p>\n',
-    section: 'Raw HTML'
-  },
-  {
-    markdown: 'foo <!--> foo -->\n\nfoo <!-- foo--->\n',
-    html: '<p>foo &lt;!--&gt; foo --&gt;</p>\n<p>foo &lt;!-- foo---&gt;</p>\n',
+    markdown: 'foo <!--> foo -->\n\nfoo <!---> foo -->\n',
+    html: '<p>foo <!--> foo --&gt;</p>\n<p>foo <!---> foo --&gt;</p>\n',
     section: 'Raw HTML'
   },
   {
