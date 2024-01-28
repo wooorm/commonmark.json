@@ -12,7 +12,7 @@
 import assert from 'node:assert/strict'
 import fs from 'node:fs/promises'
 import process from 'node:process'
-import fetch from 'node-fetch'
+import {fetch} from 'undici'
 
 /** @type {string|number} */
 let version = Number.parseInt(process.env.VERSION || '', 10)
