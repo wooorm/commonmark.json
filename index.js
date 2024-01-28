@@ -113,8 +113,8 @@ export const commonmark = [
     section: 'Backslash escapes'
   },
   {
-    markdown: '<http://example.com?find=\\*>\n',
-    html: '<p><a href="http://example.com?find=%5C*">http://example.com?find=\\*</a></p>\n',
+    markdown: '<https://example.com?find=\\*>\n',
+    html: '<p><a href="https://example.com?find=%5C*">https://example.com?find=\\*</a></p>\n',
     section: 'Backslash escapes'
   },
   {
@@ -1759,13 +1759,13 @@ export const commonmark = [
     section: 'Code spans'
   },
   {
-    markdown: '`<http://foo.bar.`baz>`\n',
-    html: '<p><code>&lt;http://foo.bar.</code>baz&gt;`</p>\n',
+    markdown: '`<https://foo.bar.`baz>`\n',
+    html: '<p><code>&lt;https://foo.bar.</code>baz&gt;`</p>\n',
     section: 'Code spans'
   },
   {
-    markdown: '<http://foo.bar.`baz>`\n',
-    html: '<p><a href="http://foo.bar.%60baz">http://foo.bar.`baz</a>`</p>\n',
+    markdown: '<https://foo.bar.`baz>`\n',
+    html: '<p><a href="https://foo.bar.%60baz">https://foo.bar.`baz</a>`</p>\n',
     section: 'Code spans'
   },
   {
@@ -1801,6 +1801,11 @@ export const commonmark = [
   {
     markdown: '* a *\n',
     html: '<p>* a *</p>\n',
+    section: 'Emphasis and strong emphasis'
+  },
+  {
+    markdown: '*$*alpha.\n\n*£*bravo.\n\n*€*charlie.\n',
+    html: '<p>*$*alpha.</p>\n<p>*£*bravo.</p>\n<p>*€*charlie.</p>\n',
     section: 'Emphasis and strong emphasis'
   },
   {
@@ -2430,13 +2435,13 @@ export const commonmark = [
     section: 'Emphasis and strong emphasis'
   },
   {
-    markdown: '**a<http://foo.bar/?q=**>\n',
-    html: '<p>**a<a href="http://foo.bar/?q=**">http://foo.bar/?q=**</a></p>\n',
+    markdown: '**a<https://foo.bar/?q=**>\n',
+    html: '<p>**a<a href="https://foo.bar/?q=**">https://foo.bar/?q=**</a></p>\n',
     section: 'Emphasis and strong emphasis'
   },
   {
-    markdown: '__a<http://foo.bar/?q=__>\n',
-    html: '<p>__a<a href="http://foo.bar/?q=__">http://foo.bar/?q=__</a></p>\n',
+    markdown: '__a<https://foo.bar/?q=__>\n',
+    html: '<p>__a<a href="https://foo.bar/?q=__">https://foo.bar/?q=__</a></p>\n',
     section: 'Emphasis and strong emphasis'
   },
   {
@@ -2536,8 +2541,8 @@ export const commonmark = [
   },
   {
     markdown:
-      '[link](#fragment)\n\n[link](http://example.com#fragment)\n\n[link](http://example.com?foo=3#frag)\n',
-    html: '<p><a href="#fragment">link</a></p>\n<p><a href="http://example.com#fragment">link</a></p>\n<p><a href="http://example.com?foo=3#frag">link</a></p>\n',
+      '[link](#fragment)\n\n[link](https://example.com#fragment)\n\n[link](https://example.com?foo=3#frag)\n',
+    html: '<p><a href="#fragment">link</a></p>\n<p><a href="https://example.com#fragment">link</a></p>\n<p><a href="https://example.com?foo=3#frag">link</a></p>\n',
     section: 'Links'
   },
   {
@@ -2662,8 +2667,8 @@ export const commonmark = [
     section: 'Links'
   },
   {
-    markdown: '[foo<http://example.com/?search=](uri)>\n',
-    html: '<p>[foo<a href="http://example.com/?search=%5D(uri)">http://example.com/?search=](uri)</a></p>\n',
+    markdown: '[foo<https://example.com/?search=](uri)>\n',
+    html: '<p>[foo<a href="https://example.com/?search=%5D(uri)">https://example.com/?search=](uri)</a></p>\n',
     section: 'Links'
   },
   {
@@ -2722,8 +2727,8 @@ export const commonmark = [
     section: 'Links'
   },
   {
-    markdown: '[foo<http://example.com/?search=][ref]>\n\n[ref]: /uri\n',
-    html: '<p>[foo<a href="http://example.com/?search=%5D%5Bref%5D">http://example.com/?search=][ref]</a></p>\n',
+    markdown: '[foo<https://example.com/?search=][ref]>\n\n[ref]: /uri\n',
+    html: '<p>[foo<a href="https://example.com/?search=%5D%5Bref%5D">https://example.com/?search=][ref]</a></p>\n',
     section: 'Links'
   },
   {
@@ -3007,8 +3012,8 @@ export const commonmark = [
     section: 'Autolinks'
   },
   {
-    markdown: '<http://foo.bar.baz/test?q=hello&id=22&boolean>\n',
-    html: '<p><a href="http://foo.bar.baz/test?q=hello&amp;id=22&amp;boolean">http://foo.bar.baz/test?q=hello&amp;id=22&amp;boolean</a></p>\n',
+    markdown: '<https://foo.bar.baz/test?q=hello&id=22&boolean>\n',
+    html: '<p><a href="https://foo.bar.baz/test?q=hello&amp;id=22&amp;boolean">https://foo.bar.baz/test?q=hello&amp;id=22&amp;boolean</a></p>\n',
     section: 'Autolinks'
   },
   {
@@ -3032,8 +3037,8 @@ export const commonmark = [
     section: 'Autolinks'
   },
   {
-    markdown: '<http://../>\n',
-    html: '<p><a href="http://../">http://../</a></p>\n',
+    markdown: '<https://../>\n',
+    html: '<p><a href="https://../">https://../</a></p>\n',
     section: 'Autolinks'
   },
   {
@@ -3042,13 +3047,13 @@ export const commonmark = [
     section: 'Autolinks'
   },
   {
-    markdown: '<http://foo.bar/baz bim>\n',
-    html: '<p>&lt;http://foo.bar/baz bim&gt;</p>\n',
+    markdown: '<https://foo.bar/baz bim>\n',
+    html: '<p>&lt;https://foo.bar/baz bim&gt;</p>\n',
     section: 'Autolinks'
   },
   {
-    markdown: '<http://example.com/\\[\\>\n',
-    html: '<p><a href="http://example.com/%5C%5B%5C">http://example.com/\\[\\</a></p>\n',
+    markdown: '<https://example.com/\\[\\>\n',
+    html: '<p><a href="https://example.com/%5C%5B%5C">https://example.com/\\[\\</a></p>\n',
     section: 'Autolinks'
   },
   {
@@ -3072,8 +3077,8 @@ export const commonmark = [
     section: 'Autolinks'
   },
   {
-    markdown: '< http://foo.bar >\n',
-    html: '<p>&lt; http://foo.bar &gt;</p>\n',
+    markdown: '< https://foo.bar >\n',
+    html: '<p>&lt; https://foo.bar &gt;</p>\n',
     section: 'Autolinks'
   },
   {
@@ -3087,8 +3092,8 @@ export const commonmark = [
     section: 'Autolinks'
   },
   {
-    markdown: 'http://example.com\n',
-    html: '<p>http://example.com</p>\n',
+    markdown: 'https://example.com\n',
+    html: '<p>https://example.com</p>\n',
     section: 'Autolinks'
   },
   {
