@@ -42,10 +42,10 @@ const examples = []
 let section
 
 data
-  .replace(/\r\n?/g, '\n')
-  .replace(/→/g, '\t')
+  .replaceAll(/\r\n?/g, '\n')
+  .replaceAll('→', '\t')
   .replace(/^<!-- END TESTS -->(.|\n)*/m, '')
-  .replace(re, onexample)
+  .replaceAll(re, onexample)
 
 const definedVersion = data.match(/version: '?([\d.]+)'?/)
 assert(definedVersion, 'expected `version` in spec')
